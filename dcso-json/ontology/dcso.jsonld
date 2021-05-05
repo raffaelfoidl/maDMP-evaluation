@@ -1,0 +1,90 @@
+{
+  "@context": {
+    
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#" ,
+    "owl": "http://www.w3.org/2002/07/owl#" ,
+    "xml": "http://www.w3.org/XML/1998/namespace" ,
+    "xsd": "http://www.w3.org/2001/XMLSchema#" ,
+    "dcat": "http://www.w3.org/ns/dcat#" ,
+    "dcso": "https://w3id.org/dcso/ns/core#" ,
+    "foaf": "http://xmlns.com/foaf/0.1/" ,
+    "terms": "http://purl.org/dc/terms/" ,
+    
+    "title": "terms:title",
+    "created": "terms:created",
+    "modified": "terms:modified",
+    "description": "terms:description",
+    "format": "terms:format",
+    "issued": "terms:issued",
+
+    "document": "dcat:hasDocument",
+    "start": "dcat:startDate",
+    "end": "dcat:endDate",
+    "access_url": "dcat:accessUrl",
+    "byte_size": "dcat:byteSize",
+    "download_url": "dcat:downloadURL",
+    "keyword": "dcat:keyword",
+
+    "name": "foaf:name",
+    "mbox": "foaf:mbox",
+    
+    "identifier": "terms:identifier",
+    "type": "dcso:identifierType",
+
+    "dmp": "dcso:hasDMP",
+    "dmp_id": "dcso:hasDMPId",
+    "language": "dcso:language",
+    "ethical_issues_exist": "dcso:ethicalIssuesExist",
+    "ethical_issues_report": "dcso:ethicalIssuesReport",
+    "ethical_issues_description": "dcso:ethicalIssuesDescription",
+
+    "contact": "dcso:hasContact", 
+    "contact_id": "dcso:hasContactId",    
+
+    "contributor": "dcso:hasContributor" , 
+    "contributor_id": "dcso:hasContributorId",
+    "role": { "@id": "dcso:role", "@container": "@list" },
+
+    "cost": "dcso:hasCost",
+    "currency_code": "dcso:currencyCode",
+    "value": "dcso:value",
+
+    "project": "dcso:hasProject", 
+    "funding": "dcso:hasFunding",
+    "funder_id": "dcso:hasFunderId",
+    "funder_status": "dcso:funderStatus",
+    "grant_id": "dcso:hasGrantId",
+
+    "dataset": "dcso:hasDataset",
+    "dataset_id": "dcso:hasDatasetId",
+    "data_quality_assurance": "dcso:dataQualityAssurance",
+    "personal_data": "dcso:personalData",
+    "sensitive_data": "dcso:sensitiveData",
+
+    "distribution": "dcso:hasDistribution",
+    "available_until": "dcso:availableUntil",
+    "data_access": "dcso:dataAccess",
+
+    "host": "dcso:hasHost",
+    "availability": "dcso:availability",
+    "backup_frequency": "dcso:backupFrequency",
+    "backup_type": "dcso:backupType",
+    "certified_with": "dcso:certifiedWith",
+    "geo_location": "dcso:geoLocation",
+    "pid_system": "dcso:pidSystem",
+    "storage_type": "dcso:storageType",
+    "support_versioning": "dcso:supportVersioning",
+    "url": "dcso:url",
+
+    "license": "dcso:hasLicense",
+    "license_ref": "dcso:licenseRef",
+    "start_date": "dcat:startDate",
+
+    "metadata": "dcso:hasMetadata",
+    "metadata_standard_id": "dcso:hasMetadataStandardId",
+
+    "security_and_privacy": "dcso:hasSecurityPrivacy",
+    "technical_resource": "dcso:hasTechnicalResource"    
+  }
+}

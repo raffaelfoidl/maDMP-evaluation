@@ -1,0 +1,303 @@
+{
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "description": "Implementation of predicting and preprocessing algorithm",
+      "issued": "2021-04-19",
+      "title": "Source Code",
+      "hasDatasetId": "_:b2",
+      "hasDistribution": "_:b1",
+      "identifierType": "source-code",
+      "personalData": "no",
+      "sensitiveData": "no"
+    },
+    {
+      "@id": "_:b1",
+      "description": "Implementation of predicting and preprocessing algorithm",
+      "title": "Python code",
+      "accessUrl": "https://github.com/sirinn/data-stewardship-scaling-effects-knn",
+      "dataAccess": "open",
+      "hasLicense": "_:b23"
+    },
+    {
+      "@id": "_:b10",
+      "description": "CSV file showing the predictions on auto_mpg dataset with standard scaling",
+      "format": "text/csv",
+      "title": "auto_mpg_scale_experiment",
+      "dcat:byteSize": 4125,
+      "availableUntil": "2029-01-30",
+      "dataAccess": "open",
+      "hasLicense": "_:b19"
+    },
+    {
+      "@id": "_:b11",
+      "identifier": "10.5281/zenodo.4699197",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b12",
+      "identifier": "10.5281/zenodo.4699201",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b13",
+      "startDate": "2021-04-19",
+      "licenseRef": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE"
+    },
+    {
+      "@id": "_:b14",
+      "startDate": "2021-04-19",
+      "licenseRef": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE"
+    },
+    {
+      "@id": "_:b15",
+      "description": "CSV file showing the predictions on bike_sharing dataset with no scaling",
+      "format": "text/csv",
+      "title": "auto_mpg_no_scale_experiment",
+      "dcat:byteSize": 5611,
+      "availableUntil": "2029-01-30",
+      "dataAccess": "open",
+      "hasLicense": "_:b16"
+    },
+    {
+      "@id": "_:b16",
+      "startDate": "2021-04-19",
+      "licenseRef": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE"
+    },
+    {
+      "@id": "_:b17",
+      "identifier": "10.5281/zenodo.4699201",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b18",
+      "identifier": "110.5281/zenodo.4699197",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b19",
+      "startDate": "2021-04-19",
+      "licenseRef": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE"
+    },
+    {
+      "@id": "_:b2",
+      "identifier": "10.5281/zenodo.4701588",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b20",
+      "description": "CSV file showing the predictions on bike_sharing dataset with no scaling",
+      "format": "text/csv",
+      "title": "auto_mpg_no_scale_experiment",
+      "dcat:byteSize": 5611,
+      "availableUntil": "2029-01-30",
+      "dataAccess": "open",
+      "hasLicense": "_:b14"
+    },
+    {
+      "@id": "_:b21",
+      "identifier": "https://orcid.org/0000-0002-8550-2506",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b22",
+      "description": "CSV file showing the predictions on auto_mpg dataset with no scaling",
+      "format": "text/csv",
+      "title": "auto_mpg_no_scale_experiment",
+      "dcat:byteSize": 5611,
+      "availableUntil": "2029-01-30",
+      "dataAccess": "open",
+      "hasLicense": "_:b13"
+    },
+    {
+      "@id": "_:b23",
+      "startDate": "2021-04-19",
+      "licenseRef": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/150c171a6624795e2459b4cd567ef06d43c6da8d/LICENSE"
+    },
+    {
+      "@id": "_:b3",
+      "@type": "DMP",
+      "created": "2021-04-19T00:00:00.0",
+      "description": "Demonstration of effect of scaling on KNN algorithm for educational purposes",
+      "modified": "2021-04-19T00:00:00.0",
+      "title": "Effects of scaling when modeling with KNN",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b8",
+      "hasDMPId": "_:b5",
+      "hasDataset": [
+        "_:b4",
+        "_:b0",
+        "_:b6",
+        "_:b7",
+        "_:b9"
+      ],
+      "language": "eng"
+    },
+    {
+      "@id": "_:b4",
+      "description": "Predictions on auto_mpg dataset with standard scaling",
+      "issued": "2021-04-19",
+      "title": "auto_mpg_scale_experiment",
+      "hasDatasetId": "_:b11",
+      "hasDistribution": "_:b10",
+      "identifierType": "document",
+      "personalData": "no",
+      "sensitiveData": "unknown"
+    },
+    {
+      "@id": "_:b5",
+      "identifier": "10.5281/zenodo.4701457",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b6",
+      "description": "Predictions on bike_sharing dataset with no scaling",
+      "issued": "2021-04-19",
+      "title": "bike_sharing_no_scale_experiment",
+      "hasDatasetId": "_:b12",
+      "hasDistribution": "_:b20",
+      "identifierType": "document",
+      "personalData": "no",
+      "sensitiveData": "unknown"
+    },
+    {
+      "@id": "_:b7",
+      "description": "Predictions on bike_sharing dataset with standard scaling",
+      "issued": "2021-04-19",
+      "title": "bike_sharing_scale_experiment",
+      "hasDatasetId": "_:b17",
+      "hasDistribution": "_:b15",
+      "identifierType": "document",
+      "personalData": "no",
+      "sensitiveData": "unknown"
+    },
+    {
+      "@id": "_:b8",
+      "mbox": "sirinqi@gmail.com",
+      "name": "Dusan Trnka",
+      "hasContactId": "_:b21"
+    },
+    {
+      "@id": "_:b9",
+      "description": "Predictions on auto_mpg dataset with no scaling",
+      "issued": "2021-04-19",
+      "title": "auto_mpg_no_scale_experiment",
+      "hasDatasetId": "_:b18",
+      "hasDistribution": "_:b22",
+      "identifierType": "document",
+      "personalData": "no",
+      "sensitiveData": "unknown"
+    }
+  ],
+  "@context": {
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "availableUntil": {
+      "@id": "https://w3id.org/dcso/ns/core#availableUntil"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "schema": "http://schema.org/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ex": "https://w3id.org/dcso/id/example/",
+    "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "terms": "http://purl.org/dc/terms/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }
+}
