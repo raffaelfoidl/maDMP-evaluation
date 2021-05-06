@@ -105,7 +105,7 @@ public class DcsoJson implements Callable<Integer> {
     /* TODO:
      * Logging
      * move contents of "ontology" folder to src/main/resources and from there such that reading/converting
-     *   also works when executing the jar
+     *   also works when executing the jar (irrespective of working directory)
      * repository metadata (GitHub)
      * Documentation (code - IDcsoJsonTransformer, readme, root readme, goals, methodology, outputs, file structure, ...)
      *  -> known issue: when converting JSON -> JSON-LD/Turtle -> JSON, array elements with arity 1 have been
