@@ -1,0 +1,273 @@
+{
+    "dmp": {
+      "contact": {
+        "contact_id": {
+          "identifier": "https://orcid.org/0000-0002-5605-4003",
+          "type": "orcid"
+        },
+        "mbox": "e1627772@student.tuwien.ac.at",
+        "name": "Jovan Petrovic"
+      },
+      "created": "2021-04-17T20:17:56.725Z",
+      "dataset": [
+        {
+          "dataset_id": {
+            "identifier": "https://doi.org/10.5281/zenodo.4698406",
+            "type": "doi"
+          },
+          "personal_data": "no",
+          "sensitive_data": "no",
+          "title": "Correlation of GDP and fertility rate in 2016",
+          "description": "This dataset contains GDP per capita and fertility rate of all countries that have that information for the year 2016. The data from this file will be used later for the graphical representation of our experiment",
+          "keyword": [
+              "GDP",
+              "Fertility",
+              "Correlation",
+              "2016"
+          ],
+          "issued": "2021-04-17",
+          "type": "dataset",
+          "distribution": [
+            {
+              "data_access": "open",
+              "title": "Correlation of GDP and fertility rate in 2016",
+              "description": "This dataset contains GDP per capita and fertility rate of all countries that have that information for the year 2016. The data from this file will be used later for the graphical representation of our experiment",
+              "download_url": "https://zenodo.org/record/4698406/files/gdp_fertility.csv?download=1",
+              "host": {
+                "pid_system": [
+                    "doi"
+                ],
+                "support_versioning": "yes",
+                "title": "Zenodo",
+                "url": "https://zenodo.org"
+              },
+              "byte_size": 8700,
+              "license": [
+                {
+                  "license_ref": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                  "start_date": "2021-04-17"
+                }
+              ],
+              "access_url": "https://zenodo.org/record/4698406#.YHsnUy2w1ZM",
+              "format": [
+                "text/csv"
+              ]
+            },
+            {
+              "data_access": "open",
+              "title": "Scatter plot of correlation between GDP and Fertility rate",
+              "byte_size": 21000,
+              "download_url": "https://zenodo.org/record/4698428/files/correlation.png?download=1",
+              "license": [
+                {
+                  "license_ref": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                  "start_date": "2021-04-17"
+                }
+              ],
+              "access_url": "https://zenodo.org/record/4698428#.YHsr0y2w1ZM",
+              "host": {
+                "pid_system": [
+                    "doi"
+                ],
+                "support_versioning": "yes",
+                "title": "Zenodo",
+                "url": "https://zenodo.org"
+              },
+              "format": [
+                "image/png"
+              ],
+              "description": "This is a scatter plot of the merged data that clearly shows the correlation between the fertility rate and the GDP per capita for the year 2016."
+            },
+            {
+              "data_access": "open",
+              "title": "GDP_Fertility_Correlation",
+              "format": [
+                "application/zip"
+              ],
+              "access_url": "https://github.com/jpetrovi/GDP_Fertility_Correlation",
+              "license": [
+                {
+                    "license_ref": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                    "start_date": "2021-04-17"
+                }
+              ],
+              "host": {
+                "title": "GitHub",
+                "url": "https://github.com",
+                "support_versioning": "yes",
+                "pid_system": [
+                  "doi"
+                ]
+              },
+              "download_url": "https://github.com/jpetrovi/GDP_Fertility_Correlation/archive/refs/heads/master.zip",
+              "description": "This is the source code of the project that contains all relevant files and folders of the project implementation",
+              "byte_size": 737630
+            }
+          ],
+          "language": "eng",
+          "security_and_privacy": [
+            {
+              "title": "Data access",
+              "description": "Since our project is stored on a public GitHub repository, there are no access restrictions to the source code and created data, anyone who wants may reuse our project or if someone wants to collaborate with us, we are open for pull request that will be reviewed by our team. GitHub has already mechanisms that ensure data security and prevents unauthorized users from altering the project content"
+            }
+          ],
+          "metadata": [
+            {
+              "language": "eng",
+              "metadata_standard_id": {
+                "identifier": "http://dublincore.org",
+                "type": "url"
+              },
+              "description": "The Dublin Core is a set of fifteen  elements (properties) for describing resources"
+            }
+          ]
+        },
+        {
+          "dataset_id": {
+            "identifier": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+            "type": "url"
+          },
+          "personal_data": "no",
+          "sensitive_data": "no",
+          "title": "GDP per capita (current US$)",
+          "keyword": [
+            "GDP",
+            "Capita"
+          ],
+          "type": "dataset",
+          "issued": "2021-04-17",
+          "distribution": [
+            {
+              "data_access": "open",
+              "title": "GDP per capita (current US$)",
+              "format": [
+                "text/csv"
+              ],
+              "description": "This dataset contains GDP per capita data for all countries for the period of 1960-2019.",
+              "access_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+              "download_url": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
+              "license": [
+                {
+                    "license_ref": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                    "start_date": "2021-04-17"
+                }
+              ],
+              "byte_size": 184000,
+              "host": {
+                "title": "The World Bank",
+                "url": "https://data.worldbank.org"
+              }
+            }
+          ],
+          "language": "eng",
+          "security_and_privacy": [
+            {
+              "title": "Data access",
+              "description": "Available for public use under the terms of Creative Commons Attribution 4.0 International license"
+            }
+          ],
+          "metadata": [
+            {
+              "language": "eng",
+              "metadata_standard_id": {
+                "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
+                "type": "url"
+              }
+            }
+          ],
+          "description": "This dataset contains GDP per capita data for all countries for the period of 1960-2019."
+        },
+        {
+          "dataset_id": {
+            "identifier": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+            "type": "url"
+          },
+          "personal_data": "no",
+          "sensitive_data": "no",
+          "title": "Fertility rate, total (births per woman)",
+          "type": "dataset",
+          "distribution": [
+            {
+              "data_access": "open",
+              "title": "Fertility rate, total (births per woman)",
+              "byte_size": 168000,
+              "description": "This dataset contains fertility rate values for all countries for the period of 1960-2019",
+              "download_url": "https://api.worldbank.org/v2/en/indicator/SP.DYN.TFRT.IN?downloadformat=csv",
+              "license": [
+                {
+                    "license_ref": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                    "start_date": "2021-04-17"
+                }
+              ],
+              "format": [
+                "text/csv"
+              ],
+              "access_url": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN"
+            }
+          ],
+          "description": "This dataset contains fertility rate values for all countries for the period of 1960-2019",
+          "security_and_privacy": [
+            {
+                "title": "Data access",
+                "description": "Available for public use under the terms of Creative Commons Attribution 4.0 International license"
+            }
+          ],
+          "metadata": [
+            {
+              "language": "eng",
+              "metadata_standard_id": {
+                "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=SP.DYN.TFRT.IN",
+                "type": "url"
+              }
+            }
+          ],
+          "issued": "2021-04-17",
+          "keyword": [
+           "Fertility",
+           "Rate",
+           "Woman",
+           "Birth"
+          ],
+          "language": "eng"
+        }
+      ],
+      "dmp_id": {
+        "identifier": "10.5281/zenodo.4698519",
+        "type": "doi"
+      },
+      "ethical_issues_exist": "no",
+      "language": "eng",
+      "modified": "2021-04-17T19:57:57.584Z",
+      "title": "DMP: Correlation of GDP and fertility rate",
+      "cost": [
+        {
+          "title": "Cost of performing the research",
+          "value": 0,
+          "currency_code": "EUR",
+          "description": "There are no costs present for any aspect of our research, because all tools and data management processes are free"
+        }
+      ],
+      "project": [
+        {
+          "title": "Correlation of GDP and fertility rate",
+          "start": "2021-04-14",
+          "end": "2021-04-19"
+        }
+      ],
+      "description": "This is the data management plan for our research project about analyzing the correlation between GDP per capita and fertility rate(births per Woman).",
+      "ethical_issues_description": "There are no known ethical issues in our project",
+      "contributor": [
+        {
+          "contributor_id": {
+            "identifier": "https://orcid.org/0000-0002-5605-4003",
+            "type": "orcid"
+          },
+          "name": "Jovan Petrovic",
+          "role": [
+            "Project creator"
+          ],
+          "mbox": "e1627772@student.tuwien.ac.at"
+        }
+      ]
+    }
+  }

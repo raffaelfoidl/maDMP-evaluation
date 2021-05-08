@@ -80,11 +80,10 @@ The files to be deployed are represented by the files produced by the `package` 
 ## Methodology (to be moved to main readme)
 
 * get maDMPs from [Zenodo](https://zenodo.org/communities/dast-2021)
-* normalization (indenting, formatting, ...)
-* ensure schema conformity (document changes to be made for standard conformity)
+* preprocessing (uniform indenting + formatting) + ensuring schema conformity
     * <https://www.jsonschemavalidator.net/>
     * 4: removed line breaks in JSON string
-    * 6: some closing brackets were missing + **TODO**:
+    * 6: some closing brackets were missing + the object hierarchy in the `distribution` field was not correct (only a guess as to the author's intentions could be made)
 
 ```text
 Found 2 error(s)
@@ -96,7 +95,13 @@ Schema path: https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/mast
 ```
 
   * 10: 56 errors (mostly "Expected Array but got Object") **TODO**
+    * mostly objects were used instead of arrays with one element
+    * string instead of numerical values
+    * two of the four data sets had no `dataset_id` field
+    * used datetime format for date field
   * 11: 2021-04-12T25:10:16.8 -> 2021-04-12T25:10:16.8Z
+  * 2021-04-12T25:10:16.8Z -> 2021-04-12T23:10:16.8Z (a day does not have more than 24 hours)
+* normalization (achieve same, alphabetical key sorting using tool)
 * convert to JSON-LD
 * import into GraphDB
 * formulate SPARQL queries, based on (link to evaluation Rubric)

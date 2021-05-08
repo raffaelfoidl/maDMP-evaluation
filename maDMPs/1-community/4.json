@@ -1,0 +1,180 @@
+{
+    "dmp": {
+        "contact": {
+            "contact_id": {
+                "identifier": "https://orcid.org/0000-0001-8770-4112",
+                "type": "orcid"
+            },
+            "mbox": "lea.brugger@student.tuwien.ac.at",
+            "name": "Lea Salome Brugger"
+        },
+        "contributor": [
+            {
+                "contributor_id": {
+                    "identifier": "https://orcid.org/0000-0001-8770-4112",
+                    "type": "orcid"
+                },
+                "mbox": "lea.brugger@student.tuwien.ac.at",
+                "name": "Lea Salome Brugger",
+                "role": [
+                    "Project Creator",
+                    "Project Maintainer"
+                ]
+            }
+        ],
+        "created": "2021-04-18T20:15:00+0100",
+        "dataset": [
+            {
+                "data_quality_assurance": [
+                    "The naming and structure of the folders and files follows the convention defined by Princeton University (https://libguides.princeton.edu/rdm)",
+                    "In order to only produce useful data, countries where incomplete information is provided by either or both of the datasets, are neglected. This is ensured firstly by filtering out rows in the CSV file for the GDP per capita where no numeric value is given and secondly by the way the datasets are merged; if a country is only included in one of the datasets, but not both, it is not added to the resulting dataset."
+                ],
+                "dataset_id": {
+                    "identifier": "https://doi.org/10.5281/zenodo.4699901",
+                    "type": "doi"
+                },
+                "description": 
+                    "As a result of the experiment, a CSV files is created. This CSV file contains the raw data produced by the experiment; for each country, there are two entries in the CSV file: Each entry contains the
+                    country code, country name and the GDP per capita, which are obviously the same for both entries. The two entries differ in the columns for the sex and the mean height of 19-year-olds of this sex; there
+                    is one entry for males and another for females. Therefore, the created CSV file represents filtered and then merged data from the two input datasets. Additionally, two PNG files are generated which display
+                    a linear regression between the GDP per capita and the average height of 19-year-old males or females, respectively. A Python application is responsible for processing the data and producing the desired output.",
+                "distribution": [
+                    {
+                        "access_url": "https://zenodo.org/record/4699901",
+                        "byte_size": 82900,
+                        "data_access": "open",
+                        "description": "This Zenodo upload contains the results obtained by running the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\"",
+                        "format": [
+                            "text/csv",
+                            "image/png"
+                        ],
+                        "host": {
+                            "availability": "at least 99.7%",
+                            "backup_frequency": "nightly",
+                            "backup_type": "tape",
+                            "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+                            "pid_system": [
+                                "doi"
+                            ],
+                            "support_versioning": "yes",
+                            "title": "Zenodo",
+                            "url": "https://zenodo.org"
+                        },
+                        "license": [
+                            {
+                                "license_ref": "https://creativecommons.org/licenses/by/4.0/",
+                                "start_date": "2021-04-19"
+                            }
+                        ],
+                        "title": "Results: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries"
+                    },
+                    {
+                        "access_url": "https://github.com/bruggerl/gdp-height",
+                        "byte_size": 5645000,
+                        "data_access": "open",
+                        "description": "This Github repository contains the source code for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\" as well as the input data used and the results obtained by running the experiment",
+                        "format": [
+                            "application/zip"
+                        ],
+                        "host": {
+                            "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+                            "pid_system": [
+                                "doi"
+                            ],
+                            "support_versioning": "yes",
+                            "title": "Github",
+                            "url": "https://github.com"
+                        },
+                        "license": [
+                            {
+                                "license_ref": "https://choosealicense.com/licenses/mit/",
+                                "start_date": "2021-04-19"
+                            }
+                        ],
+                        "title": "gdp-height"
+                    }
+                ],
+                "is_reused": "produced",
+                "methodology": {
+                    "description":
+                    "The creation of the output of the experiment is conducted as follows:
+                    First, the two input datasets are downloaded in the CSV format. The dataset concerning the GDP per capita is downloaded as a ZIP file containing the actual dataset as well as two CSV files containing metadata (their file names start with \"Metadata\") which can be ignored for this experiment as we are only interested in the concrete data. The ZIP file is extracted. The data about the average height can be downloaded directly in the CSV format.
+                    The two CSV files from the two different datasets are renamed to gdps.csv and heights.csv, respectively, in order to better indicate their scope and content. There is a data folder in the repository in order to separate the source code and output from the input data. The renamed CSV files are transferred to this data folder since the source code for the experiment excepts data provided in data/gdps.csv and data/heights.csv as input. The first four lines of the CSV file for the GDP per capita information are reserved for a header indicating the data source and the date of the last update. Those four lines are deleted before running the experiment since the library used for data processing (pandas) is not able to handle \"uneven\" CSV files well."
+                },
+                "issued": "2021-04-18",
+                "keyword": [
+                    "GDP",
+                    "GDP per capita",
+                    "height",
+                    "average height",
+                    "regression",
+                    "linear regression",
+                    "2019"
+                ],
+                "language": "eng",
+                "metadata": [
+                    {
+                        "description": "Provides metadata for the created dataset.",
+                        "language": "eng",
+                        "metadata_standard_id": {
+                            "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+                            "type": "url"
+                          }
+                    }
+                ],
+                "personal_data": "no",
+                "preservation_statement": "The data are produced in the scope of a university course project; hence, the potential uses in research are limited. Nevertheless, as all used data are licensed under the CC-BY 4.0 license described above and no personal data is processed, there is no reason to destroy the produced data either. Therefore, all data as well as the source code for the experiment are preserved in order to enable long-term reusability.",
+                "security_and_privacy": [
+                    {
+                        "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
+                        "title": "Read access to the data"
+                    },
+                    {
+                        "description":
+                            "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
+                        "title": "Write access to the data"
+                    }
+                ],
+                "sensitive_data": "no",
+                "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+                "type": "dataset"
+            }
+        ],
+        "description": "This is the DMP for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\".",
+        "dmp_id": {
+            "identifier": "https://doi.org/10.5281/zenodo.4701272",
+            "type": "doi"
+        },
+        "ethical_issues_description":
+            "All in all, no ethical issues arise in this experiment. No personal information is processed and there are no participants involved; hence, there is no consent needed for data preservation or sharing. Furthermore, there are no restrictions with regard to data transfer and storage duration since no sensitive data is being handled.",
+        "ethical_issues_exist": "no",
+        "language": "eng",
+        "modified": "2021-04-19T12:20:00+0100",
+        "title": "DMP: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries",
+        "project": [
+            {
+                "description":
+                    "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
+                "start": "2021-04-11",
+                "end": "2021-04-19",
+                "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries"
+            }
+        ],
+        "related_policy": [
+            {
+                "description": "Policy for Research Data Management at Vienna University of Technology",
+                "related_policy_id": {
+                  "identifier": "https://www.tuwien.at/index.php?eID=dms&s=4&path=Directives%20and%20Regulations%20of%20the%20Rectorate/Policy%20for%20Research%20Data%20Management.pdf",
+                  "type": "url"
+                }
+              },
+            {
+              "description": "Data Protection Policy at Vienna University of Technology",
+              "related_policy_id": {
+                "identifier": "https://www.tuwien.at/index.php?eID=dms&s=4&path=Documents/Data%20Protection%20Guidelines/Data%20Protection%20Policy.pdf",
+                "type": "url"
+              }
+            }
+          ]
+    }
+}

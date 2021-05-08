@@ -1,0 +1,154 @@
+{
+  "dmp": {
+    "contact": {
+      "contact_id": {
+        "identifier": "https://orcid.org/0000-0003-3169-225X",
+        "type": "orcid"
+      },
+      "mbox": "mihaicata1205@gmail.com",
+      "name": "Mihai Cata"
+    },
+    "created": "2021-04-13T11:12:13.4",
+    "data_collection": [
+      {
+        "description": "This project accesses two external CSV datasets containing text data about meat consumption worldwide and deaths caused by cancer worldwide. The volume of the files is 479 KB and 3285 KB respectively, and the data is open-source. This project produces an aggregated dataset in CSV format, containing data points that combine the two datasets used (meat consumption per capita and lung cancer deaths in Romania), having a file size of 1.44 KB, as well as two PNG visualizations of the data. The data will be available for long-term access and the CSV files are highly reusable, whereas the PNG files can be reused but they represent results for a very specific task. The CSV format was chosen for the generated data because it is highly reusable and very easy to read in multiple programming languages. The data will be stored in the cloud via GitHub.",
+        "title": "What data will you collect or create?"
+      },
+      {
+        "description": "The two datasets will be downloaded as CSV files, available to anyone. The input directory will be placed in the folder input_data. The output files will be created by exporting a dataframe and a picture using Python, and will be stored in the output_data folder. Versioning will be ensured by storing all the required documents using GitHub. The quality of the data collection will be checked using basic statistical techniques for dealing with missing values.",
+        "title": "How will the data be collected or created?"
+      }
+    ],
+    "data_sharing": [
+      {
+        "description": "Both the code and the data will be distributed by sharing the link of the repository on which it will be saved. Any user can access the data by using the link or by searching for it on the Internet with a search engine (like Google). There will be no need to handle requests from users since the data will be publicly available. It will also have a DOI .",
+        "title": "How will you share the data?"
+      },
+      {
+        "description": "No restrictions on data sharing are imposed.",
+        "title": "Are any restrictions on data sharing required?"
+      }
+    ],
+    "dataset": [
+      {
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4685759",
+          "type": "doi"
+        },
+        "description": "Data which shows yearly measurements of meat consumption per capita and deaths caused by lung cancer.",
+        "distribution": [
+          {
+            "byte_size": 1500,
+            "data_access": "open",
+            "description": "CSV file early measurements of meat consumption per capita and deaths caused by lung cancer in Romania, during the period 1990-2017",
+            "format": [
+              "text/csv"
+            ],
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/share-your-work/public-domain/cc0/",
+                "start_date": "2021-04-14"
+              }
+            ],
+            "title": "Raw data"
+          }
+        ],
+        "issued": "2021-04-10",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "title": "Meat consumption and lung cancer data in Romania",
+        "type": "document"
+      },
+      {
+        "data_quality_assurance": [
+          "The code has been reviewed by the author and follows standard naming conventions"
+        ],
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4685759",
+          "type": "doi"
+        },
+        "description": "Experiment implementation",
+        "distribution": [
+          {
+            "access_url": "https://github.com/mihaicata/analysis_meat_consumption_lung_cancer_deaths_romania",
+            "data_access": "open",
+            "description": "Final realase implemented using Python to visualize data correlations.",
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/share-your-work/public-domain/cc0/",
+                "start_date": "2019-06-30"
+              }
+            ],
+            "title": "Python code"
+          }
+        ],
+        "issued": "2021-04-14",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "title": "Source Code",
+        "type": "source-code"
+      }
+    ],
+    "description": "DMP describing my experiment in which I tried to check whether a correlation exists about meat consumption and the number of deaths caused by lung cancer in Romania, based on data spanning a 28 year period.",
+    "dmp_id": {
+      "identifier": "http://doi.org/10.5281/zenodo.4685909",
+      "type": "doi"
+    },
+    "documentation_and_metadata": [
+      {
+        "description": "The metadata is contained within the input files, as the headers of the tables, where each the significance and measurement unit for each column is specified. All the data required by the user to perform experiments will be there. Besides this, a Readme file will be available, containing all this information and additional information about the source of the data.",
+        "title": "What documentation and metadata will accompany the data?"
+      }
+    ],
+    "ethical_issues_exist": "no",
+    "ethics_and_legal_compliance": [
+      {
+        "description": "The data was already anonymized and was gathered from a publicly available source.",
+        "title": "How will you manage any ethical issues?"
+      },
+      {
+        "description": "The data created by the experiment (both the code and the CSV file) will be publicly available for anyone, which will be ensured by using a CC-0 license.",
+        "title": "How will you manage copyright and Intellectual Property Rights (IPR) issues?"
+      }
+    ],
+    "language": "eng",
+    "modified": "2021-04-12T23:10:16.8Z",
+    "project": [
+      {
+        "description": "This project was developed for educational purposes.",
+        "title": "Analysis of correlation between meat consumption and number of lung cancer deaths in Romania"
+      }
+    ],
+    "responsabilities_and_resources": [
+      {
+        "description": "The creator of the experiment.",
+        "title": "Who will be responsible for data management?"
+      },
+      {
+        "description": "The only resources required are getting a researcher ORCID and DOI for the data and thecode.",
+        "title": "What resources will you require to deliver your plan?"
+      }
+    ],
+    "selection_and_preservation": [
+      {
+        "description": "Only the CSV files and the code are of long-term value and must be kept, since the PNG visualizations don't have much reusability outside this experiment, and they can be generated by running the Python script. The foreseeable research uses for the data include academic purposes, bachelor thesis or university projects and individual learning. The data will be preserved indefinitely.",
+        "title": "Which data are of long-term value and should be retained, shared, and/or preserved?"
+      },
+      {
+        "description": "Besides being stored by the original host, the data (both the datasets and the code) will be preserved cost-free in the GitHub account of the experimenter and made publicly available. The code will be placed in the code directory, the input data (the two CSV files) in the input_data directory and the outputs (one CSV file and two PNG visualizations) in the output_data directory.",
+        "title": "What is the long-term preservation plan for the dataset?"
+      }
+    ],
+    "storage_and_backup": [
+      {
+        "description": "The data will be stored in the Cloud. Since it has a very small size, no additional charges will be required to store it. Storing the data in the cloud will ensure that it is safeguarded and preserved.",
+        "title": "How will the data be stored and backed up during the research?"
+      },
+      {
+        "description": "Since the data will be publicly available to anyone, no security risks will be involved.",
+        "title": "How will you manage access and security?"
+      }
+    ],
+    "title": "DMP: Analysis of correlation between meat consumption and number of lung cancer deaths in Romania"
+  }
+}

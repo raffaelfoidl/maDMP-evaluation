@@ -1,0 +1,174 @@
+{
+  "dmp": {
+    "contact": {
+      "contact_id": {
+        "identifier": "https://orcid.org/0000-0002-8550-2506",
+        "type": "orcid"
+      },
+      "mbox": "sirinqi@gmail.com",
+      "name": "Dusan Trnka"
+    },
+    "created": "2021-04-19T00:00:00.0",
+    "dataset": [
+      {
+        "dataset_id": {
+          "identifier": "110.5281/zenodo.4699197",
+          "type": "doi"
+        },
+        "description": "Predictions on auto_mpg dataset with no scaling",
+        "distribution": [
+          {
+            "available_until": "2029-01-30",
+            "byte_size": 5611,
+            "data_access": "open",
+            "description": "CSV file showing the predictions on auto_mpg dataset with no scaling",
+            "format": [
+              "text/csv"
+            ],
+            "license": [
+              {
+                "license_ref": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "auto_mpg_no_scale_experiment"
+          }
+        ],
+        "issued": "2021-04-19",
+        "personal_data": "no",
+        "sensitive_data": "unknown",
+        "target_audience": "Target audience are students who are exploring the different machine learning algorithm and their characteristics and needs.",
+        "title": "auto_mpg_no_scale_experiment",
+        "type": "document"
+      },
+      {
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4699197",
+          "type": "doi"
+        },
+        "description": "Predictions on auto_mpg dataset with standard scaling",
+        "distribution": [
+          {
+            "available_until": "2029-01-30",
+            "byte_size": 4125,
+            "data_access": "open",
+            "description": "CSV file showing the predictions on auto_mpg dataset with standard scaling",
+            "format": [
+              "text/csv"
+            ],
+            "license": [
+              {
+                "license_ref": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "auto_mpg_scale_experiment"
+          }
+        ],
+        "issued": "2021-04-19",
+        "personal_data": "no",
+        "sensitive_data": "unknown",
+        "target_audience": "Target audience are students who are exploring the different machine learning algorithm and their characteristics and needs.",
+        "title": "auto_mpg_scale_experiment",
+        "type": "document"
+      },
+      {
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4699201",
+          "type": "doi"
+        },
+        "description": "Predictions on bike_sharing dataset with no scaling",
+        "distribution": [
+          {
+            "available_until": "2029-01-30",
+            "byte_size": 5611,
+            "data_access": "open",
+            "description": "CSV file showing the predictions on bike_sharing dataset with no scaling",
+            "format": [
+              "text/csv"
+            ],
+            "license": [
+              {
+                "license_ref": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "auto_mpg_no_scale_experiment"
+          }
+        ],
+        "issued": "2021-04-19",
+        "personal_data": "no",
+        "sensitive_data": "unknown",
+        "target_audience": "Target audience are students who are exploring the different machine learning algorithm and their characteristics and needs.",
+        "title": "bike_sharing_no_scale_experiment",
+        "type": "document"
+      },
+      {
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4699201",
+          "type": "doi"
+        },
+        "description": "Predictions on bike_sharing dataset with standard scaling",
+        "distribution": [
+          {
+            "available_until": "2029-01-30",
+            "byte_size": 5611,
+            "data_access": "open",
+            "description": "CSV file showing the predictions on bike_sharing dataset with no scaling",
+            "format": [
+              "text/csv"
+            ],
+            "license": [
+              {
+                "license_ref": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/1.1/LICENSE",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "auto_mpg_no_scale_experiment"
+          }
+        ],
+        "issued": "2021-04-19",
+        "personal_data": "no",
+        "sensitive_data": "unknown",
+        "target_audience": "Target audience are students who are exploring the different machine learning algorithm and their characteristics and needs.",
+        "title": "bike_sharing_scale_experiment",
+        "type": "document"
+      },
+      {
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4701588",
+          "type": "doi"
+        },
+        "description": "Implementation of predicting and preprocessing algorithm",
+        "distribution": [
+          {
+            "access_url": "https://github.com/sirinn/data-stewardship-scaling-effects-knn",
+            "data_access": "open",
+            "description": "Implementation of predicting and preprocessing algorithm",
+            "license": [
+              {
+                "license_ref": "https://github.com/sirinn/data-stewardship-scaling-effects-knn/blob/150c171a6624795e2459b4cd567ef06d43c6da8d/LICENSE",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "Python code"
+          }
+        ],
+        "issued": "2021-04-19",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "title": "Source Code",
+        "type": "source-code"
+      }
+    ],
+    "description": "Demonstration of effect of scaling on KNN algorithm for educational purposes",
+    "dmp_id": {
+      "identifier": "10.5281/zenodo.4701457",
+      "type": "doi"
+    },
+    "ethical_issues_exist": "no",
+    "language": "eng",
+    "modified": "2021-04-19T00:00:00.0",
+    "title": "Effects of scaling when modeling with KNNddd"
+  }
+}

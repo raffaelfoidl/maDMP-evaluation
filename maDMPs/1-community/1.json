@@ -46,27 +46,19 @@
 						]
 					}
 				],
-				"data_quality_assurance": [
-					"Provenance notebook created to validate produced outputs with the reference outputs to validate the runtime environment."
-				],
+				"data_quality_assurance": ["Provenance notebook created to validate produced outputs with the reference outputs to validate the runtime environment."],
 				"security_and_privacy": [
-					{
-						"title": "read access",
-						"description": "Read access of the repository will be allowed to anyone"
-					},
-					{
-						"title": "write access",
-						"description": "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management"
-					}
-				],
-				"preservation_statement": "Is preserved to allow reproducibility of the experiment, reference files to promote validation will also be kept",
-				"keyword": [
-					"social Media",
-					"suicide rate",
-					"correlation",
-					"Facebook",
-					"Twitter"
-				]
+					 {
+					 	"title": "read access",
+					 	"description" : "Read access of the repository will be allowed to anyone"
+					 },
+					 {
+					 	"title": "write access",
+					 	"description" : "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management"
+					 },
+					],
+				"preservation_statement" : "Is preserved to allow reproducibility of the experiment, reference files to promote validation will also be kept",
+				"keyword" : ["social Media", "suicide rate", "correlation", "Facebook", "Twitter"]
 			},
 			{
 				"title": "Produced data",
@@ -94,27 +86,19 @@
 						]
 					}
 				],
-				"data_quality_assurance": [
-					"Data is sanitized, missing values are removed to ensure not swaying of results in certain years.",
-					"Custom naming convention present in README.md was used"
-				],
+				"data_quality_assurance": ["Data is sanitized, missing values are removed to ensure not swaying of results in certain years.", "Custom naming convention present in README.md was used"],
 				"security_and_privacy": [
-					{
-						"title": "read access",
-						"description": "Read access of the repository will be allowed to anyone"
-					},
-					{
-						"title": "write access",
-						"description": "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management"
-					}
+					 {
+					 	"title": "read access",
+					 	"description" : "Read access of the repository will be allowed to anyone"
+					 },
+					 {
+					 	"title": "write access",
+					 	"description" : "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management"
+					 },
 				],
-				"preservation_statement": "Even though the data can be recreated by re-run of the experiment the output dataset is retained for future reference in case the experiment is no longer runnable due to deprecation of the technologies used.",
-				"keyword": [
-					"social Media",
-					"suicide rate",
-					"Facebook",
-					"Twitter"
-				]
+				"preservation_statement" : "Even though the data can be recreated by re-run of the experiment the output dataset is retained for future reference in case the experiment is no longer runnable due to deprecation of the technologies used.",		
+				"keyword" : ["social Media", "suicide rate", "Facebook", "Twitter"]
 			},
 			{
 				"title": "WHO suicide rates",
@@ -132,9 +116,7 @@
 					{
 						"title": "Raw data",
 						"description": "CSV file extracted fom WHO containing suicide rates per country per sex",
-						"format": [
-							"text/csv"
-						],
+						"format": ["text/csv"],
 						"byte_size": 1222577,
 						"data_access": "open",
 						"license": [
@@ -162,9 +144,7 @@
 					{
 						"title": "Raw data",
 						"description": "Number of users of Facebook, Twitter and Instagram on quarterly basis from 2010 to 2020, missing values are represented as -",
-						"format": [
-							"text/csv"
-						],
+						"format": ["text/csv"],
 						"byte_size": 1154,
 						"data_access": "open",
 						"license": [
@@ -176,6 +156,7 @@
 					}
 				]
 			}
+
 		]
 	}
 }

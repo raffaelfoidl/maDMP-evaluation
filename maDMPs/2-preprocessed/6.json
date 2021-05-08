@@ -39,45 +39,37 @@
               {
                 "license_ref": "https://opensource.org/licenses/MIT",
                 "start_date": "2021-04-15"
-              },
-              {
-                "title": "Taylor rule output",
-                "description": "Data output of applying the Taylor rule to inflation and output gap",
-                "type": "document",
-                "issued": "2021-04-10",
-                "dataset_id": {
-                  "identifier": "10.5281/zenodo.4678242",
-                  "type": "doi"
-                },
-                "personal_data": "no",
-                "sensitive_data": "no",
-                "distribution": [
-                  {
-                    "title": "Output data",
-                    "description": "CSV file of applying the Taylor rule to inflation and output gap",
-                    "format": [
-                      "text/csv"
-                    ],
-                    "byte_size": 960,
-                    "data_access": "open",
-                    "license": [
-                      {
-                        "license_ref": "https://creativecommons.org/licenses/by/4.0/",
-                        "start_date": "2021-04-10"
-                      }
-                    ]
-                  }
-                ]
               }
+            ]
+          },
+          {
+            "title": "Taylor rule output",
+            "description": "Data output of applying the Taylor rule to inflation and output gap",
+            "type": "document",
+            "issued": "2021-04-10",
+            "dataset_id": {
+              "identifier": "10.5281/zenodo.4678242",
+              "type": "doi"
+            },
+            "personal_data": "no",
+            "sensitive_data": "no",
+            "format": [
+              "text/csv"
             ],
-            "ethical_issues_exist": "no",
-            "language": "eng",
-            "modified": "2021-04-19T13:40:00"
+            "byte_size": 960,
+            "data_access": "open",
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/licenses/by/4.0/",
+                "start_date": "2021-04-10"
+              }
+            ]
           }
         ]
       }
-    ]
+    ],
+    "ethical_issues_exist": "no",
+    "language": "eng",
+    "modified": "2021-04-19T13:40:00"
   }
 }
-
-

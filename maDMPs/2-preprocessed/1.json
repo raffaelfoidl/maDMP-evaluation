@@ -1,0 +1,181 @@
+{
+  "dmp": {
+    "title": "DMP for Impact of social media on suicide rates",
+    "description": "DMP for project Impact of social media on suicide rates outlining input and output data persisted to zenodo.",
+    "created": "2021-04-19T01:04:00.0",
+    "modified": "2021-04-19T01:04:00.0",
+    "project": [],
+    "contact": {
+      "mbox": "e11941109@student.tuwien.ac.at",
+      "name": "Martin Winkler",
+      "contact_id": {
+        "identifier": "https://orcid.org/0000-0001-8811-8043",
+        "type": "orcid"
+      }
+    },
+    "language": "eng",
+    "ethical_issues_exist": "no",
+    "dmp_id": {
+      "identifier": "10.5281/zenodo.4701948",
+      "type": "doi"
+    },
+    "dataset": [
+      {
+        "title": "Source Code",
+        "description": "Preprocessing and correlation analysis with provenance validation, Embargoed until licence->start_date below",
+        "type": "source-code",
+        "issued": "2021-04-19",
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4701612",
+          "type": "doi"
+        },
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "is_reused": "produced",
+        "distribution": [
+          {
+            "title": "Jupyter notebooks",
+            "access_url": "https://github.com/vvartin/Impact-of-social-media-on-suicide-rates",
+            "byte_size": 1500000,
+            "data_access": "open",
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                "start_date": "2021-04-20"
+              }
+            ]
+          }
+        ],
+        "data_quality_assurance": [
+          "Provenance notebook created to validate produced outputs with the reference outputs to validate the runtime environment."
+        ],
+        "security_and_privacy": [
+          {
+            "title": "read access",
+            "description": "Read access of the repository will be allowed to anyone"
+          },
+          {
+            "title": "write access",
+            "description": "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management"
+          }
+        ],
+        "preservation_statement": "Is preserved to allow reproducibility of the experiment, reference files to promote validation will also be kept",
+        "keyword": [
+          "social Media",
+          "suicide rate",
+          "correlation",
+          "Facebook",
+          "Twitter"
+        ]
+      },
+      {
+        "title": "Produced data",
+        "description": "Preprocessing and correlation analysis with provenance validation, Embargoed until licence->start_date below",
+        "type": "csv dataset, figures",
+        "issued": "2021-04-19",
+        "dataset_id": {
+          "identifier": "10.5281/zenodo.4701587",
+          "type": "doi"
+        },
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "is_reused": "produced",
+        "distribution": [
+          {
+            "title": "Dataset in CSV format, Figures in PNG format",
+            "access_url": "https://github.com/vvartin/Impact-of-social-media-on-suicide-rates-results",
+            "byte_size": 127700,
+            "data_access": "open",
+            "license": [
+              {
+                "license_ref": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                "start_date": "2021-04-20"
+              }
+            ]
+          }
+        ],
+        "data_quality_assurance": [
+          "Data is sanitized, missing values are removed to ensure not swaying of results in certain years.",
+          "Custom naming convention present in README.md was used"
+        ],
+        "security_and_privacy": [
+          {
+            "title": "read access",
+            "description": "Read access of the repository will be allowed to anyone"
+          },
+          {
+            "title": "write access",
+            "description": "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management"
+          }
+        ],
+        "preservation_statement": "Even though the data can be recreated by re-run of the experiment the output dataset is retained for future reference in case the experiment is no longer runnable due to deprecation of the technologies used.",
+        "keyword": [
+          "social Media",
+          "suicide rate",
+          "Facebook",
+          "Twitter"
+        ]
+      },
+      {
+        "title": "WHO suicide rates",
+        "description": "Suicide rates per country per sex from WHO",
+        "dataset_id": {
+          "identifier": "https://apps.who.int/gho/athena/api/GHO/SDGSUICIDE.csv",
+          "type": "url"
+        },
+        "type": "document",
+        "issued": "2021-04-18",
+        "personal_data": "no",
+        "sensitive_data": "unknown",
+        "is_reused": "reused",
+        "distribution": [
+          {
+            "title": "Raw data",
+            "description": "CSV file extracted fom WHO containing suicide rates per country per sex",
+            "format": [
+              "text/csv"
+            ],
+            "byte_size": 1222577,
+            "data_access": "open",
+            "license": [
+              {
+                "license_ref": "https://www.who.int/about/who-we-are/publishing-policies/data-policy/terms-and-conditions",
+                "start_date": "2021-04-20"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Social media users",
+        "description": "Number of users of Facebook, Twitter and Instagram on quarterly basis from 2010 to 2020",
+        "dataset_id": {
+          "identifier": "https://www.kaggle.com/margarethamartinez/socialmedia2021",
+          "type": "url"
+        },
+        "type": "document",
+        "issued": "2021-04-18",
+        "personal_data": "no",
+        "sensitive_data": "unknown",
+        "is_reused": "reused",
+        "distribution": [
+          {
+            "title": "Raw data",
+            "description": "Number of users of Facebook, Twitter and Instagram on quarterly basis from 2010 to 2020, missing values are represented as -",
+            "format": [
+              "text/csv"
+            ],
+            "byte_size": 1154,
+            "data_access": "open",
+            "license": [
+              {
+                "license_ref": "https://www.statista.com/imprint/",
+                "start_date": "2021-04-20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

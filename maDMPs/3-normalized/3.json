@@ -1,0 +1,221 @@
+{
+  "dmp": {
+    "contact": {
+      "contact_id": {
+        "identifier": "https://orcid.org/0000-0002-7143-0353",
+        "type": "orcid"
+      },
+      "mbox": "tobias.hajszan@tuwien.ac.at",
+      "name": "Tobias Hajszan"
+    },
+    "contributor": [
+      {
+        "contributor_id": {
+          "identifier": "https://orcid.org/0000-0002-7143-0353",
+          "type": "orcid"
+        },
+        "mbox": "tobias.hajszan@tuwien.ac.at",
+        "name": "Tobias Hajszan",
+        "role": [
+          "Data Manager",
+          "Principal Investigator",
+          "Project Administrator",
+          "Software Engineer"
+        ]
+      },
+      {
+        "contributor_id": {
+          "identifier": "https://orcid.org/0000-0002-5164-2690",
+          "type": "orcid"
+        },
+        "mbox": "moritz.staudinger@tuwien.ac.at",
+        "name": "Moritz Staudinger",
+        "role": [
+          "Data Manager"
+        ]
+      }
+    ],
+    "created": "2021-04-18T18:02:00.000Z",
+    "dataset": [
+      {
+        "dataset_id": {
+          "identifier": "https://www.kaggle.com/aungpyaeap/fish-market",
+          "type": "url"
+        },
+        "description": "The fish data set is a small data and provides records of 7 common different fish species in fish market sales",
+        "is_reused": "reused",
+        "issued": "2019-06-13",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "title": "Dataset Fish",
+        "type": "dataset"
+      },
+      {
+        "dataset_id": {
+          "identifier": "https://www.openml.org/d/42125",
+          "type": "url"
+        },
+        "description": "The employee dataset is from openml.org and provides annual salary information including gross pay and overtime pay for all active, permanent employees of Montgomery County, MD paid in calendar year 2016. It is composed of 13 features and 9222 rows of data.",
+        "is_reused": "reused",
+        "issued": "2019-09-12",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "title": "Dataset Employees",
+        "type": "dataset"
+      },
+      {
+        "dataset_id": {
+          "identifier": "https://doi.org/10.5281/zenodo.4699520",
+          "type": "doi"
+        },
+        "description": "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish (https://www.kaggle.com/aungpyaeap/fish-market) and employee (https://www.openml.org/d/42125) dataset. Preview",
+        "is_reused": "reused",
+        "issued": "2020-04-18",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "target_audience": [
+          "This collection of data sets is special interest for data scientists, which want to research the Performance of kNN and GD on small and medium datasets."
+        ],
+        "title": "Datasets for Performance Comparison of kNN and GD",
+        "type": "dataset"
+      },
+      {
+        "data_quality_assurance": [
+          "The code has been peer-reviewed by the authors"
+        ],
+        "dataset_id": {
+          "identifier": "https://doi.org/10.5281/zenodo.4701071",
+          "type": "doi"
+        },
+        "description": "Source Code for Performance Comparison of kNN and GD",
+        "distribution": [
+          {
+            "access_url": "https://doi.org/10.5281/zenodo.4699506",
+            "available_until": "2022-04-19",
+            "byte_size": 15007744,
+            "data_access": "open",
+            "description": "Final release implemented using sklearn, numpy and matplotlib",
+            "host": {
+              "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+              "host_id_type": "HTTP-RE3DATA",
+              "pid_system": [
+                "doi"
+              ],
+              "storage_type": "repository",
+              "supports_versioning": "yes",
+              "title": "Zenodo",
+              "url": "https://www.re3data.org/repository/r3d100010468"
+            },
+            "license": [
+              {
+                "license_name": "LGPL-3.0",
+                "license_ref": "https://opensource.org/licenses/lgpl-3.0.html",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "Planned Distribution"
+          }
+        ],
+        "is_reused": "produced",
+        "issued": "2021-04-18",
+        "methodology": [
+          {
+            "description": "The source code for the project. It includes all needed code, and data as well as all results. The results and data sets can all be recreated by downloading the original data sets from the provided links and run the experiment again and start the plotting. ",
+            "methodology_id": {
+              "identifier": "https://doi.org/10.5281/zenodo.4701071",
+              "type": "url"
+            }
+          }
+        ],
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "target_audience": [
+          "The source code and data is of interest for software engineers, which want to compare hand written gd and knn implementations with the sklearn state of the art implementations"
+        ],
+        "title": "Source Code for Performance Comparison of kNN and GD",
+        "type": "software"
+      },
+      {
+        "dataset_id": {
+          "identifier": "https://doi.org/10.5281/zenodo.4699565",
+          "type": "doi"
+        },
+        "description": "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
+        "distribution": [
+          {
+            "available_until": "2022-04-19",
+            "byte_size": 24576,
+            "data_access": "open",
+            "description": "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
+            "format": [
+              "text/csv"
+            ],
+            "host": {
+              "description": "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+              "host_id_type": "HTTP-RE3DATA",
+              "pid_system": [
+                "doi"
+              ],
+              "storage_type": "repository",
+              "supports_versioning": "yes",
+              "title": "Zenodo",
+              "url": "https://www.re3data.org/repository/r3d100010468"
+            },
+            "license": [
+              {
+                "license_name": "Creative Commons Attribution (CC-BY)",
+                "license_ref": "https://creativecommons.org/licenses/by/4.0/",
+                "start_date": "2021-04-19"
+              }
+            ],
+            "title": "Planned Distribution"
+          }
+        ],
+        "is_reused": "produced",
+        "issued": "2021-04-18",
+        "methodology": [
+          {
+            "description": "The data is produced by running the experiment for both datasets. Two files for each data set are yielded, one for each algorithm.",
+            "methodology_id": {
+              "identifier": "https://doi.org/10.5281/zenodo.4699565",
+              "type": "url"
+            }
+          }
+        ],
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "target_audience": [
+          "This data is of special interest for data scientists, which want to research the Performance of kNN and GD on small and medium datasets. It contains the results of the experiment with various metrics. "
+        ],
+        "title": "Results for Performance Comparison of kNN and GD",
+        "type": "dataset"
+      }
+    ],
+    "description": "This maDMP describes how the data of the project Performance Comparison of kNN and GD is organized, archived, preserved and licensed. It gives information about the project in general, the project members and how it is accessable",
+    "dmp_id": {
+      "identifier": "https://doi.org/10.5281/zenodo.4701164",
+      "type": "doi"
+    },
+    "ethical_issues_exist": "no",
+    "language": "eng",
+    "modified": "2021-04-18T18:02:00.000Z",
+    "project": [
+      {
+        "description": "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
+        "end": "2020-12-10",
+        "start": "2020-11-15",
+        "title": "Performance Comparison of kNN and GD"
+      }
+    ],
+    "related_policy": [
+      {
+        "description": "RDM policy of TU Wien",
+        "related_policy_id": {
+          "identifier": "https://www.tuwien.at/fileadmin/Assets/forschung/Zentrum_Forschungsdatenmanagement/TUW-Guide_DMP_20210112.pdf",
+          "type": "URL"
+        }
+      }
+    ],
+    "title": "machine actionable DMP: Performance Comparison of kNN and GD"
+  }
+}

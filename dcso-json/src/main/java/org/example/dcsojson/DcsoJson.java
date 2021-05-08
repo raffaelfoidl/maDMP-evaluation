@@ -16,7 +16,7 @@ import java.util.concurrent.Callable;
   showEndOfOptionsDelimiterInUsageHelp = true,
   description = "Transforms JSON maDMPs to DCSO (JSON-LD/Turtle) and vice versa.\n" +
     "The following conversions are valid:\n" +
-    "JSON => JSON-LD, JSON => Turtle, JSON-LD => JSON, Turtle => JSON.\n",
+    "JSON => JSON-LD, JSON => Turtle; JSON-LD => JSON, JSON-LD => Turtle; Turtle => JSON, Turtle => JSON-LD.\n",
   exitCodeListHeading = "Exit Codes:%n",
   exitCodeList = {
     "0:Successful program execution.",

@@ -1,0 +1,1016 @@
+@prefix : <https://w3id.org/dcso/ns/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/dcso/ns/core> .
+
+<https://w3id.org/dcso/ns/core> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://w3id.org/dcso/ns/core/3.0.2> ;
+                                 <http://purl.org/dc/terms/contributor> "Daniel Faria" ,
+                                                                        "Diogo Proença" ,
+                                                                        "Tomasz Miksa" ;
+                                 <http://purl.org/dc/terms/creator> "Fajar J. Ekaputra" ,
+                                                                    "João Cardoso" ,
+                                                                    "Leyla Garcia" ,
+                                                                    "Marie Christine Jacquemot" ;
+                                 <http://purl.org/dc/terms/description> " This ontology aims to represent the DMP Common Standard model, through the usage of semantic web technology. It represents the DMP Common Standard model using the Web Ontology Language (OWL)."@en ;
+                                 <http://purl.org/dc/terms/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                 <http://purl.org/dc/terms/title> "The DMP Common Standard Ontology." ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "dcso" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9
+<http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "personal_data"@en .
+
+
+###  http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y
+<http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "download_url"@en .
+
+
+###  http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa
+<http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "sensitive_data"@en .
+
+
+###  http://webprotege.stanford.edu/R7TUdarnY3xHxRlNCcA1DG0
+<http://webprotege.stanford.edu/R7TUdarnY3xHxRlNCcA1DG0> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "modified"@en .
+
+
+###  http://webprotege.stanford.edu/R7U7Yvjrlyt8NoZ4Hvbyyh
+<http://webprotege.stanford.edu/R7U7Yvjrlyt8NoZ4Hvbyyh> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "available_until"@en .
+
+
+###  http://webprotege.stanford.edu/R8CBM4WaQVpIwN8WERFSIuR
+<http://webprotege.stanford.edu/R8CBM4WaQVpIwN8WERFSIuR> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "support_versioning"@en .
+
+
+###  http://webprotege.stanford.edu/R8EfLKuVCLfFVgPikHEvAZM
+<http://webprotege.stanford.edu/R8EfLKuVCLfFVgPikHEvAZM> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "backup_type"@en .
+
+
+###  http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv
+<http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "type"@en .
+
+
+###  http://webprotege.stanford.edu/R9R6JDlk0nacFyIYYfRurAC
+<http://webprotege.stanford.edu/R9R6JDlk0nacFyIYYfRurAC> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "start_date"@en .
+
+
+###  http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb
+<http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "data_access"@en .
+
+
+###  http://webprotege.stanford.edu/R9pddhdV5fvXancKS8wvY3
+<http://webprotege.stanford.edu/R9pddhdV5fvXancKS8wvY3> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "name"@en .
+
+
+###  http://webprotege.stanford.edu/R9qVT9WbfrJGG8c2vwRuAVU
+<http://webprotege.stanford.edu/R9qVT9WbfrJGG8c2vwRuAVU> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "license_ref"@en .
+
+
+###  http://webprotege.stanford.edu/RBbSNPuZjW5EKI3ycdcqRJW
+<http://webprotege.stanford.edu/RBbSNPuZjW5EKI3ycdcqRJW> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "backup_frequency"@en .
+
+
+###  http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh
+<http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "access_url"@en .
+
+
+###  http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj
+<http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "byte_size"@en .
+
+
+###  http://webprotege.stanford.edu/RDnSNL4VBr5lbhB4Zoym0hO
+<http://webprotege.stanford.edu/RDnSNL4VBr5lbhB4Zoym0hO> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "url"@en .
+
+
+###  http://webprotege.stanford.edu/RVodfADM2rd8Vj1qS8UDIN
+<http://webprotege.stanford.edu/RVodfADM2rd8Vj1qS8UDIN> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "created"@en .
+
+
+###  http://webprotege.stanford.edu/RaHsYKP0CjjjNTQYTu15tY
+<http://webprotege.stanford.edu/RaHsYKP0CjjjNTQYTu15tY> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "ethical_issues_exist"@en .
+
+
+###  http://webprotege.stanford.edu/RdwiMi0oWuR8Z4oRdOTnVG
+<http://webprotege.stanford.edu/RdwiMi0oWuR8Z4oRdOTnVG> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "preservation_statement"@en .
+
+
+###  http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw
+<http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "data_quality_assurance"@en .
+
+
+###  https://w3id.org/dcso/ns/core#identifier_type
+:identifier_type rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/dcso/ns/core#hasContact
+:hasContact rdf:type owl:ObjectProperty ;
+            rdfs:domain :DMP ;
+            rdfs:range :Contact ;
+            rdfs:comment "Any Contact that can provide information on this DMP."^^rdfs:Literal .
+
+
+###  https://w3id.org/dcso/ns/core#hasContactId
+:hasContactId rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasId ;
+              rdfs:domain :Contact ;
+              rdfs:range :ContactId ;
+              rdfs:comment "Any ID used to uniquely identified this Contact." .
+
+
+###  https://w3id.org/dcso/ns/core#hasContributor
+:hasContributor rdf:type owl:ObjectProperty ;
+                rdfs:domain :DMP ;
+                rdfs:range :Contributor ;
+                rdfs:comment "Any Contributor involved in the process of the data management described by this DMP as well as any Contributor involved in the creation and management of this DMP itself." .
+
+
+###  https://w3id.org/dcso/ns/core#hasContributorId
+:hasContributorId rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasId ;
+                  rdfs:domain :Contributor ;
+                  rdfs:range :ContributorId ;
+                  rdfs:comment "Any ID used to uniquely identified this Contributor." .
+
+
+###  https://w3id.org/dcso/ns/core#hasCost
+:hasCost rdf:type owl:ObjectProperty ;
+         rdfs:domain :DMP ;
+         rdfs:range :Cost ;
+         rdfs:comment "Any Cost related to data management included in this DMP." .
+
+
+###  https://w3id.org/dcso/ns/core#hasCurrencyCode
+:hasCurrencyCode rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Cost ;
+                 rdfs:range <https://w3id.org/dcso/ns/extension#CurrencyCode> ;
+                 rdfs:comment "A Currency Code used to express values in this Cost." .
+
+
+###  https://w3id.org/dcso/ns/core#hasDMPId
+:hasDMPId rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasId ;
+          rdfs:domain :DMP ;
+          rdfs:range :DMPId ;
+          rdfs:comment "Any ID used to uniquely identified this DMP."^^xsd:string .
+
+
+###  https://w3id.org/dcso/ns/core#hasDataset
+:hasDataset rdf:type owl:ObjectProperty ;
+            rdfs:domain :DMP ;
+            rdfs:range :Dataset ;
+            rdfs:comment "Any Dataset considered under this DMP." .
+
+
+###  https://w3id.org/dcso/ns/core#hasDatasetId
+:hasDatasetId rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasId ;
+              rdfs:domain :Dataset ;
+              rdfs:range :DatasetId ;
+              rdfs:comment "Any ID used to uniquely identified this Dataset." .
+
+
+###  https://w3id.org/dcso/ns/core#hasDistribution
+:hasDistribution rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Dataset ;
+                 rdfs:range :Distribution ;
+                 rdfs:comment "Any Distribution, i.e., specific instance, of this Dataset." .
+
+
+###  https://w3id.org/dcso/ns/core#hasFunderId
+:hasFunderId rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasId ;
+             rdfs:domain :Funding ;
+             rdfs:range :FunderId ;
+             rdfs:comment "Any ID used to uniquely identified this Funder." .
+
+
+###  https://w3id.org/dcso/ns/core#hasFunding
+:hasFunding rdf:type owl:ObjectProperty ;
+            rdfs:domain :Project ;
+            rdfs:range :Funding ;
+            rdfs:comment "Any Funding granted for this Project." .
+
+
+###  https://w3id.org/dcso/ns/core#hasGeoLocation
+:hasGeoLocation rdf:type owl:ObjectProperty ;
+                rdfs:domain :Host ;
+                rdfs:range <https://w3id.org/dcso/ns/extension#Country> ;
+                rdfs:comment "A Country where a Host, i.e. storage system, is located." .
+
+
+###  https://w3id.org/dcso/ns/core#hasGrantId
+:hasGrantId rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasId ;
+            rdfs:domain :Funding ;
+            rdfs:range :GrantId ;
+            rdfs:comment "Any ID used to uniquely identified a Grant associated to this Funder." .
+
+
+###  https://w3id.org/dcso/ns/core#hasHost
+:hasHost rdf:type owl:ObjectProperty ;
+         rdfs:domain :Distribution ;
+         rdfs:range :Host ;
+         rdfs:comment "Any Host, i., storage system, where this Distribution has been stored." .
+
+
+###  https://w3id.org/dcso/ns/core#hasId
+:hasId rdf:type owl:ObjectProperty ;
+       rdfs:range :Id ;
+       rdfs:comment "Any ID used to uniquely identified a Thing." .
+
+
+###  https://w3id.org/dcso/ns/core#hasLanguage
+:hasLanguage rdf:type owl:ObjectProperty ;
+             rdfs:domain :DMP ;
+             rdfs:range <https://w3id.org/dcso/ns/extension#Language> ;
+             rdfs:comment "Any Language used to express data in this Dataset." .
+
+
+###  https://w3id.org/dcso/ns/core#hasLicense
+:hasLicense rdf:type owl:ObjectProperty ;
+            rdfs:domain :Distribution ;
+            rdfs:range :License ;
+            rdfs:comment "A License used for this Distribution." .
+
+
+###  https://w3id.org/dcso/ns/core#hasMetadata
+:hasMetadata rdf:type owl:ObjectProperty ;
+             rdfs:domain :DMP ;
+             rdfs:range :Metadata ;
+             rdfs:comment "A Metadata standard used to describe data in this Dataset." .
+
+
+###  https://w3id.org/dcso/ns/core#hasMetadataStandardId
+:hasMetadataStandardId rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasId ;
+                       rdfs:domain :Metadata ;
+                       rdfs:range :MetadataStandardId ;
+                       rdfs:comment "Any ID used to uniquely identified this Metadata standard." .
+
+
+###  https://w3id.org/dcso/ns/core#hasProject
+:hasProject rdf:type owl:ObjectProperty ;
+            rdfs:domain :DMP ;
+            rdfs:range :Project ;
+            rdfs:comment "Any Project associated with this DMP." .
+
+
+###  https://w3id.org/dcso/ns/core#hasSecurityPrivacy
+:hasSecurityPrivacy rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Dataset ;
+                    rdfs:range :SecurityPrivacy ;
+                    rdfs:comment "Any specific requirements related to security and privacy of this Dataset." .
+
+
+###  https://w3id.org/dcso/ns/core#hasTechnicalResource
+:hasTechnicalResource rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Dataset ;
+                      rdfs:range :TechnicalResource ;
+                      rdfs:comment "Any Technical Resource, e.g, microscope, needed/used to create or process the data in this Dataset." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdf:type owl:DatatypeProperty ;
+                                  rdfs:comment "Format according to: https://www.iana.org/assignments/media-types/media-types.xhtml if appropriate, otherwise use the common name for this format" .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty ;
+                                  rdfs:comment "Issued date" .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdf:type owl:DatatypeProperty ;
+                                      rdfs:comment "A URL of the resource that gives access to a distribution of the dataset. e.g. landing page." .
+
+
+###  http://www.w3.org/ns/dcat#byteSize
+<http://www.w3.org/ns/dcat#byteSize> rdf:type owl:DatatypeProperty ;
+                                     rdfs:comment "Byte size" .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> rdf:type owl:DatatypeProperty ;
+                                        rdfs:comment "The URL of the downloadable file in a given format. E.g. CSV file or RDF file." .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdf:type owl:DatatypeProperty ;
+                                    rdfs:comment "Keyword to describe the dataset" .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:DatatypeProperty ;
+                                 rdfs:comment "E_mail address" .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/dcso/ns/core#availability
+:availability rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Host ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Indicates the availability of the host" .
+
+
+###  https://w3id.org/dcso/ns/core#availableUntil
+:availableUntil rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Distribution ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "Indicates how long this distribution will be/ should be available" ;
+                rdfs:label "availableUntil" .
+
+
+###  https://w3id.org/dcso/ns/core#backupFrequency
+:backupFrequency rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Host ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Backup frequency" ;
+                 rdfs:label "backupFrequency" .
+
+
+###  https://w3id.org/dcso/ns/core#backupType
+:backupType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Host ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Backup type" ;
+            rdfs:label "backupType" .
+
+
+###  https://w3id.org/dcso/ns/core#certifiedWith
+:certifiedWith rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Host ;
+               rdfs:range xsd:string ;
+               rdfs:comment """Repository certified to a recognised standard
+Suggested values:
+    din31644
+    dini-zertifikat
+    dsa
+    iso16363
+    iso16919
+    trac
+    wds
+    coretrustseal
+    none
+    other
+    unknown""" ,
+                            "Validation with ShEx/SHACL" ;
+               rdfs:label "certifiedWith" .
+
+
+###  https://w3id.org/dcso/ns/core#dataAccess
+:dataAccess rdf:type owl:DatatypeProperty ;
+            rdfs:comment """Indicates access mode for data.
+Allowed Values:
+    open
+    shared
+    closed""" ;
+            rdfs:label "dataAccess" .
+
+
+###  https://w3id.org/dcso/ns/core#dataQualityAssurance
+:dataQualityAssurance rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Dataset ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Assurance quality of data" ;
+                      rdfs:label "dataQualityAssurance" .
+
+
+###  https://w3id.org/dcso/ns/core#datasetType
+:datasetType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Dataset ;
+             rdfs:range xsd:string ;
+             rdfs:comment "If appropriate, type according to: DataCite and/or COAR dictionary. Otherwise use the common name for the type, e.g. raw data, software, survey, etc. https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf http://vocabularies.coar-repositories.org/pubby/resource_type.html" ;
+             rdfs:label "datasetType" .
+
+
+###  https://w3id.org/dcso/ns/core#end
+:end rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Project ;
+     rdfs:range xsd:dateTime ;
+     rdfs:comment "Project end date" .
+
+
+###  https://w3id.org/dcso/ns/core#ethicalIssueDescription
+:ethicalIssueDescription rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :DMP ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "To describe ethical issues directly in a DMP" ;
+                         rdfs:label "ethicalIssueDescription" .
+
+
+###  https://w3id.org/dcso/ns/core#ethicalIssuesExist
+:ethicalIssuesExist rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :DMP ;
+                    rdfs:comment """To indicate whether there are ethical issues related to data that this DMP describes.
+Allowed Values:
+    yes
+    no
+    unknown""" ;
+                    rdfs:label "ethicalIssuesExist" .
+
+
+###  https://w3id.org/dcso/ns/core#ethicalIssuesReport
+:ethicalIssuesReport rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :DMP ;
+                     rdfs:range xsd:anyURI ;
+                     rdfs:comment "To indicate where a protocol from a meeting with an ethical commitee can be found" ;
+                     rdfs:label "ethicalIssuesReport" .
+
+
+###  https://w3id.org/dcso/ns/core#fundingStatus
+:fundingStatus rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Funding ;
+               rdfs:comment """To express different phases of project lifecycle.
+Allowed Values:
+    planned
+    applied
+    granted
+    rejected""" ;
+               rdfs:label "fundingStatus" .
+
+
+###  https://w3id.org/dcso/ns/core#identifierType
+:identifierType rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Id ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Identifier type" ,
+                             "Validation with ShEx/SHACL" ;
+                rdfs:label "identifierType" .
+
+
+###  https://w3id.org/dcso/ns/core#licenseRef
+:licenseRef rdf:type owl:DatatypeProperty ;
+            rdfs:domain :License ;
+            rdfs:range xsd:anyURI ;
+            rdfs:comment "" ,
+                         "Link to license document." ;
+            rdfs:label "licenseRef" ;
+            rdfs:seeAlso "https://jats.nlm.nih.gov/archiving/tag-library/1.2/element/ali-license_ref.html" .
+
+
+###  https://w3id.org/dcso/ns/core#personalData
+:personalData rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Dataset ;
+              rdfs:comment "Informs about the presence or absence of personal data in the dataset" ;
+              rdfs:label "personalData" .
+
+
+###  https://w3id.org/dcso/ns/core#pidSystem
+:pidSystem rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Host ;
+           rdfs:comment """PID System
+Suggested values:
+    ark
+    arxiv
+    bibcode
+    doi
+    ean13
+    eissn
+    handle
+    igsn
+    isbn
+    issn
+    istc
+    lissn
+    lsid
+    pmid
+    purl
+    upc
+    url
+    urn
+    none
+    unknown
+    other""" ;
+           rdfs:label "pidSystem" .
+
+
+###  https://w3id.org/dcso/ns/core#preservationStatement
+:preservationStatement rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Dataset ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Preservation statement" ;
+                       rdfs:label "preservationStatement" .
+
+
+###  https://w3id.org/dcso/ns/core#report
+:report rdf:type owl:DatatypeProperty ;
+        rdfs:domain :DMP ;
+        rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/dcso/ns/core#role
+:role rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Contributor ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Type of contributor" .
+
+
+###  https://w3id.org/dcso/ns/core#sensitiveData
+:sensitiveData rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Dataset ;
+               rdfs:comment "Informs about the presence or absence of sensitive data in the dataset" ;
+               rdfs:label "sensitiveData" .
+
+
+###  https://w3id.org/dcso/ns/core#start
+:start rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Project ;
+       rdfs:range xsd:dateTime ;
+       rdfs:comment "Project start date" .
+
+
+###  https://w3id.org/dcso/ns/core#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :License ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "If date is set in the future, it indicates embargo period." ;
+           rdfs:label "startDate" .
+
+
+###  https://w3id.org/dcso/ns/core#storageType
+:storageType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Host ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The type of storage required" ;
+             rdfs:label "storageType" .
+
+
+###  https://w3id.org/dcso/ns/core#supportVersioning
+:supportVersioning rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Host ;
+                   rdfs:comment """Informs of the support for versioning
+  Allowed Values:
+    yes
+    no
+    unknown""" ;
+                   rdfs:label "supportVersioning" .
+
+
+###  https://w3id.org/dcso/ns/core#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Host ;
+     rdfs:range xsd:anyURI ;
+     rdfs:comment "The URL of the system hosting a distribution of a dataset" .
+
+
+###  https://w3id.org/dcso/ns/core#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Cost ;
+       rdfs:range xsd:integer ;
+       rdfs:comment "Value for cost" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  https://w3id.org/dcso/ns/core#Contact
+:Contact rdf:type owl:Class ;
+         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+         rdfs:comment "Specifies the party which can provide any information on the DMP. This is not necessarily the DMP creator, and can be a person or an organisation. " .
+
+
+###  https://w3id.org/dcso/ns/core#ContactId
+:ContactId rdf:type owl:Class ;
+           rdfs:subClassOf :Id ;
+           rdfs:comment "Identifier for a contact person" .
+
+
+###  https://w3id.org/dcso/ns/core#Contributor
+:Contributor rdf:type owl:Class ;
+             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+             rdfs:comment "For listing all parties involved in the process of the data management described by this DMP, and those parties involved in the creation and management of the DMP itself. " .
+
+
+###  https://w3id.org/dcso/ns/core#ContributorId
+:ContributorId rdf:type owl:Class ;
+               rdfs:subClassOf :Id ;
+               rdfs:comment "Identifier for a contributor person" .
+
+
+###  https://w3id.org/dcso/ns/core#Cost
+:Cost rdf:type owl:Class ;
+      rdfs:comment "Provides a list of costs related to data management" .
+
+
+###  https://w3id.org/dcso/ns/core#DMP
+:DMP rdf:type owl:Class ;
+     rdfs:comment "Provides high level information about the DMP, e.g. its title, modification date, etc. It is the root of this application profile. The majority of its fields are mandatory. " .
+
+
+###  https://w3id.org/dcso/ns/core#DMPId
+:DMPId rdf:type owl:Class ;
+       rdfs:subClassOf :Id ;
+       rdfs:comment "Identifier for a DMP" .
+
+
+###  https://w3id.org/dcso/ns/core#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+         rdfs:comment "This follows the defintion of Dataset in the W3C DCAT specification. Dataset can be understood as a logical entity depicting data, e.g. raw data. It provides high level information about the data. The granularity of dataset depends on a specific setting. In edge cases it can be a file, but also a collection of files in different formats" .
+
+
+###  https://w3id.org/dcso/ns/core#DatasetId
+:DatasetId rdf:type owl:Class ;
+           rdfs:subClassOf :Id ;
+           rdfs:comment "Identifier for a dataset" .
+
+
+###  https://w3id.org/dcso/ns/core#Distribution
+:Distribution rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution> ;
+              rdfs:comment "This follows the defintion of Dataset in the W3C DCAT specification. Dataset can be understood as a logical entity depicting data, e.g. raw data. It provides high level information about the data. The granularity of dataset depends on a specific setting. In edge cases it can be a file, but also a collection of files in different formats" .
+
+
+###  https://w3id.org/dcso/ns/core#FunderId
+:FunderId rdf:type owl:Class ;
+          rdfs:subClassOf :Id ;
+          rdfs:comment "Identifier for funders : it is recommended to use CrossRef Funder Registry. " .
+
+
+###  https://w3id.org/dcso/ns/core#Funding
+:Funding rdf:type owl:Class ;
+         rdfs:comment "For specifying details on funded projects, e.g. NSF of EC funded projects. " .
+
+
+###  https://w3id.org/dcso/ns/core#GrantId
+:GrantId rdf:type owl:Class ;
+         rdfs:subClassOf :Id ;
+         rdfs:comment "Identifier for grant" .
+
+
+###  https://w3id.org/dcso/ns/core#Host
+:Host rdf:type owl:Class ;
+      rdfs:comment "Provides information on the system where data is stored. It can be used to provide details on a repository where data is deposited, e.g. a Core Trust Seal certified repository located in Europe that uses DOIs. It can also provide details on systems where data is stored and processed during research, e.g. a high performance computer that uses fast storage with two daily backups. " .
+
+
+###  https://w3id.org/dcso/ns/core#Id
+:Id rdf:type owl:Class .
+
+
+###  https://w3id.org/dcso/ns/core#License
+:License rdf:type owl:Class ;
+         rdfs:comment "Used to indicate the license under which data (each specific Distribution) will be made available. It also allows for modelling embargoes. " .
+
+
+###  https://w3id.org/dcso/ns/core#Metadata
+:Metadata rdf:type owl:Class ;
+          rdfs:comment "Provides a pointer to a metadata standard used to describe the data. It does not contain any actual metadata relating to the dataset. " .
+
+
+###  https://w3id.org/dcso/ns/core#MetadataStandardId
+:MetadataStandardId rdf:type owl:Class ;
+                    rdfs:subClassOf :Id ;
+                    rdfs:comment "Identifier for the metadata standard used." .
+
+
+###  https://w3id.org/dcso/ns/core#Project
+:Project rdf:type owl:Class ;
+         rdfs:comment "Describes the project associated with the DMP, if applicable. It can be used to describe any type of project: that is, not only funded projects, but also internal projects, PhD theses, etc. " .
+
+
+###  https://w3id.org/dcso/ns/core#SecurityPrivacy
+:SecurityPrivacy rdf:type owl:Class ;
+                 rdfs:comment "Used to indicate any specific requirements related to security and privacy of a specific dataset, e.g. to indicate that data is not anonymized. " .
+
+
+###  https://w3id.org/dcso/ns/core#TechnicalResource
+:TechnicalResource rdf:type owl:Class ;
+                   rdfs:comment "For specifying equipment needed/used to create or process the data, e.g. a microscope, etc. " .
+
+
+###  https://w3id.org/dcso/ns/extension#Country
+<https://w3id.org/dcso/ns/extension#Country> rdf:type owl:Class .
+
+
+###  https://w3id.org/dcso/ns/extension#CurrencyCode
+<https://w3id.org/dcso/ns/extension#CurrencyCode> rdf:type owl:Class .
+
+
+###  https://w3id.org/dcso/ns/extension#Language
+<https://w3id.org/dcso/ns/extension#Language> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R5bzJd4ybovTzWMPCAxKW3
+<http://webprotege.stanford.edu/R5bzJd4ybovTzWMPCAxKW3> rdf:type owl:NamedIndividual ,
+                                                                 :DatasetId ;
+                                                        <http://purl.org/dc/terms/identifier> "10.5281/zenodo.4694270"^^xsd:string ;
+                                                        rdfs:label "datasetid_1"@en ;
+                                                        :identifier_type "doi"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7daorYTWekPMg41vXLVrpr
+<http://webprotege.stanford.edu/R7daorYTWekPMg41vXLVrpr> rdf:type owl:NamedIndividual ,
+                                                                  :Distribution ;
+                                                         :hasHost <http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd> ,
+                                                                  <http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx> ;
+                                                         :hasLicense <http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o> ;
+                                                         :hasTechnicalResource <http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj> ;
+                                                         <http://purl.org/dc/terms/format> "text/csv"^^xsd:string ;
+                                                         <http://purl.org/dc/terms/description> "The file is in the format csv and is uploaded on the server Kaggle.com."^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Life Expectancy (WHO)"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y> <https://www.kaggle.com/kumarajarshi/life-expectancy-who/download> ;
+                                                         <http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb> "open"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh> <https://www.kaggle.com/kumarajarshi/life-expectancy-who> ;
+                                                         <http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj> 325630 ;
+                                                         rdfs:label "distribution_2"@en .
+
+
+###  http://webprotege.stanford.edu/R8zB3D6nz4xeqP59qgUDI0t
+<http://webprotege.stanford.edu/R8zB3D6nz4xeqP59qgUDI0t> rdf:type owl:NamedIndividual ,
+                                                                  :Distribution ;
+                                                         :hasHost <http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd> ,
+                                                                  <http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx> ;
+                                                         :hasLicense <http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o> ;
+                                                         :hasTechnicalResource <http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj> ;
+                                                         <http://purl.org/dc/terms/format> "text/csv"^^xsd:string ;
+                                                         <http://purl.org/dc/terms/description> """The file will be in the format csv and will be uploaded on the server zenodo.org.
+
+Data are needed exclusively for the months of March and April 2021 due to ongoing assignment at the university. I don't expect any data sharing issues."""^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Effect of suicide rates on life expectancy dataset"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y> <https://zenodo.org/record/4694270/files/30_merged_dataset_v00_final.csv?download=1> ;
+                                                         <http://webprotege.stanford.edu/R7U7Yvjrlyt8NoZ4Hvbyyh> "2021-04-15T00:00:00"^^xsd:dateTime ;
+                                                         <http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb> "open"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh> <https://zenodo.org/record/4694270> ;
+                                                         <http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj> 107000 ;
+                                                         rdfs:label "distribution_3"@en .
+
+
+###  http://webprotege.stanford.edu/R96uDOv1NEyMARzO7iz9QkV
+<http://webprotege.stanford.edu/R96uDOv1NEyMARzO7iz9QkV> rdf:type owl:NamedIndividual ,
+                                                                  :DMPId ;
+                                                         <http://purl.org/dc/terms/identifier> "10.5281/zenodo.4696250"^^xsd:string ;
+                                                         rdfs:label "dmpid_1"@en ;
+                                                         :identifier_type "orcid"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBbfEvzBhpbLOJf9yBP8z7z
+<http://webprotege.stanford.edu/RBbfEvzBhpbLOJf9yBP8z7z> rdf:type owl:NamedIndividual ,
+                                                                  :Dataset ;
+                                                         :hasDistribution <http://webprotege.stanford.edu/REXKXDa9jKOIDehXa7Wn9u> ;
+                                                         <http://purl.org/dc/terms/issued> "2018-01-01T00:00:00"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/language> <https://w3id.org/dcso/id/iso639-3/eng> ;
+                                                         <http://purl.org/dc/terms/description> "The WHO Suicide Statistics dataset has 43 776 records and 6 variables: country, which is of type string and have 141 unique values, year, which is of type string and has a range between 1979 and 2017, sex, which is type of string and has 2 unique values,age, which is type of string and has 6 categories, suicides_no, which is type of integer and is number of suicides, and population, which is type of integer."^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "WHO Suicide Statistics"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9> "no"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa> "no"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv> "raw data"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw> "The project using the pattern for the files: [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX]"^^xsd:string ;
+                                                         rdfs:label "dataset_1"@en .
+
+
+###  http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd
+<http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd> rdf:type owl:NamedIndividual ,
+                                                                  :Host ;
+                                                         <http://purl.org/dc/terms/description> "Open-access repository"^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Zenodo"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8CBM4WaQVpIwN8WERFSIuR> "yes"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8EfLKuVCLfFVgPikHEvAZM> "cloud repository"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RBbSNPuZjW5EKI3ycdcqRJW> "One time backup"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RDnSNL4VBr5lbhB4Zoym0hO> <https://zenodo.org/> ;
+                                                         rdfs:label "host_2"@en .
+
+
+###  http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx
+<http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx> rdf:type owl:NamedIndividual ,
+                                                                  :Host ;
+                                                         :availability 99.5 ;
+                                                         <http://purl.org/dc/terms/description> "Internet hosting for software development and version control using Git"^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Github"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8CBM4WaQVpIwN8WERFSIuR> "yes"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8EfLKuVCLfFVgPikHEvAZM> "cloud repository"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RBbSNPuZjW5EKI3ycdcqRJW> "daily"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RDnSNL4VBr5lbhB4Zoym0hO> <https://github.com/> ;
+                                                         rdfs:label "host_1"@en .
+
+
+###  http://webprotege.stanford.edu/RCOHaMOteSXFEinYTlj4xOm
+<http://webprotege.stanford.edu/RCOHaMOteSXFEinYTlj4xOm> rdf:type owl:NamedIndividual ,
+                                                                  :Dataset ;
+                                                         :hasDistribution <http://webprotege.stanford.edu/R7daorYTWekPMg41vXLVrpr> ;
+                                                         <http://purl.org/dc/terms/issued> "2018-01-01T00:00:00"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/elements/1.1/language> <https://w3id.org/dcso/id/iso639-3/eng> ;
+                                                         <http://purl.org/dc/terms/description> """The WHO Life Expectancy dataset has 2 938 rows and 22 variables: country, which is of type string and have 141 unique values, year, which is of type integer and has a range between 2000 and 2015, status, which is type of string, has two categories and indicates if the country has developed or developing status, life expectancy, which is type of float and indicates number of life expectancy in age, adult mortality, which is type of integer and indicates adult mortality rates of both sexes, that means probabily of dying between 15 and 60 year per 1000 population, infant deaths, which is type of integer and indicates number of infant deaths per 1000 population, alcohol, which is type of float and indicates alcohol recorded per capita (15+) consumption in litres of pure alcohol, percentage expenditure, which is type of float and indicates expenditure on health as a percentage of Gross Domestic Product per capita, hepatitis B, which is type of integer and indicates Hepatitis B immunization coverage among 1-year-olds, measles, which is type of integer and indicates number of reported measles per 1000 population, BMI, which is type of float and indicates average boddy mass index of entire population, under-five deaths, which is type of integer and indicates number of under-five deaths per 1000 population, polio, which is type of integer and indicates polio immunization
+coverage among 1-year-old in percent, total expenditure, which is type of float and indicates general government expenditure on healtg as a percatage of total government expenditure, diphtheria, which is type of integer and indicates diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among 1-year-olds, HIV/AIDS, which is type of float and indicates deaths per 1 000 live births HIV/AIDS (0-4 years), GDP, which is type of float and indicates Gross Domestic Product per capita in USD, population, which is type of integer and indicates population of the country, thinness 1-19 years, which is type of float and indicates prevalence of thinness among children and adolescents for age 10 to 19, thinness 5-9 years, which is type of float and indicates prevalence of thinness among children for age 5 to 9, income composition of resources , which is type of float and indicates Human Development Index in terms of income composition of resources in the range 0 and 1, and schooling, which is type of float and indicates number of years of schooling in years."""^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Life Expectancy (WHO)"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9> "no"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa> "no"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv> "raw data"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw> "The project using the pattern for the files: [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX]"^^xsd:string ;
+                                                         rdfs:label "dataset_2"@en .
+
+
+###  http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj
+<http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj> rdf:type owl:NamedIndividual ,
+                                                                  :TechnicalResource ;
+                                                         <http://purl.org/dc/terms/description> <https://cs.libreoffice.org/get-help/documentation/> ;
+                                                         <http://webprotege.stanford.edu/R9pddhdV5fvXancKS8wvY3> "LibreOffice"^^xsd:string ;
+                                                         rdfs:label "technicalresource_1"@en .
+
+
+###  http://webprotege.stanford.edu/RDJyrMloFcac0lnZOzMHahg
+<http://webprotege.stanford.edu/RDJyrMloFcac0lnZOzMHahg> rdf:type owl:NamedIndividual ,
+                                                                  :DMP ;
+                                                         :hasContact <https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1> ;
+                                                         :hasContributor <https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1> ;
+                                                         :hasDMPId <http://webprotege.stanford.edu/R96uDOv1NEyMARzO7iz9QkV> ;
+                                                         :hasDataset <http://webprotege.stanford.edu/RBbfEvzBhpbLOJf9yBP8z7z> ,
+                                                                     <http://webprotege.stanford.edu/RCOHaMOteSXFEinYTlj4xOm> ,
+                                                                     <http://webprotege.stanford.edu/RDTE640mt34hX4rbhvqigV0> ;
+                                                         :hasProject <http://webprotege.stanford.edu/RDVZ1jRBdOKZZa6MEy6NZGw> ;
+                                                         <http://purl.org/dc/elements/1.1/language> <https://w3id.org/dcso/id/iso639-3/eng> ;
+                                                         <http://purl.org/dc/terms/description> "This DMP serves to characterize the functioning of the experiment Effect of suicide rates on life expectancy."^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Effect of suicide rates on life expectancy"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R7TUdarnY3xHxRlNCcA1DG0> "2021-04-15T00:00:00"^^xsd:dateTime ;
+                                                         <http://webprotege.stanford.edu/RVodfADM2rd8Vj1qS8UDIN> "2021-04-15T00:00:00"^^xsd:dateTime ;
+                                                         <http://webprotege.stanford.edu/RaHsYKP0CjjjNTQYTu15tY> "no"^^xsd:string ,
+                                                                                                                 "unknown"^^xsd:string ;
+                                                         rdfs:label "dmp_1"@en .
+
+
+###  http://webprotege.stanford.edu/RDTE640mt34hX4rbhvqigV0
+<http://webprotege.stanford.edu/RDTE640mt34hX4rbhvqigV0> rdf:type owl:NamedIndividual ,
+                                                                  :Dataset ;
+                                                         :hasDatasetId <http://webprotege.stanford.edu/R5bzJd4ybovTzWMPCAxKW3> ;
+                                                         :hasDistribution <http://webprotege.stanford.edu/R8zB3D6nz4xeqP59qgUDI0t> ;
+                                                         :hasTechnicalResource <http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj> ;
+                                                         <http://purl.org/dc/terms/issued> "2018-01-01T00:00:00"^^xsd:dateTime ;
+                                                         <http://www.w3.org/ns/dcat#keyword> "Experiment"^^xsd:string ,
+                                                                                             "life expectancy"^^xsd:string ,
+                                                                                             "software"^^xsd:string ,
+                                                                                             "suicide rates"^^xsd:string ;
+                                                         <http://purl.org/dc/elements/1.1/language> <https://w3id.org/dcso/id/iso639-3/eng> ;
+                                                         <http://purl.org/dc/terms/description> """I will clean, preprocess and merge the datasets by year and country and use these 13 variables: Country, Year, Suicides number, Life expectancy, Adult Mortality, Infant deaths, Alcohol, Under-five deaths, HIV/AIDS, GDP, Population, Income composition of resources and Schooling. The final dataset will have around 1 400 rows because of missing values in some rows. Long-term data on year, country, number of suicides and life expectancy should be retained.
+
+The data will be created during the preprocessing. As a first step, I will start with the WHO Life Expectancy dataset. After loading data into pandas dataset, firstly, I will select wanted variables - country, year, life expectancy, adult mortality, infant deaths, alcohol, under-five deaths, HIV/AIDS, GDP, population, income composition of resources and schooling. Then, I will retype the variable year from Integere to String and set Country and Year as index. Then, I will check data by the functions such as head and dtypes and save the dataset as csv to the folder 10_Data named 10_life_expectancy_v01_clean.csv. As a second step, I will select following variables country, year, suicides number and population from the loaded second dataset WHO Suicide Statistics and I will rename the variable suicides_no to Suicides number and population to population2. I will also retype the variable year from Integere to String and set Country and Year as index. Then, I will drop all rows, where the values in the column suicides number are missing and group them by year and country. Then, I will check data by the functions such as head and dtypes and save the dataset as csv to the folder 10_Data named 20_suicide_rates_v01_clean.csv. As a last step, I will merge these two datasets by index – country and year. Then I will clean missing data: I will unify two population variables, for life expectancy I will delete all rows with missing values and for remaining variables I will add values using the function fill, which fill the values according to the previous row. After all, I will save the merged dataset as csv to the folder 10_Data named 30_merged_dataset_v00_final.csv."""^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Effect of suicide rates on life expectancy dataset"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9> "no"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa> "no"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv> "preprocessed data"^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/RdwiMi0oWuR8Z4oRdOTnVG> "All data and source will be stored for a long time, because there are no legal and regulatory purposes above them and on the Zenodo portal, which are stored safely for the future in CERN’s Data Centre for as long as CERN exists. The data and code source can be used to research suicide prevention. The data can be easily used thanks to the csv format and description in many cases."^^xsd:string ;
+                                                         <http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw> "The project using the pattern for the files: [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX]"^^xsd:string ;
+                                                         rdfs:label "dataset_3"@en .
+
+
+###  http://webprotege.stanford.edu/RDVZ1jRBdOKZZa6MEy6NZGw
+<http://webprotege.stanford.edu/RDVZ1jRBdOKZZa6MEy6NZGw> rdf:type owl:NamedIndividual ,
+                                                                  :Project ;
+                                                         :end "2021-04-18T00:00:00"^^xsd:dateTime ;
+                                                         :start "2021-04-12T00:00:00"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/terms/description> """In 2015, approximately 55 million people died worldwide, of which 8 million committed suicide. In the USA, one of the main causes of death is the aforementioned suicide, therefore, this experiment is dealing with the question of how much suicide rates affects the statistics of average life expectancy. 
+The experiment takes two datasets, one with the number of suicides and life expectancy in  the second one and combine data into one dataset. Subsequently, I try to find any patterns  and correlations among the variables and perform statistical test using simple regression to 
+confirm my assumptions.
+
+I will use Python 3.7.9, numpy 1.20.1, pandas 1.2.3 JupyterLab nootebook for data processing and for experiment as well. Moreover, I will use seaborn 0.11.1, matplotlib 3.4.1, statsmodels 0.12.2, scikit-learn 0.24.1 for the experiment. I will create two JupyterLab nootebooks: one for preprocessing and one for the experiment. I will write code into these notebooks.
+
+The project will be divided into 4 folders using a pattern - [SERIAL_NUMBER]0_[DESCRIPTION] - for data, code, output, documents: 10_Data, 20_Code, 30_Output, 40_Documents. All files in the folders will use a pattern - [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX], or instance, 10_life_expectancy_v00_orig.csv for original dataset of life expectancy. The project will have 3 special files - LICENSE.md for a description of the license, README.md for a basic instroduction with the project and requirements.txt, where will be mentioned all libraries requirements. Versioning will be handled by special naming of the file and using the Github repository. I will also use versioning provided by Zenodo in the format X.X.X.
+
+The source code will be create as two JupyterLab nootebooks, one for preprocessing named 10_preprocessing.ipynb, where will be implement the previously mentioned procedure, and one named 20_experiment.ipynb. In the second notebook there will be implemented the experiment, where I will start with loading the final dataset. Then I will create a second dataset which will be scaled by the min-max normalization. Firstly, I will describe the non-scaled dataset to get deeper insight into the data and check data quality, then I will display a correlation among all columns and filter more interested variables into the issue with two main variables suicides number, life expectancy and correlate a second time. After correlation, I will also display a pairplot of filtered variables and will look for the patterns. After these operations, I will lay down a hypothesis, which I will try to prove using a simple regression only between suicides number and life expectancy. Finally, I will save all figures and the final regression output to the folder 30_Output.
+
+Data and source code will be stored on the Zenodo portal, for long-term storage. Source code will contain whole GitHub code with data, output and documents as well. The document folder will contain summary of the whole experiment with basic description of data, source code, results and the experiment diagram. I will also comment the source code and write the readme file of project, where will be abstract of the experiment, license, used technologies and how to run the experiment. Finally, I will fill all possible metadata provided by Zenodo, which are: publication date, title, authors, description, where will be mentioned the abstract of the project, basic data description and license, version, language, keywords, license and contact person with ORCID. Zenodo will automatically create DOI.
+
+Users will find out about the project through two portals - Zenodo and Github - and also through the university. 
+
+Since this project is carried out by an individual, all responsibility falls on him. This applies to the implementation of the DMP, and ensuring it is reviewed and revised, as well as data management activity. The individual will be responsible for all activities data capture, metadata production, data quality, storage and backup, data archiving & data sharing, as well as ensuring that data will be FAIR.
+
+I will use my expertise and freely available information from the Internet to deliver my plan. To run the experiment, I will use free resources and run it on my computer"""^^xsd:string ;
+                                                         <http://purl.org/dc/terms/title> "Effect of suicide rates on life expectancy"^^xsd:string ;
+                                                         rdfs:label "project_1"@en .
+
+
+###  http://webprotege.stanford.edu/REXKXDa9jKOIDehXa7Wn9u
+<http://webprotege.stanford.edu/REXKXDa9jKOIDehXa7Wn9u> rdf:type owl:NamedIndividual ,
+                                                                 :Distribution ;
+                                                        :hasHost <http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd> ,
+                                                                 <http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx> ;
+                                                        :hasLicense <http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o> ;
+                                                        :hasTechnicalResource <http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj> ;
+                                                        <http://purl.org/dc/terms/format> "text/csv"^^xsd:string ;
+                                                        <http://purl.org/dc/terms/description> "The file is in the format csv and is uploaded on the server Kaggle.com."^^xsd:string ;
+                                                        <http://purl.org/dc/terms/title> "WHO Suicide Statistics"^^xsd:string ;
+                                                        <http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y> <https://www.kaggle.com/szamil/who-suicide-statistics/download> ;
+                                                        <http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb> "open"^^xsd:string ;
+                                                        <http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh> <https://www.kaggle.com/szamil/who-suicide-statistics> ;
+                                                        <http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj> 1770000 ;
+                                                        rdfs:label "distribution_1"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o
+<http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o> rdf:type owl:NamedIndividual ,
+                                                                 :License ;
+                                                        <http://webprotege.stanford.edu/R9R6JDlk0nacFyIYYfRurAC> "2021-04-15T00:00:00"^^xsd:dateTime ;
+                                                        <http://webprotege.stanford.edu/R9qVT9WbfrJGG8c2vwRuAVU> <https://creativecommons.org/licenses/by-nc-sa/3.0/igo/> ;
+                                                        rdfs:label "license_1"@en .
+
+
+###  https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1
+<https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1> rdf:type owl:NamedIndividual ,
+                                                        :ContactId ,
+                                                        :ContributorId ;
+                                               <http://purl.org/dc/terms/identifier> "0000-0003-1269-2668"^^xsd:string ;
+                                               :identifier_type "orcid"^^xsd:string .
+
+
+###  https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1
+<https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1> rdf:type owl:NamedIndividual ,
+                                                          :Contact ,
+                                                          :Contributor ;
+                                                 :hasContactId <https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1> ,
+                                                               <https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/id_1> ;
+                                                 :hasContributorId <https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1> ;
+                                                 <http://xmlns.com/foaf/0.1/mbox> "e11938258@student.tuwien.ac.a"^^xsd:string ;
+                                                 <http://xmlns.com/foaf/0.1/name> "Filip Zoubek"^^xsd:string ;
+                                                 :role "Project Leader"^^xsd:string .
+
+
+###  https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/id_1
+<https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/id_1> rdf:type owl:NamedIndividual ,
+                                                 :Id .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
