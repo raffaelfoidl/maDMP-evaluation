@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import picocli.CommandLine;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.util.Map;
@@ -25,6 +26,7 @@ import java.util.concurrent.Callable;
   })
 public class DcsoJson implements Callable<Integer> {
     private static final Logger LOGGER = LoggerFactory.getLogger(DcsoJson.class);
+    public static final String ONTOLOGY_DCSO_JSONLD = "/ontology/dcso.jsonld";
 
     @SuppressWarnings("unused")
     @CommandLine.Parameters(index = "0", arity = "1",
@@ -45,17 +47,19 @@ public class DcsoJson implements Callable<Integer> {
       description = "The format of the input file. Required. Valid values (case-insensitive): ${COMPLETION-CANDIDATES}.")
     private Representation outputFormat;
 
+    private final Map<String, DcsoJsonTransformation<Path, Path>> conversions;
 
-    private final IDcsoJsonTransformer transformer = new DcsoJsonTransformer("ontology/dcso.jsonld");
-
-    private final Map<String, DcsoJsonTransformation<Path, Path>> VALID_CONVERSIONS = Map.of(
-      Representation.JSON.convertTo(Representation.JSON_LD), transformer::convertJsonToJsonLd,
-      Representation.JSON.convertTo(Representation.TURTLE), transformer::convertJsonToTurtle,
-      Representation.JSON_LD.convertTo(Representation.JSON), transformer::convertJsonLdToJson,
-      Representation.JSON_LD.convertTo(Representation.TURTLE), transformer::convertJsonLdToTurtle,
-      Representation.TURTLE.convertTo(Representation.JSON), transformer::convertTurtleToJson,
-      Representation.TURTLE.convertTo(Representation.JSON_LD), transformer::convertTurtleToJsonLd
-    );
+    public DcsoJson() throws IOException {
+        IDcsoJsonTransformer transformer = new DcsoJsonTransformer(ONTOLOGY_DCSO_JSONLD);
+        conversions = Map.of(
+          Representation.JSON.convertTo(Representation.JSON_LD), transformer::convertJsonToJsonLd,
+          Representation.JSON.convertTo(Representation.TURTLE), transformer::convertJsonToTurtle,
+          Representation.JSON_LD.convertTo(Representation.JSON), transformer::convertJsonLdToJson,
+          Representation.JSON_LD.convertTo(Representation.TURTLE), transformer::convertJsonLdToTurtle,
+          Representation.TURTLE.convertTo(Representation.JSON), transformer::convertTurtleToJson,
+          Representation.TURTLE.convertTo(Representation.JSON_LD), transformer::convertTurtleToJsonLd
+        );
+    }
 
 
     @Override
@@ -66,7 +70,7 @@ public class DcsoJson implements Callable<Integer> {
         }
 
         var conversion = inputFormat.convertTo(outputFormat);
-        var transformationMethod = VALID_CONVERSIONS.get(conversion);
+        var transformationMethod = conversions.get(conversion);
         transformationMethod.accept(inputFile.toPath().toAbsolutePath(), outputFile.toPath().toAbsolutePath());
 
         return 0;
@@ -90,7 +94,7 @@ public class DcsoJson implements Callable<Integer> {
         }
 
         var conversion = inputFormat.convertTo(outputFormat);
-        if (!VALID_CONVERSIONS.containsKey(conversion)) {
+        if (!conversions.containsKey(conversion)) {
             return err("Invalid combination of values for options '--input-format', '--output-format': The conversion \"%s\" is not supported.%n", conversion);
         }
 
@@ -104,8 +108,6 @@ public class DcsoJson implements Callable<Integer> {
 
     /* TODO:
      * Logging
-     * move contents of "ontology" folder to src/main/resources and from there such that reading/converting
-     *   also works when executing the jar (irrespective of working directory)
      * repository metadata (GitHub)
      * Documentation (code - IDcsoJsonTransformer, readme, root readme, goals, methodology, outputs, file structure, ...)
      *  -> known issue: when converting JSON -> JSON-LD/Turtle -> JSON, array elements with arity 1 have been
@@ -117,7 +119,7 @@ public class DcsoJson implements Callable<Integer> {
      * complete conversion of maDMPs to JSON-LD
      * decide whether we want to check-in the packaged tool
      */
-    public static void main(String... args) {
+    public static void main(String... args) throws IOException {
         var commandLine = new CommandLine(new DcsoJson());
         commandLine.setCaseInsensitiveEnumValuesAllowed(true);
 

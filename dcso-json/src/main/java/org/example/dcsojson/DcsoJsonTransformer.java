@@ -4,6 +4,8 @@ import com.apicatalog.jsonld.JsonLd;
 import com.apicatalog.jsonld.JsonLdError;
 import jakarta.json.*;
 import jakarta.json.stream.JsonGenerator;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
@@ -24,11 +26,12 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
     private static final Property HAS_DMP = ResourceFactory.createProperty("https://w3id.org/dcso/ns/core#", "hasDMP");
     private static final Resource CLS_DMP = ResourceFactory.createResource("https://w3id.org/dcso/ns/core#DMP");
     private static final Resource NAMED_INDIVIDUAL = ResourceFactory.createResource(OWL.NS + "NamedIndividual");
+    public static final String ONTOLOGY_DCSO_TTL = "/ontology/dcso.ttl";
 
     private final File jsonLdContext;
 
-    public DcsoJsonTransformer(String jsonLdContextPath) {
-        this.jsonLdContext = new File(jsonLdContextPath);
+    public DcsoJsonTransformer(String jsonLdContextPath) throws IOException {
+        this.jsonLdContext = getResourceAsFile(jsonLdContextPath);
     }
 
     @Override
@@ -138,9 +141,9 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         return outputFile;
     }
 
-    private Model dmpJsonToJenaModel(File dmpJsonFile, File contextFile, Boolean adjustDMP) throws JsonLdError, FileNotFoundException {
-        Model dcso = ModelFactory.createDefaultModel();
-        RDFDataMgr.read(dcso, new FileInputStream("ontology/dcso.ttl"), Lang.TURTLE);
+    private Model dmpJsonToJenaModel(File dmpJsonFile, File contextFile, Boolean adjustDMP) throws JsonLdError {
+        var dcso = ModelFactory.createDefaultModel();
+        RDFDataMgr.read(dcso, getResourceAsStream(ONTOLOGY_DCSO_TTL), Lang.TURTLE);
 
         Model model = ModelFactory.createDefaultModel();
         model.setNsPrefixes(dcso.getNsPrefixMap());
@@ -209,5 +212,22 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         jsonString = jsonString.replaceAll("\\s*\"@type\"\\s*:\\s*\\[(\\s*\"[A-Za-z/.\\s0-9:_-]*\",?)*\\s*]?,?", "");
 
         return Json.createReader(new StringReader(jsonString)).readObject();
+    }
+
+    private File getResourceAsFile(String resourcePath) throws IOException {
+        InputStream resourceAsStream = getResourceAsStream(resourcePath);
+        if (resourceAsStream == null) {
+            return null;
+        }
+
+        var extension = "." + FilenameUtils.getExtension(resourcePath);
+        var tempFile = File.createTempFile(String.valueOf(resourceAsStream.hashCode()), extension);
+        tempFile.deleteOnExit();
+        FileUtils.copyInputStreamToFile(resourceAsStream, tempFile);
+        return tempFile;
+    }
+
+    private InputStream getResourceAsStream(String resourcePath) {
+        return getClass().getResourceAsStream(resourcePath);
     }
 }
