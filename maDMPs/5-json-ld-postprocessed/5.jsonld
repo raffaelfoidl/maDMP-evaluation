@@ -1,0 +1,1307 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "availability": {
+      "@id": "https://w3id.org/dcso/ns/core#availability",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "comment": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor": {
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "creator": {
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "domain": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type": "@id"
+    },
+    "end": {
+      "@id": "https://w3id.org/dcso/ns/core#end",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasContributor": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type": "@id"
+    },
+    "hasContributorId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributorId",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasHost": {
+      "@id": "https://w3id.org/dcso/ns/core#hasHost",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "hasProject": {
+      "@id": "https://w3id.org/dcso/ns/core#hasProject",
+      "@type": "@id"
+    },
+    "hasTechnicalResource": {
+      "@id": "https://w3id.org/dcso/ns/core#hasTechnicalResource",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifier_type": {
+      "@id": "https://w3id.org/dcso/ns/core#identifier_type"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "keyword": {
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "language": {
+      "@id": "http://purl.org/dc/elements/1.1/language",
+      "@type": "@id"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "preferredNamespacePrefix": {
+      "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "R5zSdjyCzPo14HS4V4e4s9": {
+      "@id": "http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9"
+    },
+    "R7139bWEDHSfOsDp3g7hA3y": {
+      "@id": "http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y",
+      "@type": "@id"
+    },
+    "R7LnptiaVUY4zHK5mEucUxa": {
+      "@id": "http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa"
+    },
+    "R7TUdarnY3xHxRlNCcA1DG0": {
+      "@id": "http://webprotege.stanford.edu/R7TUdarnY3xHxRlNCcA1DG0",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "R7U7Yvjrlyt8NoZ4Hvbyyh": {
+      "@id": "http://webprotege.stanford.edu/R7U7Yvjrlyt8NoZ4Hvbyyh",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "R8CBM4WaQVpIwN8WERFSIuR": {
+      "@id": "http://webprotege.stanford.edu/R8CBM4WaQVpIwN8WERFSIuR"
+    },
+    "R8EfLKuVCLfFVgPikHEvAZM": {
+      "@id": "http://webprotege.stanford.edu/R8EfLKuVCLfFVgPikHEvAZM"
+    },
+    "R8sd8umBaxIp5YXxQy6tsMv": {
+      "@id": "http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv"
+    },
+    "R9eEa8zyjB6jZhEPzjxHZcb": {
+      "@id": "http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb"
+    },
+    "R9pddhdV5fvXancKS8wvY3": {
+      "@id": "http://webprotege.stanford.edu/R9pddhdV5fvXancKS8wvY3"
+    },
+    "R9qVT9WbfrJGG8c2vwRuAVU": {
+      "@id": "http://webprotege.stanford.edu/R9qVT9WbfrJGG8c2vwRuAVU",
+      "@type": "@id"
+    },
+    "R9R6JDlk0nacFyIYYfRurAC": {
+      "@id": "http://webprotege.stanford.edu/R9R6JDlk0nacFyIYYfRurAC",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "RaHsYKP0CjjjNTQYTu15tY": {
+      "@id": "http://webprotege.stanford.edu/RaHsYKP0CjjjNTQYTu15tY"
+    },
+    "range": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type": "@id"
+    },
+    "RBbSNPuZjW5EKI3ycdcqRJW": {
+      "@id": "http://webprotege.stanford.edu/RBbSNPuZjW5EKI3ycdcqRJW"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "RDfEFVnUiSftM3jqiD8hnYj": {
+      "@id": "http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "RDnSNL4VBr5lbhB4Zoym0hO": {
+      "@id": "http://webprotege.stanford.edu/RDnSNL4VBr5lbhB4Zoym0hO",
+      "@type": "@id"
+    },
+    "RDV5X1pgEK124emUIyM1Jyh": {
+      "@id": "http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh",
+      "@type": "@id"
+    },
+    "RdwiMi0oWuR8Z4oRdOTnVG": {
+      "@id": "http://webprotege.stanford.edu/RdwiMi0oWuR8Z4oRdOTnVG"
+    },
+    "Rh68bFgTCLMacJ7m9qbtVw": {
+      "@id": "http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw"
+    },
+    "rights": {
+      "@id": "http://purl.org/dc/terms/rights"
+    },
+    "role": {
+      "@id": "https://w3id.org/dcso/ns/core#role"
+    },
+    "RVodfADM2rd8Vj1qS8UDIN": {
+      "@id": "http://webprotege.stanford.edu/RVodfADM2rd8Vj1qS8UDIN",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "seeAlso": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "start": {
+      "@id": "https://w3id.org/dcso/ns/core#start",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "subClassOf": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type": "@id"
+    },
+    "subPropertyOf": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "versionIRI": {
+      "@id": "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type": "@id"
+    },
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://purl.org/dc/elements/1.1/language",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/contributor",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Format according to: https://www.iana.org/assignments/media-types/media-types.xhtml if appropriate, otherwise use the common name for this format"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Issued date"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R5bzJd4ybovTzWMPCAxKW3",
+      "@type": "owl:NamedIndividual",
+      "identifier": "10.5281/zenodo.4694270",
+      "identifier_type": "doi",
+      "label": {
+        "@language": "en",
+        "@value": "datasetid_1"
+      },
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#DatasetId"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R5zSdjyCzPo14HS4V4e4s9",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "personal_data"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R7139bWEDHSfOsDp3g7hA3y",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "download_url"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R7LnptiaVUY4zHK5mEucUxa",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "sensitive_data"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R7TUdarnY3xHxRlNCcA1DG0",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "modified"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R7U7Yvjrlyt8NoZ4Hvbyyh",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "available_until"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R7daorYTWekPMg41vXLVrpr",
+      "@type": "owl:NamedIndividual",
+      "description": "The file is in the format csv and is uploaded on the server Kaggle.com.",
+      "format": "text/csv",
+      "hasHost": [
+        "http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd",
+        "http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx"
+      ],
+      "hasLicense": "http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o",
+      "hasTechnicalResource": "http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj",
+      "http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj": 325630,
+      "label": {
+        "@language": "en",
+        "@value": "distribution_2"
+      },
+      "R7139bWEDHSfOsDp3g7hA3y": "https://www.kaggle.com/kumarajarshi/life-expectancy-who/download",
+      "R9eEa8zyjB6jZhEPzjxHZcb": "open",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Distribution"
+      },
+      "RDV5X1pgEK124emUIyM1Jyh": "https://www.kaggle.com/kumarajarshi/life-expectancy-who",
+      "title": "Life Expectancy (WHO)"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R8CBM4WaQVpIwN8WERFSIuR",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "support_versioning"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R8EfLKuVCLfFVgPikHEvAZM",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "backup_type"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R8sd8umBaxIp5YXxQy6tsMv",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "type"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R8zB3D6nz4xeqP59qgUDI0t",
+      "@type": "owl:NamedIndividual",
+      "description": "The file will be in the format csv and will be uploaded on the server zenodo.org.\n\nData are needed exclusively for the months of March and April 2021 due to ongoing assignment at the university. I don't expect any data sharing issues.",
+      "format": "text/csv",
+      "hasHost": [
+        "http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd",
+        "http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx"
+      ],
+      "hasLicense": "http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o",
+      "hasTechnicalResource": "http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj",
+      "http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj": 107000,
+      "label": {
+        "@language": "en",
+        "@value": "distribution_3"
+      },
+      "R7139bWEDHSfOsDp3g7hA3y": "https://zenodo.org/record/4694270/files/30_merged_dataset_v00_final.csv?download=1",
+      "R7U7Yvjrlyt8NoZ4Hvbyyh": "2021-04-15T00:00:00",
+      "R9eEa8zyjB6jZhEPzjxHZcb": "open",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Distribution"
+      },
+      "RDV5X1pgEK124emUIyM1Jyh": "https://zenodo.org/record/4694270",
+      "title": "Effect of suicide rates on life expectancy dataset"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R96uDOv1NEyMARzO7iz9QkV",
+      "@type": "owl:NamedIndividual",
+      "identifier": "10.5281/zenodo.4696250",
+      "identifier_type": "orcid",
+      "label": {
+        "@language": "en",
+        "@value": "dmpid_1"
+      },
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#DMPId"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R9R6JDlk0nacFyIYYfRurAC",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "start_date"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R9eEa8zyjB6jZhEPzjxHZcb",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "data_access"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R9pddhdV5fvXancKS8wvY3",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "name"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/R9qVT9WbfrJGG8c2vwRuAVU",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "license_ref"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RBbSNPuZjW5EKI3ycdcqRJW",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "backup_frequency"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RBbfEvzBhpbLOJf9yBP8z7z",
+      "@type": "owl:NamedIndividual",
+      "description": "The WHO Suicide Statistics dataset has 43 776 records and 6 variables: country, which is of type string and have 141 unique values, year, which is of type string and has a range between 1979 and 2017, sex, which is type of string and has 2 unique values,age, which is type of string and has 6 categories, suicides_no, which is type of integer and is number of suicides, and population, which is type of integer.",
+      "hasDistribution": "http://webprotege.stanford.edu/REXKXDa9jKOIDehXa7Wn9u",
+      "issued": "2018-01-01T00:00:00",
+      "label": {
+        "@language": "en",
+        "@value": "dataset_1"
+      },
+      "language": "https://w3id.org/dcso/id/iso639-3/eng",
+      "R5zSdjyCzPo14HS4V4e4s9": "no",
+      "R7LnptiaVUY4zHK5mEucUxa": "no",
+      "R8sd8umBaxIp5YXxQy6tsMv": "raw data",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Dataset"
+      },
+      "Rh68bFgTCLMacJ7m9qbtVw": "The project using the pattern for the files: [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX]",
+      "title": "WHO Suicide Statistics"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd",
+      "@type": "owl:NamedIndividual",
+      "description": "Open-access repository",
+      "label": {
+        "@language": "en",
+        "@value": "host_2"
+      },
+      "R8CBM4WaQVpIwN8WERFSIuR": "yes",
+      "R8EfLKuVCLfFVgPikHEvAZM": "cloud repository",
+      "RBbSNPuZjW5EKI3ycdcqRJW": "One time backup",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Host"
+      },
+      "RDnSNL4VBr5lbhB4Zoym0hO": "https://zenodo.org/",
+      "title": "Zenodo"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx",
+      "@type": "owl:NamedIndividual",
+      "availability": "99.5",
+      "description": "Internet hosting for software development and version control using Git",
+      "label": {
+        "@language": "en",
+        "@value": "host_1"
+      },
+      "R8CBM4WaQVpIwN8WERFSIuR": "yes",
+      "R8EfLKuVCLfFVgPikHEvAZM": "cloud repository",
+      "RBbSNPuZjW5EKI3ycdcqRJW": "daily",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Host"
+      },
+      "RDnSNL4VBr5lbhB4Zoym0hO": "https://github.com/",
+      "title": "Github"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RCOHaMOteSXFEinYTlj4xOm",
+      "@type": "owl:NamedIndividual",
+      "description": "The WHO Life Expectancy dataset has 2 938 rows and 22 variables: country, which is of type string and have 141 unique values, year, which is of type integer and has a range between 2000 and 2015, status, which is type of string, has two categories and indicates if the country has developed or developing status, life expectancy, which is type of float and indicates number of life expectancy in age, adult mortality, which is type of integer and indicates adult mortality rates of both sexes, that means probabily of dying between 15 and 60 year per 1000 population, infant deaths, which is type of integer and indicates number of infant deaths per 1000 population, alcohol, which is type of float and indicates alcohol recorded per capita (15+) consumption in litres of pure alcohol, percentage expenditure, which is type of float and indicates expenditure on health as a percentage of Gross Domestic Product per capita, hepatitis B, which is type of integer and indicates Hepatitis B immunization coverage among 1-year-olds, measles, which is type of integer and indicates number of reported measles per 1000 population, BMI, which is type of float and indicates average boddy mass index of entire population, under-five deaths, which is type of integer and indicates number of under-five deaths per 1000 population, polio, which is type of integer and indicates polio immunization\ncoverage among 1-year-old in percent, total expenditure, which is type of float and indicates general government expenditure on healtg as a percatage of total government expenditure, diphtheria, which is type of integer and indicates diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among 1-year-olds, HIV/AIDS, which is type of float and indicates deaths per 1 000 live births HIV/AIDS (0-4 years), GDP, which is type of float and indicates Gross Domestic Product per capita in USD, population, which is type of integer and indicates population of the country, thinness 1-19 years, which is type of float and indicates prevalence of thinness among children and adolescents for age 10 to 19, thinness 5-9 years, which is type of float and indicates prevalence of thinness among children for age 5 to 9, income composition of resources , which is type of float and indicates Human Development Index in terms of income composition of resources in the range 0 and 1, and schooling, which is type of float and indicates number of years of schooling in years.",
+      "hasDistribution": "http://webprotege.stanford.edu/R7daorYTWekPMg41vXLVrpr",
+      "issued": "2018-01-01T00:00:00",
+      "label": {
+        "@language": "en",
+        "@value": "dataset_2"
+      },
+      "language": "https://w3id.org/dcso/id/iso639-3/eng",
+      "R5zSdjyCzPo14HS4V4e4s9": "no",
+      "R7LnptiaVUY4zHK5mEucUxa": "no",
+      "R8sd8umBaxIp5YXxQy6tsMv": "raw data",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Dataset"
+      },
+      "Rh68bFgTCLMacJ7m9qbtVw": "The project using the pattern for the files: [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX]",
+      "title": "Life Expectancy (WHO)"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj",
+      "@type": "owl:NamedIndividual",
+      "description": {
+        "@id": "https://cs.libreoffice.org/get-help/documentation/"
+      },
+      "label": {
+        "@language": "en",
+        "@value": "technicalresource_1"
+      },
+      "R9pddhdV5fvXancKS8wvY3": "LibreOffice",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#TechnicalResource"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDJyrMloFcac0lnZOzMHahg",
+      "@type": "owl:NamedIndividual",
+      "description": "This DMP serves to characterize the functioning of the experiment Effect of suicide rates on life expectancy.",
+      "hasContact": "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1",
+      "hasContributor": "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1",
+      "hasDataset": [
+        "http://webprotege.stanford.edu/RCOHaMOteSXFEinYTlj4xOm",
+        "http://webprotege.stanford.edu/RBbfEvzBhpbLOJf9yBP8z7z",
+        "http://webprotege.stanford.edu/RDTE640mt34hX4rbhvqigV0"
+      ],
+      "hasDMPId": "http://webprotege.stanford.edu/R96uDOv1NEyMARzO7iz9QkV",
+      "hasProject": "http://webprotege.stanford.edu/RDVZ1jRBdOKZZa6MEy6NZGw",
+      "label": {
+        "@language": "en",
+        "@value": "dmp_1"
+      },
+      "language": "https://w3id.org/dcso/id/iso639-3/eng",
+      "R7TUdarnY3xHxRlNCcA1DG0": "2021-04-15T00:00:00",
+      "RaHsYKP0CjjjNTQYTu15tY": [
+        "no",
+        "unknown"
+      ],
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#DMP"
+      },
+      "RVodfADM2rd8Vj1qS8UDIN": "2021-04-15T00:00:00",
+      "title": "Effect of suicide rates on life expectancy"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDTE640mt34hX4rbhvqigV0",
+      "@type": "owl:NamedIndividual",
+      "description": "I will clean, preprocess and merge the datasets by year and country and use these 13 variables: Country, Year, Suicides number, Life expectancy, Adult Mortality, Infant deaths, Alcohol, Under-five deaths, HIV/AIDS, GDP, Population, Income composition of resources and Schooling. The final dataset will have around 1 400 rows because of missing values in some rows. Long-term data on year, country, number of suicides and life expectancy should be retained.\n\nThe data will be created during the preprocessing. As a first step, I will start with the WHO Life Expectancy dataset. After loading data into pandas dataset, firstly, I will select wanted variables - country, year, life expectancy, adult mortality, infant deaths, alcohol, under-five deaths, HIV/AIDS, GDP, population, income composition of resources and schooling. Then, I will retype the variable year from Integere to String and set Country and Year as index. Then, I will check data by the functions such as head and dtypes and save the dataset as csv to the folder 10_Data named 10_life_expectancy_v01_clean.csv. As a second step, I will select following variables country, year, suicides number and population from the loaded second dataset WHO Suicide Statistics and I will rename the variable suicides_no to Suicides number and population to population2. I will also retype the variable year from Integere to String and set Country and Year as index. Then, I will drop all rows, where the values in the column suicides number are missing and group them by year and country. Then, I will check data by the functions such as head and dtypes and save the dataset as csv to the folder 10_Data named 20_suicide_rates_v01_clean.csv. As a last step, I will merge these two datasets by index – country and year. Then I will clean missing data: I will unify two population variables, for life expectancy I will delete all rows with missing values and for remaining variables I will add values using the function fill, which fill the values according to the previous row. After all, I will save the merged dataset as csv to the folder 10_Data named 30_merged_dataset_v00_final.csv.",
+      "hasDatasetId": "http://webprotege.stanford.edu/R5bzJd4ybovTzWMPCAxKW3",
+      "hasDistribution": "http://webprotege.stanford.edu/R8zB3D6nz4xeqP59qgUDI0t",
+      "hasTechnicalResource": "http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj",
+      "issued": "2018-01-01T00:00:00",
+      "keyword": [
+        "Experiment",
+        "software",
+        "life expectancy",
+        "suicide rates"
+      ],
+      "label": {
+        "@language": "en",
+        "@value": "dataset_3"
+      },
+      "language": "https://w3id.org/dcso/id/iso639-3/eng",
+      "R5zSdjyCzPo14HS4V4e4s9": "no",
+      "R7LnptiaVUY4zHK5mEucUxa": "no",
+      "R8sd8umBaxIp5YXxQy6tsMv": "preprocessed data",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Dataset"
+      },
+      "RdwiMi0oWuR8Z4oRdOTnVG": "All data and source will be stored for a long time, because there are no legal and regulatory purposes above them and on the Zenodo portal, which are stored safely for the future in CERN’s Data Centre for as long as CERN exists. The data and code source can be used to research suicide prevention. The data can be easily used thanks to the csv format and description in many cases.",
+      "Rh68bFgTCLMacJ7m9qbtVw": "The project using the pattern for the files: [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX]",
+      "title": "Effect of suicide rates on life expectancy dataset"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDV5X1pgEK124emUIyM1Jyh",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "access_url"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDVZ1jRBdOKZZa6MEy6NZGw",
+      "@type": "owl:NamedIndividual",
+      "description": "In 2015, approximately 55 million people died worldwide, of which 8 million committed suicide. In the USA, one of the main causes of death is the aforementioned suicide, therefore, this experiment is dealing with the question of how much suicide rates affects the statistics of average life expectancy. \nThe experiment takes two datasets, one with the number of suicides and life expectancy in  the second one and combine data into one dataset. Subsequently, I try to find any patterns  and correlations among the variables and perform statistical test using simple regression to \nconfirm my assumptions.\n\nI will use Python 3.7.9, numpy 1.20.1, pandas 1.2.3 JupyterLab nootebook for data processing and for experiment as well. Moreover, I will use seaborn 0.11.1, matplotlib 3.4.1, statsmodels 0.12.2, scikit-learn 0.24.1 for the experiment. I will create two JupyterLab nootebooks: one for preprocessing and one for the experiment. I will write code into these notebooks.\n\nThe project will be divided into 4 folders using a pattern - [SERIAL_NUMBER]0_[DESCRIPTION] - for data, code, output, documents: 10_Data, 20_Code, 30_Output, 40_Documents. All files in the folders will use a pattern - [SERIAL_NUMBER]0_[DESCRIPTION]_[VERSION]_[ADDITION INFORMATION].[SUFFIX], or instance, 10_life_expectancy_v00_orig.csv for original dataset of life expectancy. The project will have 3 special files - LICENSE.md for a description of the license, README.md for a basic instroduction with the project and requirements.txt, where will be mentioned all libraries requirements. Versioning will be handled by special naming of the file and using the Github repository. I will also use versioning provided by Zenodo in the format X.X.X.\n\nThe source code will be create as two JupyterLab nootebooks, one for preprocessing named 10_preprocessing.ipynb, where will be implement the previously mentioned procedure, and one named 20_experiment.ipynb. In the second notebook there will be implemented the experiment, where I will start with loading the final dataset. Then I will create a second dataset which will be scaled by the min-max normalization. Firstly, I will describe the non-scaled dataset to get deeper insight into the data and check data quality, then I will display a correlation among all columns and filter more interested variables into the issue with two main variables suicides number, life expectancy and correlate a second time. After correlation, I will also display a pairplot of filtered variables and will look for the patterns. After these operations, I will lay down a hypothesis, which I will try to prove using a simple regression only between suicides number and life expectancy. Finally, I will save all figures and the final regression output to the folder 30_Output.\n\nData and source code will be stored on the Zenodo portal, for long-term storage. Source code will contain whole GitHub code with data, output and documents as well. The document folder will contain summary of the whole experiment with basic description of data, source code, results and the experiment diagram. I will also comment the source code and write the readme file of project, where will be abstract of the experiment, license, used technologies and how to run the experiment. Finally, I will fill all possible metadata provided by Zenodo, which are: publication date, title, authors, description, where will be mentioned the abstract of the project, basic data description and license, version, language, keywords, license and contact person with ORCID. Zenodo will automatically create DOI.\n\nUsers will find out about the project through two portals - Zenodo and Github - and also through the university. \n\nSince this project is carried out by an individual, all responsibility falls on him. This applies to the implementation of the DMP, and ensuring it is reviewed and revised, as well as data management activity. The individual will be responsible for all activities data capture, metadata production, data quality, storage and backup, data archiving & data sharing, as well as ensuring that data will be FAIR.\n\nI will use my expertise and freely available information from the Internet to deliver my plan. To run the experiment, I will use free resources and run it on my computer",
+      "end": "2021-04-18T00:00:00",
+      "label": {
+        "@language": "en",
+        "@value": "project_1"
+      },
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Project"
+      },
+      "start": "2021-04-12T00:00:00",
+      "title": "Effect of suicide rates on life expectancy"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "byte_size"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RDnSNL4VBr5lbhB4Zoym0hO",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "url"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/REXKXDa9jKOIDehXa7Wn9u",
+      "@type": "owl:NamedIndividual",
+      "description": "The file is in the format csv and is uploaded on the server Kaggle.com.",
+      "format": "text/csv",
+      "hasHost": [
+        "http://webprotege.stanford.edu/RCE7GaqOS9xdAIYElcsyzBx",
+        "http://webprotege.stanford.edu/RBnvhsffsDW2ddKMGREa0Xd"
+      ],
+      "hasLicense": "http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o",
+      "hasTechnicalResource": "http://webprotege.stanford.edu/RCPYZphWXTTxXOBIVEeABAj",
+      "http://webprotege.stanford.edu/RDfEFVnUiSftM3jqiD8hnYj": 1770000,
+      "label": "distribution_1",
+      "R7139bWEDHSfOsDp3g7hA3y": "https://www.kaggle.com/szamil/who-suicide-statistics/download",
+      "R9eEa8zyjB6jZhEPzjxHZcb": "open",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Distribution"
+      },
+      "RDV5X1pgEK124emUIyM1Jyh": "https://www.kaggle.com/szamil/who-suicide-statistics",
+      "title": "WHO Suicide Statistics"
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RG4p0sCG948moM5ALMHo2o",
+      "@type": "owl:NamedIndividual",
+      "label": {
+        "@language": "en",
+        "@value": "license_1"
+      },
+      "R9qVT9WbfrJGG8c2vwRuAVU": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+      "R9R6JDlk0nacFyIYYfRurAC": "2021-04-15T00:00:00",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#License"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RVodfADM2rd8Vj1qS8UDIN",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "created"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RaHsYKP0CjjjNTQYTu15tY",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "ethical_issues_exist"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/RdwiMi0oWuR8Z4oRdOTnVG",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "preservation_statement"
+      }
+    },
+    {
+      "@id": "http://webprotege.stanford.edu/Rh68bFgTCLMacJ7m9qbtVw",
+      "@type": "owl:AnnotationProperty",
+      "label": {
+        "@language": "en",
+        "@value": "data_quality_assurance"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#Dataset",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#Distribution",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#accessURL",
+      "@type": "owl:DatatypeProperty",
+      "comment": "A URL of the resource that gives access to a distribution of the dataset. e.g. landing page."
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Byte size"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#downloadURL",
+      "@type": "owl:DatatypeProperty",
+      "comment": "The URL of the downloadable file in a given format. E.g. CSV file or RDF file."
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#keyword",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Keyword to describe the dataset"
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/Agent",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/mbox",
+      "@type": "owl:DatatypeProperty",
+      "comment": "E_mail address"
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/name",
+      "@type": "owl:DatatypeProperty"
+    },
+    {
+      "@id": "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1",
+      "@type": "owl:NamedIndividual",
+      "identifier": "0000-0003-1269-2668",
+      "identifier_type": "orcid",
+      "rdf:type": [
+        {
+          "@id": "https://w3id.org/dcso/ns/core#ContributorId"
+        },
+        {
+          "@id": "https://w3id.org/dcso/ns/core#ContactId"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contributor_1",
+      "@type": "owl:NamedIndividual",
+      "hasContactId": [
+        "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/id_1",
+        "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1"
+      ],
+      "hasContributorId": "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/contactid_1",
+      "mbox": "e11938258@student.tuwien.ac.a",
+      "name": "Filip Zoubek",
+      "rdf:type": [
+        {
+          "@id": "https://w3id.org/dcso/ns/core#Contributor"
+        },
+        {
+          "@id": "https://w3id.org/dcso/ns/core#Contact"
+        }
+      ],
+      "role": "Project Leader"
+    },
+    {
+      "@id": "https://w3id.org/dcso/id/effect-of-suicide-rates-on-life-expectancy/id_1",
+      "@type": "owl:NamedIndividual",
+      "rdf:type": {
+        "@id": "https://w3id.org/dcso/ns/core#Id"
+      }
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core",
+      "@type": "owl:Ontology",
+      "contributor": [
+        "Diogo Proença",
+        "Daniel Faria",
+        "Tomasz Miksa"
+      ],
+      "creator": [
+        "Leyla Garcia",
+        "Marie Christine Jacquemot",
+        "João Cardoso",
+        "Fajar J. Ekaputra"
+      ],
+      "description": {
+        "@language": "en",
+        "@value": " This ontology aims to represent the DMP Common Standard model, through the usage of semantic web technology. It represents the DMP Common Standard model using the Web Ontology Language (OWL)."
+      },
+      "preferredNamespacePrefix": "dcso",
+      "rights": "http://creativecommons.org/licenses/by/4.0/",
+      "title": "The DMP Common Standard Ontology.",
+      "versionIRI": "https://w3id.org/dcso/ns/core/3.0.2"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Contact",
+      "@type": "owl:Class",
+      "comment": "Specifies the party which can provide any information on the DMP. This is not necessarily the DMP creator, and can be a person or an organisation. ",
+      "subClassOf": "http://xmlns.com/foaf/0.1/Agent"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#ContactId",
+      "@type": "owl:Class",
+      "comment": "Identifier for a contact person",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Contributor",
+      "@type": "owl:Class",
+      "comment": "For listing all parties involved in the process of the data management described by this DMP, and those parties involved in the creation and management of the DMP itself. ",
+      "subClassOf": "http://xmlns.com/foaf/0.1/Agent"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#ContributorId",
+      "@type": "owl:Class",
+      "comment": "Identifier for a contributor person",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Cost",
+      "@type": "owl:Class",
+      "comment": "Provides a list of costs related to data management"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#DMP",
+      "@type": "owl:Class",
+      "comment": "Provides high level information about the DMP, e.g. its title, modification date, etc. It is the root of this application profile. The majority of its fields are mandatory. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#DMPId",
+      "@type": "owl:Class",
+      "comment": "Identifier for a DMP",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Dataset",
+      "@type": "owl:Class",
+      "comment": "This follows the defintion of Dataset in the W3C DCAT specification. Dataset can be understood as a logical entity depicting data, e.g. raw data. It provides high level information about the data. The granularity of dataset depends on a specific setting. In edge cases it can be a file, but also a collection of files in different formats",
+      "subClassOf": "http://www.w3.org/ns/dcat#Dataset"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#DatasetId",
+      "@type": "owl:Class",
+      "comment": "Identifier for a dataset",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Distribution",
+      "@type": "owl:Class",
+      "comment": "This follows the defintion of Dataset in the W3C DCAT specification. Dataset can be understood as a logical entity depicting data, e.g. raw data. It provides high level information about the data. The granularity of dataset depends on a specific setting. In edge cases it can be a file, but also a collection of files in different formats",
+      "subClassOf": "http://www.w3.org/ns/dcat#Distribution"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#FunderId",
+      "@type": "owl:Class",
+      "comment": "Identifier for funders : it is recommended to use CrossRef Funder Registry. ",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Funding",
+      "@type": "owl:Class",
+      "comment": "For specifying details on funded projects, e.g. NSF of EC funded projects. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#GrantId",
+      "@type": "owl:Class",
+      "comment": "Identifier for grant",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Host",
+      "@type": "owl:Class",
+      "comment": "Provides information on the system where data is stored. It can be used to provide details on a repository where data is deposited, e.g. a Core Trust Seal certified repository located in Europe that uses DOIs. It can also provide details on systems where data is stored and processed during research, e.g. a high performance computer that uses fast storage with two daily backups. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Id",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#License",
+      "@type": "owl:Class",
+      "comment": "Used to indicate the license under which data (each specific Distribution) will be made available. It also allows for modelling embargoes. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Metadata",
+      "@type": "owl:Class",
+      "comment": "Provides a pointer to a metadata standard used to describe the data. It does not contain any actual metadata relating to the dataset. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#MetadataStandardId",
+      "@type": "owl:Class",
+      "comment": "Identifier for the metadata standard used.",
+      "subClassOf": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#Project",
+      "@type": "owl:Class",
+      "comment": "Describes the project associated with the DMP, if applicable. It can be used to describe any type of project: that is, not only funded projects, but also internal projects, PhD theses, etc. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#SecurityPrivacy",
+      "@type": "owl:Class",
+      "comment": "Used to indicate any specific requirements related to security and privacy of a specific dataset, e.g. to indicate that data is not anonymized. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#TechnicalResource",
+      "@type": "owl:Class",
+      "comment": "For specifying equipment needed/used to create or process the data, e.g. a microscope, etc. "
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#availability",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Indicates the availability of the host",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#availableUntil",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Indicates how long this distribution will be/ should be available",
+      "domain": "https://w3id.org/dcso/ns/core#Distribution",
+      "label": "availableUntil",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#backupFrequency",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Backup frequency",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "label": "backupFrequency",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#backupType",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Backup type",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "label": "backupType",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#certifiedWith",
+      "@type": "owl:DatatypeProperty",
+      "comment": [
+        "Validation with ShEx/SHACL",
+        "Repository certified to a recognised standard\nSuggested values:\n    din31644\n    dini-zertifikat\n    dsa\n    iso16363\n    iso16919\n    trac\n    wds\n    coretrustseal\n    none\n    other\n    unknown"
+      ],
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "label": "certifiedWith",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Indicates access mode for data.\nAllowed Values:\n    open\n    shared\n    closed",
+      "label": "dataAccess"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#dataQualityAssurance",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Assurance quality of data",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "label": "dataQualityAssurance",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#datasetType",
+      "@type": "owl:DatatypeProperty",
+      "comment": "If appropriate, type according to: DataCite and/or COAR dictionary. Otherwise use the common name for the type, e.g. raw data, software, survey, etc. https://schema.datacite.org/meta/kernel-4.1/doc/DataCite-MetadataKernel_v4.1.pdf http://vocabularies.coar-repositories.org/pubby/resource_type.html",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "label": "datasetType",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#end",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Project end date",
+      "domain": "https://w3id.org/dcso/ns/core#Project",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssueDescription",
+      "@type": "owl:DatatypeProperty",
+      "comment": "To describe ethical issues directly in a DMP",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "label": "ethicalIssueDescription",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist",
+      "@type": "owl:DatatypeProperty",
+      "comment": "To indicate whether there are ethical issues related to data that this DMP describes.\nAllowed Values:\n    yes\n    no\n    unknown",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "label": "ethicalIssuesExist"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesReport",
+      "@type": "owl:DatatypeProperty",
+      "comment": "To indicate where a protocol from a meeting with an ethical commitee can be found",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "label": "ethicalIssuesReport",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#fundingStatus",
+      "@type": "owl:DatatypeProperty",
+      "comment": "To express different phases of project lifecycle.\nAllowed Values:\n    planned\n    applied\n    granted\n    rejected",
+      "domain": "https://w3id.org/dcso/ns/core#Funding",
+      "label": "fundingStatus"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "owl:ObjectProperty",
+      "comment": {
+        "@type": "rdfs:Literal",
+        "@value": "Any Contact that can provide information on this DMP."
+      },
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#Contact"
+    },
+    {
+      "@id": "hasContact:Id",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified this Contact.",
+      "domain": "https://w3id.org/dcso/ns/core#Contact",
+      "range": "https://w3id.org/dcso/ns/core#ContactId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Contributor involved in the process of the data management described by this DMP as well as any Contributor involved in the creation and management of this DMP itself.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#Contributor"
+    },
+    {
+      "@id": "hasContributor:Id",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified this Contributor.",
+      "domain": "https://w3id.org/dcso/ns/core#Contributor",
+      "range": "https://w3id.org/dcso/ns/core#ContributorId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasCost",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Cost related to data management included in this DMP.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#Cost"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasCurrencyCode",
+      "@type": "owl:ObjectProperty",
+      "comment": "A Currency Code used to express values in this Cost.",
+      "domain": "https://w3id.org/dcso/ns/core#Cost",
+      "range": "https://w3id.org/dcso/ns/extension#CurrencyCode"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified this DMP.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#DMPId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Dataset considered under this DMP.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#Dataset"
+    },
+    {
+      "@id": "hasDataset:Id",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified this Dataset.",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "range": "https://w3id.org/dcso/ns/core#DatasetId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Distribution, i.e., specific instance, of this Dataset.",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "range": "https://w3id.org/dcso/ns/core#Distribution"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasFunderId",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified this Funder.",
+      "domain": "https://w3id.org/dcso/ns/core#Funding",
+      "range": "https://w3id.org/dcso/ns/core#FunderId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasFunding",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Funding granted for this Project.",
+      "domain": "https://w3id.org/dcso/ns/core#Project",
+      "range": "https://w3id.org/dcso/ns/core#Funding"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasGeoLocation",
+      "@type": "owl:ObjectProperty",
+      "comment": "A Country where a Host, i.e. storage system, is located.",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "range": "https://w3id.org/dcso/ns/extension#Country"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasGrantId",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified a Grant associated to this Funder.",
+      "domain": "https://w3id.org/dcso/ns/core#Funding",
+      "range": "https://w3id.org/dcso/ns/core#GrantId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasHost",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Host, i., storage system, where this Distribution has been stored.",
+      "domain": "https://w3id.org/dcso/ns/core#Distribution",
+      "range": "https://w3id.org/dcso/ns/core#Host"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasId",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified a Thing.",
+      "range": "https://w3id.org/dcso/ns/core#Id"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasLanguage",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Language used to express data in this Dataset.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/extension#Language"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "owl:ObjectProperty",
+      "comment": "A License used for this Distribution.",
+      "domain": "https://w3id.org/dcso/ns/core#Distribution",
+      "range": "https://w3id.org/dcso/ns/core#License"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasMetadata",
+      "@type": "owl:ObjectProperty",
+      "comment": "A Metadata standard used to describe data in this Dataset.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#Metadata"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasMetadataStandardId",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any ID used to uniquely identified this Metadata standard.",
+      "domain": "https://w3id.org/dcso/ns/core#Metadata",
+      "range": "https://w3id.org/dcso/ns/core#MetadataStandardId",
+      "subPropertyOf": "https://w3id.org/dcso/ns/core#hasId"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasProject",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Project associated with this DMP.",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "https://w3id.org/dcso/ns/core#Project"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasSecurityPrivacy",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any specific requirements related to security and privacy of this Dataset.",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "range": "https://w3id.org/dcso/ns/core#SecurityPrivacy"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#hasTechnicalResource",
+      "@type": "owl:ObjectProperty",
+      "comment": "Any Technical Resource, e.g, microscope, needed/used to create or process the data in this Dataset.",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "range": "https://w3id.org/dcso/ns/core#TechnicalResource"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType",
+      "@type": "owl:DatatypeProperty",
+      "comment": [
+        "Validation with ShEx/SHACL",
+        "Identifier type"
+      ],
+      "domain": "https://w3id.org/dcso/ns/core#Id",
+      "label": "identifierType",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#identifier_type",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef",
+      "@type": "owl:DatatypeProperty",
+      "comment": [
+        "Link to license document.",
+        ""
+      ],
+      "domain": "https://w3id.org/dcso/ns/core#License",
+      "label": "licenseRef",
+      "range": "xsd:anyURI",
+      "seeAlso": "https://jats.nlm.nih.gov/archiving/tag-library/1.2/element/ali-license_ref.html"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#personalData",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Informs about the presence or absence of personal data in the dataset",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "label": "personalData"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#pidSystem",
+      "@type": "owl:DatatypeProperty",
+      "comment": "PID System\nSuggested values:\n    ark\n    arxiv\n    bibcode\n    doi\n    ean13\n    eissn\n    handle\n    igsn\n    isbn\n    issn\n    istc\n    lissn\n    lsid\n    pmid\n    purl\n    upc\n    url\n    urn\n    none\n    unknown\n    other",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "label": "pidSystem"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#preservationStatement",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Preservation statement",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "label": "preservationStatement",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#report",
+      "@type": "owl:DatatypeProperty",
+      "domain": "https://w3id.org/dcso/ns/core#DMP",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#role",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Type of contributor",
+      "domain": "https://w3id.org/dcso/ns/core#Contributor",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Informs about the presence or absence of sensitive data in the dataset",
+      "domain": "https://w3id.org/dcso/ns/core#Dataset",
+      "label": "sensitiveData"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#start",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Project start date",
+      "domain": "https://w3id.org/dcso/ns/core#Project",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "start:Date",
+      "@type": "owl:DatatypeProperty",
+      "comment": "If date is set in the future, it indicates embargo period.",
+      "domain": "https://w3id.org/dcso/ns/core#License",
+      "label": "startDate",
+      "range": "xsd:dateTime"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#storageType",
+      "@type": "owl:DatatypeProperty",
+      "comment": "The type of storage required",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "label": "storageType",
+      "range": "xsd:string"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#supportVersioning",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Informs of the support for versioning\n  Allowed Values:\n    yes\n    no\n    unknown",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "label": "supportVersioning"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#url",
+      "@type": "owl:DatatypeProperty",
+      "comment": "The URL of the system hosting a distribution of a dataset",
+      "domain": "https://w3id.org/dcso/ns/core#Host",
+      "range": "xsd:anyURI"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/core#value",
+      "@type": "owl:DatatypeProperty",
+      "comment": "Value for cost",
+      "domain": "https://w3id.org/dcso/ns/core#Cost",
+      "range": "xsd:integer"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/extension#Country",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/extension#CurrencyCode",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "https://w3id.org/dcso/ns/extension#Language",
+      "@type": "owl:Class"
+    }
+  ]
+}

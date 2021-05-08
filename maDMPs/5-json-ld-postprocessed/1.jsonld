@@ -1,0 +1,320 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "dataQualityAssurance": {
+      "@id": "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "dct": "http://purl.org/dc/terms/",
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "ex": "https://w3id.org/dcso/id/example/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "hasSecurityPrivacy": {
+      "@id": "https://w3id.org/dcso/ns/core#hasSecurityPrivacy",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "keyword": {
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "terms": "http://purl.org/dc/terms/",
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "DMP",
+      "created": "2021-04-19T01:04:00.0",
+      "description": "DMP for project Impact of social media on suicide rates outlining input and output data persisted to zenodo.",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b4",
+      "hasDataset": [
+        "_:b1",
+        "_:b2",
+        "_:b5",
+        "_:b6"
+      ],
+      "hasDMPId": "_:b3",
+      "language": "eng",
+      "modified": "2021-04-19T01:04:00.0",
+      "title": "DMP for Impact of social media on suicide rates"
+    },
+    {
+      "@id": "_:b1",
+      "dataQualityAssurance": "Provenance notebook created to validate produced outputs with the reference outputs to validate the runtime environment.",
+      "description": "Preprocessing and correlation analysis with provenance validation, Embargoed until licence->start_date below",
+      "hasDatasetId": "_:b10",
+      "hasDistribution": "_:b11",
+      "hasSecurityPrivacy": [
+        "_:b9",
+        "_:b12"
+      ],
+      "identifierType": "source-code",
+      "issued": "2021-04-19",
+      "keyword": [
+        "Twitter",
+        "social Media",
+        "correlation",
+        "Facebook",
+        "suicide rate"
+      ],
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Source Code"
+    },
+    {
+      "@id": "_:b10",
+      "identifier": "10.5281/zenodo.4701612",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b11",
+      "accessUrl": "https://github.com/vvartin/Impact-of-social-media-on-suicide-rates",
+      "dataAccess": "open",
+      "dcat:byteSize": 1500000,
+      "hasLicense": "_:b18",
+      "title": "Jupyter notebooks"
+    },
+    {
+      "@id": "_:b12",
+      "description": "Read access of the repository will be allowed to anyone",
+      "title": "read access"
+    },
+    {
+      "@id": "_:b13",
+      "licenseRef": "https://www.who.int/about/who-we-are/publishing-policies/data-policy/terms-and-conditions",
+      "startDate": "2021-04-20"
+    },
+    {
+      "@id": "_:b14",
+      "identifier": "https://www.kaggle.com/margarethamartinez/socialmedia2021",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b15",
+      "identifier": "https://orcid.org/0000-0001-8811-8043",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b16",
+      "description": "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management",
+      "title": "write access"
+    },
+    {
+      "@id": "_:b17",
+      "description": "Read access of the repository will be allowed to anyone",
+      "title": "read access"
+    },
+    {
+      "@id": "_:b18",
+      "licenseRef": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "startDate": "2021-04-20"
+    },
+    {
+      "@id": "_:b19",
+      "dataAccess": "open",
+      "dcat:byteSize": 1222577,
+      "description": "CSV file extracted fom WHO containing suicide rates per country per sex",
+      "format": "text/csv",
+      "hasLicense": "_:b13",
+      "title": "Raw data"
+    },
+    {
+      "@id": "_:b2",
+      "description": "Number of users of Facebook, Twitter and Instagram on quarterly basis from 2010 to 2020",
+      "hasDatasetId": "_:b14",
+      "hasDistribution": "_:b7",
+      "identifierType": "document",
+      "issued": "2021-04-18",
+      "personalData": "no",
+      "sensitiveData": "unknown",
+      "title": "Social media users"
+    },
+    {
+      "@id": "_:b20",
+      "identifier": "https://apps.who.int/gho/athena/api/GHO/SDGSUICIDE.csv",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b21",
+      "identifier": "10.5281/zenodo.4701587",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b22",
+      "accessUrl": "https://github.com/vvartin/Impact-of-social-media-on-suicide-rates-results",
+      "dataAccess": "open",
+      "dcat:byteSize": 127700,
+      "hasLicense": "_:b23",
+      "title": "Dataset in CSV format, Figures in PNG format"
+    },
+    {
+      "@id": "_:b23",
+      "licenseRef": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "startDate": "2021-04-20"
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "10.5281/zenodo.4701948",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b4",
+      "hasContactId": "_:b15",
+      "mbox": "e11941109@student.tuwien.ac.at",
+      "name": "Martin Winkler"
+    },
+    {
+      "@id": "_:b5",
+      "dataQualityAssurance": [
+        "Data is sanitized, missing values are removed to ensure not swaying of results in certain years.",
+        "Custom naming convention present in README.md was used"
+      ],
+      "description": "Preprocessing and correlation analysis with provenance validation, Embargoed until licence->start_date below",
+      "hasDatasetId": "_:b21",
+      "hasDistribution": "_:b22",
+      "hasSecurityPrivacy": [
+        "_:b17",
+        "_:b16"
+      ],
+      "identifierType": "csv dataset, figures",
+      "issued": "2021-04-19",
+      "keyword": [
+        "social Media",
+        "Facebook",
+        "suicide rate",
+        "Twitter"
+      ],
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Produced data"
+    },
+    {
+      "@id": "_:b6",
+      "description": "Suicide rates per country per sex from WHO",
+      "hasDatasetId": "_:b20",
+      "hasDistribution": "_:b19",
+      "identifierType": "document",
+      "issued": "2021-04-18",
+      "personalData": "no",
+      "sensitiveData": "unknown",
+      "title": "WHO suicide rates"
+    },
+    {
+      "@id": "_:b7",
+      "dataAccess": "open",
+      "dcat:byteSize": 1154,
+      "description": "Number of users of Facebook, Twitter and Instagram on quarterly basis from 2010 to 2020, missing values are represented as -",
+      "format": "text/csv",
+      "hasLicense": "_:b8",
+      "title": "Raw data"
+    },
+    {
+      "@id": "_:b8",
+      "licenseRef": "https://www.statista.com/imprint/",
+      "startDate": "2021-04-20"
+    },
+    {
+      "@id": "_:b9",
+      "description": "Write access into the repository will be allowed only to whitelisted contributors and handled via github repository management",
+      "title": "write access"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "dataQualityAssurance": {
+      "@id": "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "dct": "http://purl.org/dc/terms/",
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "ex": "https://w3id.org/dcso/id/example/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "hasProject": {
+      "@id": "https://w3id.org/dcso/ns/core#hasProject",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "terms": "http://purl.org/dc/terms/",
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "identifier": "10.5281/zenodo.4685759",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b1",
+      "@type": "DMP",
+      "created": "2021-04-13T11:12:13.4",
+      "description": "DMP describing my experiment in which I tried to check whether a correlation exists about meat consumption and the number of deaths caused by lung cancer in Romania, based on data spanning a 28 year period.",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b6",
+      "hasDataset": [
+        "_:b4",
+        "_:b5"
+      ],
+      "hasDMPId": "_:b3",
+      "hasProject": "_:b2",
+      "language": "eng",
+      "modified": "2021-04-12T23:10:16.8Z",
+      "title": "DMP: Analysis of correlation between meat consumption and number of lung cancer deaths in Romania"
+    },
+    {
+      "@id": "_:b10",
+      "accessUrl": "https://github.com/mihaicata/analysis_meat_consumption_lung_cancer_deaths_romania",
+      "dataAccess": "open",
+      "description": "Final realase implemented using Python to visualize data correlations.",
+      "hasLicense": "_:b7",
+      "title": "Python code"
+    },
+    {
+      "@id": "_:b11",
+      "identifier": "10.5281/zenodo.4685759",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b12",
+      "identifier": "https://orcid.org/0000-0003-3169-225X",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b2",
+      "description": "This project was developed for educational purposes.",
+      "title": "Analysis of correlation between meat consumption and number of lung cancer deaths in Romania"
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "http://doi.org/10.5281/zenodo.4685909",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b4",
+      "dataQualityAssurance": "The code has been reviewed by the author and follows standard naming conventions",
+      "description": "Experiment implementation",
+      "hasDatasetId": "_:b11",
+      "hasDistribution": "_:b10",
+      "identifierType": "source-code",
+      "issued": "2021-04-14",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Source Code"
+    },
+    {
+      "@id": "_:b5",
+      "description": "Data which shows yearly measurements of meat consumption per capita and deaths caused by lung cancer.",
+      "hasDatasetId": "_:b0",
+      "hasDistribution": "_:b9",
+      "identifierType": "document",
+      "issued": "2021-04-10",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Meat consumption and lung cancer data in Romania"
+    },
+    {
+      "@id": "_:b6",
+      "hasContactId": "_:b12",
+      "mbox": "mihaicata1205@gmail.com",
+      "name": "Mihai Cata"
+    },
+    {
+      "@id": "_:b7",
+      "licenseRef": "https://creativecommons.org/share-your-work/public-domain/cc0/",
+      "startDate": "2019-06-30"
+    },
+    {
+      "@id": "_:b8",
+      "licenseRef": "https://creativecommons.org/share-your-work/public-domain/cc0/",
+      "startDate": "2021-04-14"
+    },
+    {
+      "@id": "_:b9",
+      "dataAccess": "open",
+      "dcat:byteSize": 1500,
+      "description": "CSV file early measurements of meat consumption per capita and deaths caused by lung cancer in Romania, during the period 1990-2017",
+      "format": "text/csv",
+      "hasLicense": "_:b8",
+      "title": "Raw data"
+    }
+  ]
+}

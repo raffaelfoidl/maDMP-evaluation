@@ -1,0 +1,482 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "currencyCode": {
+      "@id": "https://w3id.org/dcso/ns/core#currencyCode"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "dct": "http://purl.org/dc/terms/",
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "downloadURL": {
+      "@id": "http://www.w3.org/ns/dcat#downloadURL"
+    },
+    "endDate": {
+      "@id": "http://www.w3.org/ns/dcat#endDate"
+    },
+    "ethicalIssuesDescription": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesDescription"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "ex": "https://w3id.org/dcso/id/example/",
+    "first": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasContributor": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type": "@id"
+    },
+    "hasContributorId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributorId",
+      "@type": "@id"
+    },
+    "hasCost": {
+      "@id": "https://w3id.org/dcso/ns/core#hasCost",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasHost": {
+      "@id": "https://w3id.org/dcso/ns/core#hasHost",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "hasMetadata": {
+      "@id": "https://w3id.org/dcso/ns/core#hasMetadata",
+      "@type": "@id"
+    },
+    "hasMetadataStandardId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasMetadataStandardId",
+      "@type": "@id"
+    },
+    "hasProject": {
+      "@id": "https://w3id.org/dcso/ns/core#hasProject",
+      "@type": "@id"
+    },
+    "hasSecurityPrivacy": {
+      "@id": "https://w3id.org/dcso/ns/core#hasSecurityPrivacy",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "keyword": {
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "pidSystem": {
+      "@id": "https://w3id.org/dcso/ns/core#pidSystem"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rest": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type": "@id"
+    },
+    "role": {
+      "@id": "https://w3id.org/dcso/ns/core#role",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "supportVersioning": {
+      "@id": "https://w3id.org/dcso/ns/core#supportVersioning"
+    },
+    "terms": "http://purl.org/dc/terms/",
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "url": {
+      "@id": "https://w3id.org/dcso/ns/core#url"
+    },
+    "value": {
+      "@id": "https://w3id.org/dcso/ns/core#value",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "identifier": "https://doi.org/10.5281/zenodo.4698406",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b1",
+      "description": "The Dublin Core is a set of fifteen  elements (properties) for describing resources",
+      "hasMetadataStandardId": "_:b2",
+      "language": "eng"
+    },
+    {
+      "@id": "_:b10",
+      "identifier": "10.5281/zenodo.4698519",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b11",
+      "description": "This dataset contains GDP per capita and fertility rate of all countries that have that information for the year 2016. The data from this file will be used later for the graphical representation of our experiment",
+      "hasDatasetId": "_:b0",
+      "hasDistribution": [
+        "_:b6",
+        "_:b34",
+        "_:b32"
+      ],
+      "hasMetadata": "_:b1",
+      "hasSecurityPrivacy": "_:b22",
+      "identifierType": "dataset",
+      "issued": "2021-04-17",
+      "keyword": [
+        "Fertility",
+        "2016",
+        "GDP",
+        "Correlation"
+      ],
+      "language": "eng",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Correlation of GDP and fertility rate in 2016"
+    },
+    {
+      "@id": "_:b12",
+      "endDate": "2021-04-19",
+      "startDate": "2021-04-14",
+      "title": "Correlation of GDP and fertility rate"
+    },
+    {
+      "@id": "_:b13",
+      "dcso:role": {
+        "@list": [
+          "Project creator"
+        ]
+      },
+      "hasContributorId": "_:b37",
+      "mbox": "e1627772@student.tuwien.ac.at",
+      "name": "Jovan Petrovic"
+    },
+    {
+      "@id": "_:b14",
+      "description": "This dataset contains GDP per capita data for all countries for the period of 1960-2019.",
+      "hasDatasetId": "_:b28",
+      "hasDistribution": "_:b24",
+      "hasMetadata": "_:b3",
+      "hasSecurityPrivacy": "_:b27",
+      "identifierType": "dataset",
+      "issued": "2021-04-17",
+      "keyword": [
+        "GDP",
+        "Capita"
+      ],
+      "language": "eng",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "GDP per capita (current US$)"
+    },
+    {
+      "@id": "_:b15",
+      "description": "This dataset contains fertility rate values for all countries for the period of 1960-2019",
+      "hasDatasetId": "_:b18",
+      "hasDistribution": "_:b19",
+      "hasMetadata": "_:b21",
+      "hasSecurityPrivacy": "_:b20",
+      "identifierType": "dataset",
+      "issued": "2021-04-17",
+      "keyword": [
+        "Rate",
+        "Fertility",
+        "Birth",
+        "Woman"
+      ],
+      "language": "eng",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Fertility rate, total (births per woman)"
+    },
+    {
+      "@id": "_:b16",
+      "currencyCode": "EUR",
+      "dcso:value": 0,
+      "description": "There are no costs present for any aspect of our research, because all tools and data management processes are free",
+      "title": "Cost of performing the research"
+    },
+    {
+      "@id": "_:b17",
+      "hasContactId": "_:b23",
+      "mbox": "e1627772@student.tuwien.ac.at",
+      "name": "Jovan Petrovic"
+    },
+    {
+      "@id": "_:b18",
+      "identifier": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b19",
+      "accessUrl": "https://data.worldbank.org/indicator/SP.DYN.TFRT.IN",
+      "dataAccess": "open",
+      "dcat:byteSize": 168000,
+      "description": "This dataset contains fertility rate values for all countries for the period of 1960-2019",
+      "downloadURL": "https://api.worldbank.org/v2/en/indicator/SP.DYN.TFRT.IN?downloadformat=csv",
+      "format": "text/csv",
+      "hasLicense": "_:b30",
+      "title": "Fertility rate, total (births per woman)"
+    },
+    {
+      "@id": "_:b2",
+      "identifier": "http://dublincore.org",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b20",
+      "description": "Available for public use under the terms of Creative Commons Attribution 4.0 International license",
+      "title": "Data access"
+    },
+    {
+      "@id": "_:b21",
+      "hasMetadataStandardId": "_:b29",
+      "language": "eng"
+    },
+    {
+      "@id": "_:b22",
+      "description": "Since our project is stored on a public GitHub repository, there are no access restrictions to the source code and created data, anyone who wants may reuse our project or if someone wants to collaborate with us, we are open for pull request that will be reviewed by our team. GitHub has already mechanisms that ensure data security and prevents unauthorized users from altering the project content",
+      "title": "Data access"
+    },
+    {
+      "@id": "_:b23",
+      "identifier": "https://orcid.org/0000-0002-5605-4003",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b24",
+      "accessUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+      "dataAccess": "open",
+      "dcat:byteSize": 184000,
+      "description": "This dataset contains GDP per capita data for all countries for the period of 1960-2019.",
+      "downloadURL": "https://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv",
+      "format": "text/csv",
+      "hasHost": "_:b26",
+      "hasLicense": "_:b25",
+      "title": "GDP per capita (current US$)"
+    },
+    {
+      "@id": "_:b25",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "startDate": "2021-04-17"
+    },
+    {
+      "@id": "_:b26",
+      "title": "The World Bank",
+      "url": "https://data.worldbank.org"
+    },
+    {
+      "@id": "_:b27",
+      "description": "Available for public use under the terms of Creative Commons Attribution 4.0 International license",
+      "title": "Data access"
+    },
+    {
+      "@id": "_:b28",
+      "identifier": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b29",
+      "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=SP.DYN.TFRT.IN",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b3",
+      "hasMetadataStandardId": "_:b4",
+      "language": "eng"
+    },
+    {
+      "@id": "_:b30",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "startDate": "2021-04-17"
+    },
+    {
+      "@id": "_:b31",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "startDate": "2021-04-17"
+    },
+    {
+      "@id": "_:b32",
+      "accessUrl": "https://zenodo.org/record/4698406#.YHsnUy2w1ZM",
+      "dataAccess": "open",
+      "dcat:byteSize": 8700,
+      "description": "This dataset contains GDP per capita and fertility rate of all countries that have that information for the year 2016. The data from this file will be used later for the graphical representation of our experiment",
+      "downloadURL": "https://zenodo.org/record/4698406/files/gdp_fertility.csv?download=1",
+      "format": "text/csv",
+      "hasHost": "_:b33",
+      "hasLicense": "_:b5",
+      "title": "Correlation of GDP and fertility rate in 2016"
+    },
+    {
+      "@id": "_:b33",
+      "pidSystem": "doi",
+      "supportVersioning": "yes",
+      "title": "Zenodo",
+      "url": "https://zenodo.org"
+    },
+    {
+      "@id": "_:b34",
+      "accessUrl": "https://zenodo.org/record/4698428#.YHsr0y2w1ZM",
+      "dataAccess": "open",
+      "dcat:byteSize": 21000,
+      "description": "This is a scatter plot of the merged data that clearly shows the correlation between the fertility rate and the GDP per capita for the year 2016.",
+      "downloadURL": "https://zenodo.org/record/4698428/files/correlation.png?download=1",
+      "format": "image/png",
+      "hasHost": "_:b35",
+      "hasLicense": "_:b31",
+      "title": "Scatter plot of correlation between GDP and Fertility rate"
+    },
+    {
+      "@id": "_:b35",
+      "pidSystem": "doi",
+      "supportVersioning": "yes",
+      "title": "Zenodo",
+      "url": "https://zenodo.org"
+    },
+    {
+      "@id": "_:b37",
+      "identifier": "https://orcid.org/0000-0002-5605-4003",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b4",
+      "identifier": "https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.PCAP.CD",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b5",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "startDate": "2021-04-17"
+    },
+    {
+      "@id": "_:b6",
+      "accessUrl": "https://github.com/jpetrovi/GDP_Fertility_Correlation",
+      "dataAccess": "open",
+      "dcat:byteSize": 737630,
+      "description": "This is the source code of the project that contains all relevant files and folders of the project implementation",
+      "downloadURL": "https://github.com/jpetrovi/GDP_Fertility_Correlation/archive/refs/heads/master.zip",
+      "format": "application/zip",
+      "hasHost": "_:b8",
+      "hasLicense": "_:b7",
+      "title": "GDP_Fertility_Correlation"
+    },
+    {
+      "@id": "_:b7",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "startDate": "2021-04-17"
+    },
+    {
+      "@id": "_:b8",
+      "pidSystem": "doi",
+      "supportVersioning": "yes",
+      "title": "GitHub",
+      "url": "https://github.com"
+    },
+    {
+      "@id": "_:b9",
+      "@type": "DMP",
+      "created": "2021-04-17T20:17:56.725Z",
+      "description": "This is the data management plan for our research project about analyzing the correlation between GDP per capita and fertility rate(births per Woman).",
+      "ethicalIssuesDescription": "There are no known ethical issues in our project",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b17",
+      "hasContributor": "_:b13",
+      "hasCost": "_:b16",
+      "hasDataset": [
+        "_:b11",
+        "_:b14",
+        "_:b15"
+      ],
+      "hasDMPId": "_:b10",
+      "hasProject": "_:b12",
+      "language": "eng",
+      "modified": "2021-04-17T19:57:57.584Z",
+      "title": "DMP: Correlation of GDP and fertility rate"
+    }
+  ]
+}

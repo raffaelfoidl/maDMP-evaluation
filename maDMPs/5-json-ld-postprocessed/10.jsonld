@@ -1,0 +1,649 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "currencyCode": {
+      "@id": "https://w3id.org/dcso/ns/core#currencyCode"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "dataQualityAssurance": {
+      "@id": "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "dct": "http://purl.org/dc/terms/",
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "endDate": {
+      "@id": "http://www.w3.org/ns/dcat#endDate"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "ex": "https://w3id.org/dcso/id/example/",
+    "first": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasContributor": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type": "@id"
+    },
+    "hasContributorId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributorId",
+      "@type": "@id"
+    },
+    "hasCost": {
+      "@id": "https://w3id.org/dcso/ns/core#hasCost",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "hasProject": {
+      "@id": "https://w3id.org/dcso/ns/core#hasProject",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "keyword": {
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rest": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type": "@id"
+    },
+    "role": {
+      "@id": "https://w3id.org/dcso/ns/core#role",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "terms": "http://purl.org/dc/terms/",
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "value": {
+      "@id": "https://w3id.org/dcso/ns/core#value",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "accessUrl": "https://fbref.com/en/comps/20/1529/stats/2016-2017-Bundesliga-Stats#stats_standard",
+      "dataAccess": "open",
+      "dcat:byteSize": 59085,
+      "format": "CSV",
+      "hasLicense": "_:b1",
+      "title": "Player Standard Stats 2016-2017 Bundesliga"
+    },
+    {
+      "@id": "_:b1",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b10",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b11",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b12",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b13",
+      "accessUrl": "https://fbref.com/en/comps/12/1547/keepers/2016-2017-La-Liga-Stats#stats_keeper",
+      "dataAccess": "open",
+      "dcat:byteSize": 6277,
+      "format": "CSV",
+      "hasLicense": "_:b14",
+      "title": "Player Goalkeeping 2016-2017 La Liga"
+    },
+    {
+      "@id": "_:b14",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b15",
+      "identifier": "https://raw.githubusercontent.com/kevinheavey/fifa18-even-more-player-data/master/data/final/current/complete.csv",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b16",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b17",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b18",
+      "accessUrl": "https://fbref.com/en/comps/13/1527/keepers/2016-2017-Ligue-1-Stats#stats_keeper",
+      "dataAccess": "open",
+      "dcat:byteSize": 6021,
+      "format": "CSV",
+      "hasLicense": "_:b19",
+      "title": "Player Goalkeeping 2016-2017 Ligue 1"
+    },
+    {
+      "@id": "_:b19",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b2",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b20",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b21",
+      "accessUrl": "https://fbref.com/en/comps/13/1527/stats/2016-2017-Ligue-1-Stats#stats_standard",
+      "dataAccess": "open",
+      "dcat:byteSize": 70554,
+      "format": "CSV",
+      "hasLicense": "_:b3",
+      "title": "Player Standard Stats 2016-2017 Ligue 1"
+    },
+    {
+      "@id": "_:b22",
+      "dcso:role": {
+        "@list": [
+          "Author"
+        ]
+      },
+      "hasContributorId": "_:b8",
+      "mbox": "e1226385@student.tuwien.ac.at",
+      "name": "Ivan Lichner"
+    },
+    {
+      "@id": "_:b24",
+      "licenseRef": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "startDate": "2017-11-03"
+    },
+    {
+      "@id": "_:b25",
+      "accessUrl": "https://fbref.com/en/comps/9/1526/stats/2016-2017-Premier-League-Stats#stats_standard",
+      "dataAccess": "open",
+      "dcat:byteSize": 67891,
+      "format": "CSV",
+      "hasLicense": "_:b11",
+      "title": "Player Standard Stats 2016-2017 Premier League"
+    },
+    {
+      "@id": "_:b26",
+      "currencyCode": "EUR",
+      "dcso:value": 0,
+      "description": "Costs of storing and backuping the source code and results of the experiment.",
+      "title": "Storage and backup"
+    },
+    {
+      "@id": "_:b27",
+      "identifier": "https://doi.org/10.5281/zenodo.4697058",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b28",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b29",
+      "accessUrl": "https://raw.githubusercontent.com/Aficionado29/CorrAnalysis/main/data/output/statisticsLL.csv",
+      "dataAccess": "open",
+      "dcat:byteSize": 28979,
+      "format": "CSV",
+      "hasLicense": "_:b30",
+      "title": "statisticsLL"
+    },
+    {
+      "@id": "_:b3",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b30",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b31",
+      "accessUrl": "https://fbref.com/en/comps/13/1527/misc/2016-2017-Ligue-1-Stats#stats_misc",
+      "dataAccess": "open",
+      "dcat:byteSize": 57344,
+      "format": "CSV",
+      "hasLicense": "_:b32",
+      "title": "Player Miscellaneous Stats 2016-2017 Ligue 1"
+    },
+    {
+      "@id": "_:b32",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b33",
+      "@type": "DMP",
+      "created": "2021-04-16T20:30:00",
+      "description": "In this project I will collect the statistical data from the 5 biggest European football league - namely Premier League, La Liga, Serie A, Bundesliga and Ligue 1 as well as the data from the game FIFA. The statistics will be for the season 2016/2017 and the equivalent FIFA 18. I will then calculate the correspondence of the real performance of the player on the field with the FIFA value and overall rating of the player. The results could be used to gauge to which extent the developers of the game take into account the players' real performance or the fame of the players is more important when determining the value and rating for the game. I will use my own scoring weights for various statistics. At the end I will list the worst judged players in the FIFA game.",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b38",
+      "hasContributor": "_:b22",
+      "hasCost": "_:b26",
+      "hasDataset": [
+        "_:b34",
+        "_:b36",
+        "_:b37",
+        "_:b39"
+      ],
+      "hasDMPId": "_:b40",
+      "hasProject": "_:b35",
+      "language": "eng",
+      "modified": "2021-04-16T21:18:00",
+      "title": "Analysis of correspondence between real-world football players' statistics and FIFA players' values and rating"
+    },
+    {
+      "@id": "_:b34",
+      "dataQualityAssurance": "Naming convention is used, for standard stats suffix _STD, for miscellaneous _MISC and for goalkeeping stats suffix _GK.",
+      "description": "Collected statistics of the players' performance on the pitch for each football league for various positions.",
+      "hasDatasetId": "_:b46",
+      "hasDistribution": [
+        "_:b0",
+        "_:b6",
+        "_:b52",
+        "_:b53",
+        "_:b54",
+        "_:b13",
+        "_:b25",
+        "_:b55",
+        "_:b48",
+        "_:b4",
+        "_:b56",
+        "_:b21",
+        "_:b31",
+        "_:b18",
+        "_:b57"
+      ],
+      "identifierType": "dataset",
+      "issued": "2017-07-31",
+      "keyword": [
+        "Bundesliga",
+        "Football",
+        "La Liga",
+        "Statistics",
+        "Serie A",
+        "Ligue 1",
+        "Premier League"
+      ],
+      "language": "eng",
+      "personalData": "yes",
+      "sensitiveData": "no",
+      "title": "Real-world players' statistics"
+    },
+    {
+      "@id": "_:b35",
+      "description": "The purpose of this project was to perform an experiment on the arbitrary data-sets and learn how to create a DMP and maDMP for it.",
+      "endDate": "2021-04-18",
+      "startDate": "2021-04-01",
+      "title": "Experiment Data Stewardship"
+    },
+    {
+      "@id": "_:b36",
+      "dataQualityAssurance": "For each league there is a statistics output file with the calculated statistics based on my chosen weights named statistics[league shortcut]",
+      "description": "Calculated statistical data based on custom weights and also the selected parameters.",
+      "hasDatasetId": "_:b27",
+      "hasDistribution": [
+        "_:b44",
+        "_:b45",
+        "_:b9",
+        "_:b29",
+        "_:b42"
+      ],
+      "identifierType": "dataset",
+      "issued": "2021-04-15",
+      "keyword": [
+        "Football",
+        "Statistics",
+        "FIFA",
+        "Python",
+        "Jupyter Notebook"
+      ],
+      "language": "eng",
+      "personalData": "yes",
+      "sensitiveData": "no",
+      "title": "Calculated statistics"
+    },
+    {
+      "@id": "_:b37",
+      "dataQualityAssurance": "I use the following naming convention of files: standard stats are stored in files ending with suffix _STD, goalkeeping stats with suffix _GK and miscellaneous stats with suffix _MISC. Each league has its own prefix in the file name - Premier League has PL, La Lila has LL, Serie A has SA, Bundesliga has BL and Ligue 1 has L1, e.g. standard statistics file for Premier League has a name PL_1617_STD.csv.",
+      "description": "Source code of the performed experiment. Contains loading of data-sets, modifications, computations and outputs data-sets as well as a figure.",
+      "hasDatasetId": "_:b51",
+      "hasDistribution": "_:b47",
+      "identifierType": "software",
+      "issued": "2021-04-15",
+      "keyword": [
+        "Correspondence analysis",
+        "Histogram",
+        "Football",
+        "FIFA"
+      ],
+      "language": "eng",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Experiment's source code"
+    },
+    {
+      "@id": "_:b38",
+      "hasContactId": "_:b49",
+      "mbox": "e1226385@student.tuwien.ac.at",
+      "name": "Ivan Lichner"
+    },
+    {
+      "@id": "_:b39",
+      "description": "Data-set containing stats for the players of the game FIFA 18.",
+      "hasDatasetId": "_:b15",
+      "hasDistribution": "_:b41",
+      "identifierType": "dataset",
+      "issued": "2017-11-03",
+      "keyword": [
+        "FIFA",
+        "Football"
+      ],
+      "language": "eng",
+      "personalData": "yes",
+      "sensitiveData": "no",
+      "title": "Fifa 18 More Complete Player Dataset"
+    },
+    {
+      "@id": "_:b4",
+      "accessUrl": "https://fbref.com/en/comps/11/1535/stats/2016-2017-Serie-A-Stats#stats_standard",
+      "dataAccess": "open",
+      "dcat:byteSize": 71578,
+      "format": "CSV",
+      "hasLicense": "_:b5",
+      "title": "Player Standard Stats 2016-2017 Serie A"
+    },
+    {
+      "@id": "_:b40",
+      "identifier": "https://doi.org/10.5281/zenodo.4696240",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b41",
+      "accessUrl": "https://raw.githubusercontent.com/kevinheavey/fifa18-even-more-player-data/master/data/final/current/complete.csv",
+      "dataAccess": "open",
+      "dcat:byteSize": 19503514,
+      "format": "CSV",
+      "hasLicense": "_:b24",
+      "title": "complete"
+    },
+    {
+      "@id": "_:b42",
+      "accessUrl": "https://raw.githubusercontent.com/Aficionado29/CorrAnalysis/main/data/output/statisticsPL.csv",
+      "dataAccess": "open",
+      "dcat:byteSize": 27546,
+      "format": "CSV",
+      "hasLicense": "_:b43",
+      "title": "statisticsPL"
+    },
+    {
+      "@id": "_:b43",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b44",
+      "accessUrl": "https://raw.githubusercontent.com/Aficionado29/CorrAnalysis/main/data/output/statisticsSA.csv",
+      "dataAccess": "open",
+      "dcat:byteSize": 28467,
+      "format": "CSV",
+      "hasLicense": "_:b2",
+      "title": "statisticsSA"
+    },
+    {
+      "@id": "_:b45",
+      "accessUrl": "https://raw.githubusercontent.com/Aficionado29/CorrAnalysis/main/data/output/statisticsBL.csv",
+      "dataAccess": "open",
+      "dcat:byteSize": 24474,
+      "format": "CSV",
+      "hasLicense": "_:b16",
+      "title": "statisticsBL"
+    },
+    {
+      "@id": "_:b46",
+      "identifier": "https://fbref.com/en/comps/9/1526/stats/2016-2017-Premier-League-Stats#stats_standard",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b47",
+      "accessUrl": "https://github.com/Aficionado29/CorrAnalysis/blob/main/code/experiment.ipynb?short_path=e1708e1",
+      "dataAccess": "open",
+      "dcat:byteSize": 29287,
+      "format": "ipynb",
+      "hasLicense": "_:b17",
+      "title": "experiment"
+    },
+    {
+      "@id": "_:b48",
+      "accessUrl": "https://fbref.com/en/comps/9/1526/keepers/2016-2017-Premier-League-Stats#stats_keeper",
+      "dataAccess": "open",
+      "dcat:byteSize": 5530,
+      "format": "CSV",
+      "hasLicense": "_:b28",
+      "title": "Player Goalkeeping 2016-2017 Premier League"
+    },
+    {
+      "@id": "_:b49",
+      "identifier": "0000-0001-8473-6573",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b5",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b50",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b51",
+      "identifier": "https://doi.org/10.5281/zenodo.4695124",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b52",
+      "accessUrl": "https://fbref.com/en/comps/9/1526/misc/2016-2017-Premier-League-Stats#stats_misc",
+      "dataAccess": "open",
+      "dcat:byteSize": 55910,
+      "format": "CSV",
+      "hasLicense": "_:b60",
+      "title": "Player Miscellaneous Stats 2016-2017 Premier League"
+    },
+    {
+      "@id": "_:b53",
+      "accessUrl": "https://fbref.com/en/comps/11/1535/keepers/2016-2017-Serie-A-Stats#stats_keeper",
+      "dataAccess": "open",
+      "dcat:byteSize": 5806,
+      "format": "CSV",
+      "hasLicense": "_:b12",
+      "title": "Player Goalkeeping 2016-2017 Serie A"
+    },
+    {
+      "@id": "_:b54",
+      "accessUrl": "https://fbref.com/en/comps/11/1535/misc/2016-2017-Serie-A-Stats#stats_misc",
+      "dataAccess": "open",
+      "dcat:byteSize": 58778,
+      "format": "CSV",
+      "hasLicense": "_:b58",
+      "title": "Player Miscellaneous Stats 2016-2017 Serie A"
+    },
+    {
+      "@id": "_:b55",
+      "accessUrl": "https://fbref.com/en/comps/12/1547/misc/2016-2017-La-Liga-Stats#stats_misc",
+      "dataAccess": "open",
+      "dcat:byteSize": 55603,
+      "format": "CSV",
+      "hasLicense": "_:b59",
+      "title": "Player Miscellaneous Stats 2016-2017 La Liga"
+    },
+    {
+      "@id": "_:b56",
+      "accessUrl": "https://fbref.com/en/comps/12/1547/stats/2016-2017-La-Liga-Stats#stats_standard",
+      "dataAccess": "open",
+      "dcat:byteSize": 67789,
+      "format": "CSV",
+      "hasLicense": "_:b50",
+      "title": "Player Standard Stats 2016-2017 La Liga"
+    },
+    {
+      "@id": "_:b57",
+      "accessUrl": "https://fbref.com/en/comps/20/1529/misc/2016-2017-Bundesliga-Stats#stats_misc",
+      "dataAccess": "open",
+      "dcat:byteSize": 48845,
+      "format": "CSV",
+      "hasLicense": "_:b20",
+      "title": "Player Miscellaneous Stats 2016-2017 Bundesliga"
+    },
+    {
+      "@id": "_:b58",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b59",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b6",
+      "accessUrl": "https://fbref.com/en/comps/20/1529/keepers/2016-2017-Bundesliga-Stats#stats_keeper",
+      "dataAccess": "open",
+      "dcat:byteSize": 4373,
+      "format": "CSV",
+      "hasLicense": "_:b7",
+      "title": "Player Goalkeeping 2016-2017 Bundesliga"
+    },
+    {
+      "@id": "_:b60",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b7",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2004-10-01"
+    },
+    {
+      "@id": "_:b8",
+      "identifier": "0000-0001-8473-6573",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b9",
+      "accessUrl": "https://raw.githubusercontent.com/Aficionado29/CorrAnalysis/main/data/output/statisticsL1.csv",
+      "dataAccess": "open",
+      "dcat:byteSize": 27034,
+      "format": "CSV",
+      "hasLicense": "_:b10",
+      "title": "statisticsL1"
+    }
+  ]
+}

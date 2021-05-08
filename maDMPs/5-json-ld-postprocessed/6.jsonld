@@ -1,0 +1,200 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "dataQualityAssurance": {
+      "@id": "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "dct": "http://purl.org/dc/terms/",
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "ex": "https://w3id.org/dcso/id/example/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "terms": "http://purl.org/dc/terms/",
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "dataQualityAssurance": "The code has been reviewed by the author and follows standard naming conventions",
+      "description": "Proof of experiment claim implementation",
+      "hasDatasetId": "_:b1",
+      "hasDistribution": [
+        "_:b2",
+        "_:b3"
+      ],
+      "identifierType": "source-code",
+      "issued": "2021-04-15",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Source Code Taylor rule"
+    },
+    {
+      "@id": "_:b1",
+      "identifier": "10.5281/zenodo.4694248",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b10",
+      "identifier": "https://orcid.org/0000-0003-3390-8106",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b2",
+      "dataAccess": "open",
+      "dcat:byteSize": 960,
+      "description": "Data output of applying the Taylor rule to inflation and output gap",
+      "format": "text/csv",
+      "hasDatasetId": "_:b7",
+      "hasLicense": "_:b4",
+      "identifierType": "document",
+      "issued": "2021-04-10",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Taylor rule output"
+    },
+    {
+      "@id": "_:b3",
+      "accessUrl": "https://github.com/floom9/Comparison-between-the-actual-Federal-Funds-Rate-and-the-Taylor-Rule",
+      "dataAccess": "open",
+      "description": "Final realase implemented using R to proof data correlations.",
+      "hasLicense": "_:b6",
+      "title": "R code"
+    },
+    {
+      "@id": "_:b4",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2021-04-10"
+    },
+    {
+      "@id": "_:b5",
+      "identifier": "https://doi.org/10.5281/zenodo.4699321",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b6",
+      "licenseRef": "https://opensource.org/licenses/MIT",
+      "startDate": "2021-04-15"
+    },
+    {
+      "@id": "_:b7",
+      "identifier": "10.5281/zenodo.4678242",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b8",
+      "@type": "DMP",
+      "created": "2021-04-19T13:30:00",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b9",
+      "hasDataset": "_:b0",
+      "hasDMPId": "_:b5",
+      "language": "eng",
+      "modified": "2021-04-19T13:40:00",
+      "title": "Comparison between the actual Federal Funds Rate and the Interest Rate suggested by the Taylor Rule"
+    },
+    {
+      "@id": "_:b9",
+      "hasContactId": "_:b10",
+      "mbox": "e1525689@student.tuwien.ac.at",
+      "name": "Florian Mayer"
+    }
+  ]
+}

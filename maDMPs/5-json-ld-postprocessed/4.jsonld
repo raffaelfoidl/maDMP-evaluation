@@ -1,0 +1,350 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/dcso/ns/core#",
+    "accessUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "availability": {
+      "@id": "https://w3id.org/dcso/ns/core#availability"
+    },
+    "backupFrequency": {
+      "@id": "https://w3id.org/dcso/ns/core#backupFrequency"
+    },
+    "backupType": {
+      "@id": "https://w3id.org/dcso/ns/core#backupType"
+    },
+    "byteSize": {
+      "@id": "http://www.w3.org/ns/dcat#byteSize",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created": {
+      "@id": "http://purl.org/dc/terms/created"
+    },
+    "dataAccess": {
+      "@id": "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "dataQualityAssurance": {
+      "@id": "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcso": "https://w3id.org/dcso/ns/core#",
+    "dcsx": "https://w3id.org/dcso/ns/extension#",
+    "dct": "http://purl.org/dc/terms/",
+    "description": {
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "endDate": {
+      "@id": "http://www.w3.org/ns/dcat#endDate"
+    },
+    "ethicalIssuesDescription": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesDescription"
+    },
+    "ethicalIssuesExist": {
+      "@id": "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "ex": "https://w3id.org/dcso/id/example/",
+    "first": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "format": {
+      "@id": "http://purl.org/dc/terms/format"
+    },
+    "hasContact": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContact",
+      "@type": "@id"
+    },
+    "hasContactId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type": "@id"
+    },
+    "hasContributor": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type": "@id"
+    },
+    "hasContributorId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasContributorId",
+      "@type": "@id"
+    },
+    "hasDataset": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type": "@id"
+    },
+    "hasDatasetId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type": "@id"
+    },
+    "hasDistribution": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type": "@id"
+    },
+    "hasDMPId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type": "@id"
+    },
+    "hasHost": {
+      "@id": "https://w3id.org/dcso/ns/core#hasHost",
+      "@type": "@id"
+    },
+    "hasLicense": {
+      "@id": "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type": "@id"
+    },
+    "hasMetadata": {
+      "@id": "https://w3id.org/dcso/ns/core#hasMetadata",
+      "@type": "@id"
+    },
+    "hasMetadataStandardId": {
+      "@id": "https://w3id.org/dcso/ns/core#hasMetadataStandardId",
+      "@type": "@id"
+    },
+    "hasProject": {
+      "@id": "https://w3id.org/dcso/ns/core#hasProject",
+      "@type": "@id"
+    },
+    "hasSecurityPrivacy": {
+      "@id": "https://w3id.org/dcso/ns/core#hasSecurityPrivacy",
+      "@type": "@id"
+    },
+    "identifier": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "identifierType": {
+      "@id": "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "keyword": {
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "language": {
+      "@id": "https://w3id.org/dcso/ns/core#language"
+    },
+    "licenseRef": {
+      "@id": "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "mbox": {
+      "@id": "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "modified": {
+      "@id": "http://purl.org/dc/terms/modified"
+    },
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name"
+    },
+    "ns": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "personalData": {
+      "@id": "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "pidSystem": {
+      "@id": "https://w3id.org/dcso/ns/core#pidSystem"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rest": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type": "@id"
+    },
+    "role": {
+      "@id": "https://w3id.org/dcso/ns/core#role",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "sensitiveData": {
+      "@id": "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "startDate": {
+      "@id": "http://www.w3.org/ns/dcat#startDate"
+    },
+    "supportVersioning": {
+      "@id": "https://w3id.org/dcso/ns/core#supportVersioning"
+    },
+    "terms": "http://purl.org/dc/terms/",
+    "title": {
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "url": {
+      "@id": "https://w3id.org/dcso/ns/core#url"
+    },
+    "vann": "http://purl.org/vocab/vann/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "availability": "at least 99.7%",
+      "backupFrequency": "nightly",
+      "backupType": "tape",
+      "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+      "pidSystem": "doi",
+      "supportVersioning": "yes",
+      "title": "Zenodo",
+      "url": "https://zenodo.org"
+    },
+    {
+      "@id": "_:b1",
+      "identifier": "https://doi.org/10.5281/zenodo.4699901",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b11",
+      "@type": "DMP",
+      "created": "2021-04-18T20:15:00+0100",
+      "description": "This is the DMP for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\".",
+      "ethicalIssuesDescription": "All in all, no ethical issues arise in this experiment. No personal information is processed and there are no participants involved; hence, there is no consent needed for data preservation or sharing. Furthermore, there are no restrictions with regard to data transfer and storage duration since no sensitive data is being handled.",
+      "ethicalIssuesExist": "no",
+      "hasContact": "_:b13",
+      "hasContributor": "_:b5",
+      "hasDataset": "_:b14",
+      "hasDMPId": "_:b3",
+      "hasProject": "_:b12",
+      "language": "eng",
+      "modified": "2021-04-19T12:20:00+0100",
+      "title": "DMP: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries"
+    },
+    {
+      "@id": "_:b12",
+      "description": "The aim of this experiment is to find out whether there is a (strong) correlation between the gross domestic product (GDP) per capita of a country and the average height of its 19-year-old inhabitants. For this purpose, data from two publicly available datasets were used: One dataset concerns the GDP per capita and the other contains data about the mean height of girls and boys of different ages per country. Both datasets consist of data collected over the course of several years; the year of interest for this experiment is 2019. The data entries from the two datasets were matched by comparing the country name given in the respective entry. Only countries are taken into consideration for which both datasets yield complete information - in total, 164 countries were considered in the experiment.",
+      "endDate": "2021-04-19",
+      "startDate": "2021-04-11",
+      "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries"
+    },
+    {
+      "@id": "_:b13",
+      "hasContactId": "_:b4",
+      "mbox": "lea.brugger@student.tuwien.ac.at",
+      "name": "Lea Salome Brugger"
+    },
+    {
+      "@id": "_:b14",
+      "dataQualityAssurance": [
+        "The naming and structure of the folders and files follows the convention defined by Princeton University (https://libguides.princeton.edu/rdm)",
+        "In order to only produce useful data, countries where incomplete information is provided by either or both of the datasets, are neglected. This is ensured firstly by filtering out rows in the CSV file for the GDP per capita where no numeric value is given and secondly by the way the datasets are merged; if a country is only included in one of the datasets, but not both, it is not added to the resulting dataset."
+      ],
+      "description": "As a result of the experiment, a CSV files is created. This CSV file contains the raw data produced by the experiment; for each country, there are two entries in the CSV file: Each entry contains the country code, country name and the GDP per capita, which are obviously the same for both entries. The two entries differ in the columns for the sex and the mean height of 19-year-olds of this sex; there is one entry for males and another for females. Therefore, the created CSV file represents filtered and then merged data from the two input datasets. Additionally, two PNG files are generated which display a linear regression between the GDP per capita and the average height of 19-year-old males or females, respectively. A Python application is responsible for processing the data and producing the desired output.",
+      "hasDatasetId": "_:b1",
+      "hasDistribution": [
+        "_:b18",
+        "_:b19"
+      ],
+      "hasMetadata": "_:b8",
+      "hasSecurityPrivacy": [
+        "_:b17",
+        "_:b20"
+      ],
+      "identifierType": "dataset",
+      "issued": "2021-04-18",
+      "keyword": [
+        "regression",
+        "2019",
+        "GDP",
+        "GDP per capita",
+        "linear regression",
+        "average height",
+        "height"
+      ],
+      "language": "eng",
+      "personalData": "no",
+      "sensitiveData": "no",
+      "title": "Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries"
+    },
+    {
+      "@id": "_:b15",
+      "licenseRef": "https://creativecommons.org/licenses/by/4.0/",
+      "startDate": "2021-04-19"
+    },
+    {
+      "@id": "_:b16",
+      "description": "GitHub is a provider of Internet hosting for software development and version control using Git.",
+      "pidSystem": "doi",
+      "supportVersioning": "yes",
+      "title": "Github",
+      "url": "https://github.com"
+    },
+    {
+      "@id": "_:b17",
+      "description": "Write access to the data is controlled via Github and password protection on the local devices of the project creator, respectively. In order to mitigate the risk that a password (the password for Github or for one of the devices) is cracked, strong passwords that adhere to the most recent recommendations published by the National Institute of Standards and Technology (NIST) of the United States (https://pages.nist.gov/800-63-3/sp800-63b.html) are used.",
+      "title": "Write access to the data"
+    },
+    {
+      "@id": "_:b18",
+      "accessUrl": "https://zenodo.org/record/4699901",
+      "dataAccess": "open",
+      "dcat:byteSize": 82900,
+      "description": "This Zenodo upload contains the results obtained by running the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\"",
+      "format": [
+        "image/png",
+        "text/csv"
+      ],
+      "hasHost": "_:b0",
+      "hasLicense": "_:b15",
+      "title": "Results: Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries"
+    },
+    {
+      "@id": "_:b19",
+      "accessUrl": "https://github.com/bruggerl/gdp-height",
+      "dataAccess": "open",
+      "dcat:byteSize": 5645000,
+      "description": "This Github repository contains the source code for the experiment \"Analysis of Correlation Between GDP per Capita and Average Height of Young Adults in 2019 in 164 Countries\" as well as the input data used and the results obtained by running the experiment",
+      "format": "application/zip",
+      "hasHost": "_:b16",
+      "hasLicense": "_:b9",
+      "title": "gdp-height"
+    },
+    {
+      "@id": "_:b2",
+      "identifier": "http://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+      "identifierType": "url"
+    },
+    {
+      "@id": "_:b20",
+      "description": "Read access to the data is given to anyone as the data and source code are publicly available on Github.",
+      "title": "Read access to the data"
+    },
+    {
+      "@id": "_:b3",
+      "identifier": "https://doi.org/10.5281/zenodo.4701272",
+      "identifierType": "doi"
+    },
+    {
+      "@id": "_:b4",
+      "identifier": "https://orcid.org/0000-0001-8770-4112",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b5",
+      "dcso:role": {
+        "@list": [
+          "Project Creator",
+          "Project Maintainer"
+        ]
+      },
+      "hasContributorId": "_:b7",
+      "mbox": "lea.brugger@student.tuwien.ac.at",
+      "name": "Lea Salome Brugger"
+    },
+    {
+      "@id": "_:b7",
+      "identifier": "https://orcid.org/0000-0001-8770-4112",
+      "identifierType": "orcid"
+    },
+    {
+      "@id": "_:b8",
+      "description": "Provides metadata for the created dataset.",
+      "hasMetadataStandardId": "_:b2",
+      "language": "eng"
+    },
+    {
+      "@id": "_:b9",
+      "licenseRef": "https://choosealicense.com/licenses/mit/",
+      "startDate": "2021-04-19"
+    }
+  ]
+}

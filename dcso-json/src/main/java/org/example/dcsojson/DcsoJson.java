@@ -118,6 +118,7 @@ public class DcsoJson implements Callable<Integer> {
      * make remaining non-conformant maDMPs schema-conform
      * complete conversion of maDMPs to JSON-LD
      * decide whether we want to check-in the packaged tool
+     * dockerization to make conversion to json-ld portable?
      */
     public static void main(String... args) throws IOException {
         var commandLine = new CommandLine(new DcsoJson());
