@@ -102,23 +102,22 @@ public class DcsoJson implements Callable<Integer> {
     }
 
     private static int err(String message, Object... args) {
-        System.err.printf(message, args);
+        LOGGER.error(message, args);
         return 3;
     }
 
     /* TODO:
-     * Logging
+     * more thorough (or any) Logging
      * repository metadata (GitHub)
-     * Documentation (code - IDcsoJsonTransformer, readme, root readme, goals, methodology, outputs, file structure, ...)
+     * Documentation (code, readme, root readme, goals, methodology, outputs, file structure, ...)
+     * dockerization to make conversion to json-ld portable?
      *  -> known issue: when converting JSON -> JSON-LD/Turtle -> JSON, array elements with arity 1 have been
      *     converted to regular objects ({"a": [{"b": "c"}]} -> {"a": {"b": "c"}}) (JSON is not equivalent to initial
-     *     file anymore); would need post-processing/investigation, but not inherently relevant for this project
+     *     file anymore); would need post-processing/investigation, but not inherently relevant for this project (especially
+     *     since Dockerization is aspired)
      * think of Group ID (not org.example)
      * Maybe some more error handling
-     * make remaining non-conformant maDMPs schema-conform
-     * complete conversion of maDMPs to JSON-LD
      * decide whether we want to check-in the packaged tool
-     * dockerization to make conversion to json-ld portable?
      */
     public static void main(String... args) throws IOException {
         var commandLine = new CommandLine(new DcsoJson());
@@ -126,7 +125,7 @@ public class DcsoJson implements Callable<Integer> {
 
         int exitCode = commandLine.execute(args);
         if (exitCode == 3) {
-            commandLine.usage(System.err);
+            LOGGER.error(commandLine.getUsageMessage());
         }
 
         System.exit(exitCode);

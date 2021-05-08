@@ -127,12 +127,13 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         }
 
         JsonWriterFactory writerFactory = Json.createWriterFactory(properties);
-        FileWriter fileWriter = new FileWriter(outputFile);
-        JsonWriter jsonWriter = writerFactory.createWriter(fileWriter);
-        if (jsonValue.getValueType().equals(JsonValue.ValueType.ARRAY)) {
-            jsonWriter.writeArray(jsonValue.asJsonArray());
-        } else if (jsonValue.getValueType().equals(JsonValue.ValueType.OBJECT)) {
-            jsonWriter.writeObject(jsonValue.asJsonObject());
+        var fileWriter = new FileWriter(outputFile);
+        try (var jsonWriter = writerFactory.createWriter(fileWriter)) {
+            if (jsonValue.getValueType().equals(JsonValue.ValueType.ARRAY)) {
+                jsonWriter.writeArray(jsonValue.asJsonArray());
+            } else if (jsonValue.getValueType().equals(JsonValue.ValueType.OBJECT)) {
+                jsonWriter.writeObject(jsonValue.asJsonObject());
+            }
         }
 
         fileWriter.flush();
@@ -141,19 +142,18 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         return outputFile;
     }
 
-    private Model dmpJsonToJenaModel(File dmpJsonFile, File contextFile, Boolean adjustDMP) throws JsonLdError {
+    private Model dmpJsonToJenaModel(File dmpJsonFile, File contextFile, Boolean adjustDmp) throws JsonLdError {
         var dcso = ModelFactory.createDefaultModel();
         RDFDataMgr.read(dcso, getResourceAsStream(ONTOLOGY_DCSO_TTL), Lang.TURTLE);
 
-        Model model = ModelFactory.createDefaultModel();
+        var model = ModelFactory.createDefaultModel();
         model.setNsPrefixes(dcso.getNsPrefixMap());
-        JsonArray jsonArray = JsonLd.expand(dmpJsonFile.toURI())
-          .context(contextFile.getAbsolutePath()).get();
+        var jsonArray = JsonLd.expand(dmpJsonFile.toURI()).context(contextFile.getAbsolutePath()).get();
         InputStream is = new ByteArrayInputStream(jsonArray.toString().getBytes());
         RDFDataMgr.read(model, is, Lang.JSONLD);
 
         // hack to ensure correct DMP class representation
-        if (adjustDMP) {
+        if (adjustDmp) {
             Statement hasDMPStmt = model.getProperty(null, HAS_DMP);
             model.add((Resource) hasDMPStmt.getObject(), RDF.type, CLS_DMP);
             model.remove(hasDMPStmt);
@@ -162,12 +162,12 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         return model;
     }
 
-    private JsonObject jenaModelToJsonObject(Model model, File contextFile, Boolean adjustDMP) throws IOException, JsonLdError {
-        File tempFile = File.createTempFile("temp", ".nq");
+    private JsonObject jenaModelToJsonObject(Model model, File contextFile, boolean adjustDmp) throws IOException, JsonLdError {
+        var tempFile = File.createTempFile("temp", ".nq");
         tempFile.deleteOnExit();
 
         // hack to ensure correct DMP class representation
-        if (adjustDMP) {
+        if (adjustDmp) {
             Statement hasDMPStmt = model.listStatements(null, RDF.type, CLS_DMP).next();
             model.add(model.createResource(), HAS_DMP, hasDMPStmt.getSubject());
             model.removeAll(null, RDF.type, NAMED_INDIVIDUAL);
@@ -177,8 +177,8 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         JsonArray expandedJsonLd = JsonLd.fromRdf(tempFile.toURI()).get();
         File tempJson = writeJson(expandedJsonLd, null);
 
-        JsonObject framedJsonLd = JsonLd.frame(tempJson.toURI(), contextFile.toURI()).get();
-        JsonArray graph = framedJsonLd.getJsonArray("@graph");
+        var framedJsonLd = JsonLd.frame(tempJson.toURI(), contextFile.toURI()).get();
+        var graph = framedJsonLd.getJsonArray("@graph");
         Iterator<JsonValue> values = graph.iterator();
         JsonObject dmpJson = null;
         while (dmpJson == null && values.hasNext()) {
@@ -188,14 +188,15 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
             }
         }
 
-        if (dmpJson != null)
+        if (dmpJson != null) {
             dmpJson = adjustValuesFromRDF(dmpJson);
+        }
 
         return dmpJson;
     }
 
     private JsonObject adjustValuesFromRDF(JsonObject dmpJson) {
-        String jsonString = dmpJson.toString();
+        var jsonString = dmpJson.toString();
 
         // convert integer/decimal without value and type
         jsonString = jsonString.replaceAll("\\{\\s*\"@value\"\\s*:\\s*\"(\\d+)\"\\s*,\\s*\"@type\"\\s*:\\s*\"xsd:integer\"\\s*}", "$1");
@@ -211,12 +212,15 @@ public class DcsoJsonTransformer implements IDcsoJsonTransformer {
         jsonString = jsonString.replaceAll("\\s*\"@type\"\\s*:\\s*\"[A-Za-z/.\\s0-9:_-]*\",?\\s*", "");
         jsonString = jsonString.replaceAll("\\s*\"@type\"\\s*:\\s*\\[(\\s*\"[A-Za-z/.\\s0-9:_-]*\",?)*\\s*]?,?", "");
 
-        return Json.createReader(new StringReader(jsonString)).readObject();
+        try (var reader = Json.createReader(new StringReader(jsonString))) {
+            return reader.readObject();
+        }
     }
 
     private File getResourceAsFile(String resourcePath) throws IOException {
         InputStream resourceAsStream = getResourceAsStream(resourcePath);
         if (resourceAsStream == null) {
+            LOGGER.warn("Could not get InputStream from resource path '{}'", resourcePath);
             return null;
         }
 
