@@ -1,112 +1,144 @@
 # maDMP Evaluation
-[test-link](dcso-json/README.md)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## Introduction
 
-## Header 2
+Machine-actionable data management plans (maDMPs) have, by their very nature, advantages over data management plans that
+are written exclusively in text form.
+By employing maDMPs, not only researches should be able to benefit from their merits, but also research funders receiving
+and assessing the DMPs.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+In its _[Practical Guide to the International Alignment of Research Data Management](https://www.scienceeurope.org/our-resources/practical-guide-to-the-international-alignment-of-research-data-management/)_,
+Science Europe has published an evaluation rubric (section _Guidance for Reviewers_) that provides a solid basis to support
+research (funding) organisations in evaluating DMPs.
+By stating a set of criteria, it helps to ensure submitted DMPs cover required aspects and support [FAIR data management](https://www.go-fair.org/fair-principles/).
 
-### Header 3
+## Covered Criteria
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+The tables in the following subsections depict which criteria from the evaluation rubric we were able to express via SPARQL queries.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+### Data Description and Collection or Re-Use of Existing Data
 
-#### Header 4
+| **Section**                                                                                  | **Requirement**                                                                                                                                                                                                                                                                                     | **Covered** | **Remarks** |
+|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
+| **1a How will new data be produced and/or how will existing data be re-used?**               |                                                                                                                                                                                                                                                                                                     |             |             |
+|                                                                                              | Explain which methodologies or software will be used if new data are collected or produced                                                                                                                                                                                                          | No          |             |
+|                                                                                              |                                                                                                                                                                                                                                                                                                     | No          |             |
+|                                                                                              | Explain how data provenance will be documented.                                                                                                                                                                                                                                                     | No          |             |
+|                                                                                              | Briefly state the reasons if the re-use of any existing data sources has been considered but discarded.                                                                                                                                                                                             | No          |             |
+| **1b What data (for example the kind, formats, and volumes) will be collected or produced?** |                                                                                                                                                                                                                                                                                                     |             |             |
+|                                                                                              | Give details on the kind of data: for example, numeric (databases, spreadsheets), textual (documents), image, audio, video, and/or mixed media.                                                                                                                                                     | No          |             |
+|                                                                                              | Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension (for example pdf, xls, doc, txt, or rdf).                                                                                                                              | No          |             |
+|                                                                                              | Justify the use of certain formats. For example, decisions may be based on staff expertise within the host organisation, a preference for open formats, standards accepted by data repositories, widespread usage within the research community, or on the software or equipment that will be used. | No          |             |
+|                                                                                              | Give preference to open and standard formats as they facilitate sharing and long-term re-use of data (several repositories provide lists of such ‘preferred formats’).                                                                                                                              | No          |             |
+|                                                                                              | Give details on the volumes (they can be expressed in storage space required (bytes), and/or in numbers of objects, files, rows, and columns).                                                                                                                                                      | No          |             |
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### Documentation and Data Quality
 
-##### Header 5
+| **Section**                                                                                                                                 | **Requirement**                                                                                                                                                                                                                                                                                         | **Covered** | **Remarks** |
+|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
+| **2a What metadata and documentation (for example the methodology of data collection and way of organising data) will accompany the data?** |                                                                                                                                                                                                                                                                                                         |             |             |
+|                                                                                                                                             | Indicate which metadata will be provided to help others identify and discover the data.                                                                                                                                                                                                                 | No          |             |
+|                                                                                                                                             | Indicate which metadata standards (for example DDI, TEI, EML, MARC, CMDI) will be used.                                                                                                                                                                                                                 | No          |             |
+|                                                                                                                                             | Use community metadata standards where these are in place.                                                                                                                                                                                                                                              | No          |             |
+|                                                                                                                                             | Indicate how the data will be organised during the project mentioning, for example, conventions, version control, and folder structures. Consistent, well-ordered research data will be easier to find, understand, and re-use.                                                                         | No          |             |
+|                                                                                                                                             | Consider what other documentation is needed to enable re-use. This may include information on the methodology used to collect the data, analytical and procedural information, definitions of variables, units of measurement, and so on.                                                               | No          |             |
+|                                                                                                                                             | Consider how this information will be captured and where it will be recorded (for example in a database with links to each item, a 'readme' text file, file headers, code books, or lab notebooks).                                                                                                     | No          |             |
+| **2b What data quality control measures will be used?**                                                                                     |                                                                                                                                                                                                                                                                                                         |             |             |
+|                                                                                                                                             | Give details on the kind of data: for example, numeric (databases, spreadsheets), textual (documents), image, audio, video, and/or mixed media.                                                                                                                                                         | No          |             |
+|                                                                                                                                             | Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension (for example pdf, xls, doc, txt, or rdf).                                                                                                                                  | No          |             |
+|                                                                                                                                             | Justify the use of certain formats. For example, decisions may be based on staff expertise within the host organisation, a preference for open formats, standards accepted by data repositories, widespread usage within the research community, or on the software or equipment that will be used.     | No          |             |
+|                                                                                                                                             | Give preference to open and standard formats as they facilitate sharing and long-term re-use of data (several repositories provide lists of such ‘preferred formats’).                                                                                                                                  | No          |             |
+|                                                                                                                                             | Give details on the volumes (they can be expressed in storage space required (bytes), and/or in numbers of objects, files, rows, and columns).                                                                                                                                                          | No          |             |
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### Storage and Backup During the Research Process
 
-###### Header 6
+| **Section**                                                                                          | **Requirement**                                                                                                                                                                                                                                                    | **Covered** | **Remarks** |
+|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
+| **3a How will data and metadata be stored and backed up during the research?**                       |                                                                                                                                                                                                                                                                    |             |             |
+|                                                                                                      | Describe where the data will be stored and backed up during research activities and how often the backup will be performed. It is recommended to store data in least at two separate locations.                                                                    | No          |             |
+|                                                                                                      | Give preference to the use of robust, managed storage with automatic backup, such as provided by IT support services of the home institution. Storing data on laptops, stand-alone hard drives, or external storage devices such as USB sticks is not recommended. | No          |             |
+| **3b How will data security and protection of sensitive data be taken care of during the research?** |                                                                                                                                                                                                                                                                    |             |             |
+|                                                                                                      | Explain how the data will be recovered in the event of an incident.                                                                                                                                                                                                | No          |             |
+|                                                                                                      | Explain who will have access to the data during the research and how access to data is controlled, especially in collaborative partnerships.                                                                                                                       | No          |             |
+|                                                                                                      | Consider data protection, particularly if your data is sensitive (for example containing personal data, politically sensitive information, or trade secrets). Describe the main risks and how these will be managed.                                               | No          |             |
+|                                                                                                      | Explain which institutional data protection policies are in place.                                                                                                                                                                                                 | No          |             |
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+### Legal and Ethical Requirements, Code of Conduct
 
-### There's a horizontal rule below this.
+| **Section**                                                                                                                         | **Requirement**                                                                                                                                                                                                         | **Covered** | **Remarks** |
+|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
+| **4a If personal data are processed, how will compliance with legislation on personal data and security be ensured?**               |                                                                                                                                                                                                                         |             |             |
+|                                                                                                                                     | Ensure that when dealing with personal data, data protection laws (for example GDPR) are complied with.  _(including sub-points)_                                                                                       | No          |             |
+| **4b How will other legal issues, such as intellectual property rights and ownership, be managed? What legislation is applicable?** |                                                                                                                                                                                                                         |             |             |
+|                                                                                                                                     | Explain who will be the owner of the data, meaning who will have the rights to control access. _(including sub-points)_                                                                                                 | No          |             |
+|                                                                                                                                     | Indicate whether intellectual property rights (for example Database Directive, sui generis rights) are affected. If so, explain which and how will they be dealt with.                                                  | No          |             |
+|                                                                                                                                     | Indicate whether there are any restrictions on the re-use of third-party data                                                                                                                                           | No          |             |
+| **4c What ethical issues and codes of conduct are there, and how will they be taken into account?**                                 |                                                                                                                                                                                                                         |             |             |
+|                                                                                                                                     | Consider whether ethical issues can affect how data are stored and transferred, who can see or use them, and how long they are kept. Demonstrate awareness of these aspects and respective planning.                    | No          |             |
+|                                                                                                                                     | Follow the national and international codes of conducts and institutional ethical guidelines, and check if ethical review (for example by an ethics committee) is required for data collection in the research project. | No          |             |
 
-* * *
+### Data Sharing and Long-Term Preservation
 
-### Here is an unordered list:
+| **Section**                                                                                                                                    | **Requirement**                                                                                                                                                                                                                                                                                                                                 | **Covered** | **Remarks** |
+|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
+| **5a How and when will data be shared? Are there possible restrictions to data sharing or embargo reasons?**                                   |                                                                                                                                                                                                                                                                                                                                                 |             |             |
+|                                                                                                                                                | Explain how the data will be discoverable and shared (for example by deposit in a trustworthy data repository, indexed in a catalogue, use of a secure data service, direct handling of data requests, or use of another mechanism).                                                                                                            | No          |             |
+|                                                                                                                                                | Outline the plan for data preservation and give information on how long the data will be retained.                                                                                                                                                                                                                                              | No          |             |
+|                                                                                                                                                | Explain when the data will be made available. Indicate the expected timely release. Explain whether exclusive use of the data will be claimed and if so, why and for how long. Indicate whether data sharing will be postponed or restricted for example to publish, protect intellectual property, or seek patents.                            | No          |             |
+|                                                                                                                                                | Indicate who will be able to use the data. If it is necessary to restrict access to certain communities or to apply a data sharing agreement, explain how and why. Explain what action will be taken to overcome or to minimise restrictions.                                                                                                   | No          |             |
+| **5b How will data for preservation be selected, and where data will be preserved long-term (for example a data repository or archive)?**      |                                                                                                                                                                                                                                                                                                                                                 |             |             |
+|                                                                                                                                                | Indicate what data must be retained or destroyed for contractual, legal, or regulatory purposes.                                                                                                                                                                                                                                                | No          |             |
+|                                                                                                                                                | Indicate how it will be decided what data to keep. Describe the data to be preserved long-term.                                                                                                                                                                                                                                                 | No          |             |
+|                                                                                                                                                | Explain the foreseeable research uses (and/ or users) for the data.                                                                                                                                                                                                                                                                             | No          |             |
+|                                                                                                                                                | Indicate where the data will be deposited. If no established repository is proposed, demonstrate in the DMP that the data can be curated effectively beyond the lifetime of the grant. It is recommended to demonstrate that the repositories policies and procedures (including any metadata standards, and costs involved) have been checked. | No          |             |
+| **5c What methods or software tools are needed to access and use data?**                                                                       |                                                                                                                                                                                                                                                                                                                                                 |             |             |
+|                                                                                                                                                | Indicate whether potential users need specific tools to access and (re-)use the data. Consider the sustainability of software needed for accessing the data.                                                                                                                                                                                    | No          |             |
+|                                                                                                                                                | Indicate whether data will be shared via a repository requests handled directly, or whether another mechanism will be used?                                                                                                                                                                                                                     | No          |             |
+| **5d How will the application of a unique and persistent identifier (such as a Digital Object Identifier (DOI)) to each data set be ensured?** | Explain how the data might be re-used in other contexts. Persistent identifiers (PIDs) should be applied so that data can be reliably and efficiently located and referred to. PIDs also help to track citations and re-use.                                                                                                                    |             |             |
+|                                                                                                                                                | Indicate whether a PID for the data will be pursued. Typically, a trustworthy, long-term repository will provide a persistent identifier.                                                                                                                                                                                                       | No          |             |
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+### Data Management Responsibilities and Resources
 
-### And an ordered list:
+| **Section**                                                                                                                                                                       | **Requirement**                                                                                                                                                                                                                                      | **Covered** | **Remarks** |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
+| **6a Who (for example role, position, and institution) will be responsible for data management (i.e. the data steward)?**                                                         |                                                                                                                                                                                                                                                      |             |             |
+|                                                                                                                                                                                   | Outline the roles and responsibilities for data management/ stewardship activities for example data capture, metadata production, data quality, storage and backup, data archiving, and data sharing. Name responsible individual(s) where possible. | No          |             |
+|                                                                                                                                                                                   | For collaborative projects, explain the co-ordination of data management responsibilities across partners                                                                                                                                            | No          |             |
+|                                                                                                                                                                                   | Indicate who is responsible for implementing the DMP, and for ensuring it is reviewed and, if necessary, revised.                                                                                                                                    | No          |             |
+|                                                                                                                                                                                   | Consider regular updates of the DMP.                                                                                                                                                                                                                 | No          |             |
+| **6b What resources (for example financial and time) will be dedicated to data management and ensuring that data will be FAIR (Findable, Accessible, Interoperable, Re-usable)?** |                                                                                                                                                                                                                                                      |             |             |
+|                                                                                                                                                                                   | Explain how the necessary resources (for example time) to prepare the data for sharing/preservation (data curation) have been costed in.                                                                                                             | No          |             |
+|                                                                                                                                                                                   | Carefully consider and justify any resources needed to deliver the data. These may include storage costs, hardware, staff time, costs of preparing data for deposit, and repository charges.                                                         | No          |             |
+|                                                                                                                                                                                   | Indicate whether additional resources will be needed to prepare data for deposit or to meet any charges from data repositories. If yes, explain how much is needed and how such costs will be covered.                                               | No          |             |
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+## Queries
 
-### And a nested list:
+The table below gives a summary of the queries that were developed over the course of this project.
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+| **Query**  | **Description** | **Rubric Section**        | **Remarks** |
+|------------|-----------------|---------------------------|-------------|
+| `01.sparq` |                 | 1a                        |             |
+|            |                 | 1b                        |             |
+|            |                 | 2a                        |             |
+|            |                 | 2b                        |             |
+|            |                 | 3a                        |             |
+|            |                 | 3b                        |             |
+|            |                 | 4a                        |             |
+|            |                 | 4b                        |             |
+|            |                 | 4c                        |             |
+|            |                 | 5a                        |             |
+|            |                 | 5b                        |             |
+|            |                 | 5c                        |             |
+|            |                 | 5d                        |             |
+|            |                 | 6a                        |             |
+|            |                 | 6b                        |             |
 
-### Small image
+## Assessment report
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+In this section, we want to present an aggregated assessment of the maDMPs submitted to the aforementioned
+[Zenodo community](https://zenodo.org/communities/dast-2021/).
+As it is possible to determine the respective authors from the content of an maDMP, we want to clarify that we - of course -
+do not intend to disparage neither the efforts that went into creating the documents nor the authors themselves by this assessment
+in any way.
+We merely utilized the files as realistic test data since they stem from experiments with diverse topics - in order to
+gauge the utility of the SPARQL queries developed during our project.
