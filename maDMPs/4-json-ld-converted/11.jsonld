@@ -1,0 +1,200 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "identifier" : "10.5281/zenodo.4685759",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "DMP",
+    "created" : "2021-04-13T11:12:13.4",
+    "description" : "DMP describing my experiment in which I tried to check whether a correlation exists about meat consumption and the number of deaths caused by lung cancer in Romania, based on data spanning a 28 year period.",
+    "modified" : "2021-04-12T23:10:16.8Z",
+    "title" : "DMP: Analysis of correlation between meat consumption and number of lung cancer deaths in Romania",
+    "ethicalIssuesExist" : "no",
+    "hasContact" : "_:b6",
+    "hasDMPId" : "_:b3",
+    "hasDataset" : [ "_:b4", "_:b5" ],
+    "hasProject" : "_:b2",
+    "language" : "eng"
+  }, {
+    "@id" : "_:b10",
+    "description" : "Final realase implemented using Python to visualize data correlations.",
+    "title" : "Python code",
+    "accessUrl" : "https://github.com/mihaicata/analysis_meat_consumption_lung_cancer_deaths_romania",
+    "dataAccess" : "open",
+    "hasLicense" : "_:b7"
+  }, {
+    "@id" : "_:b11",
+    "identifier" : "10.5281/zenodo.4685759",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b12",
+    "identifier" : "https://orcid.org/0000-0003-3169-225X",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b2",
+    "description" : "This project was developed for educational purposes.",
+    "title" : "Analysis of correlation between meat consumption and number of lung cancer deaths in Romania"
+  }, {
+    "@id" : "_:b3",
+    "identifier" : "http://doi.org/10.5281/zenodo.4685909",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b4",
+    "description" : "Experiment implementation",
+    "issued" : "2021-04-14",
+    "title" : "Source Code",
+    "dataQualityAssurance" : "The code has been reviewed by the author and follows standard naming conventions",
+    "hasDatasetId" : "_:b11",
+    "hasDistribution" : "_:b10",
+    "identifierType" : "source-code",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b5",
+    "description" : "Data which shows yearly measurements of meat consumption per capita and deaths caused by lung cancer.",
+    "issued" : "2021-04-10",
+    "title" : "Meat consumption and lung cancer data in Romania",
+    "hasDatasetId" : "_:b0",
+    "hasDistribution" : "_:b9",
+    "identifierType" : "document",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b6",
+    "mbox" : "mihaicata1205@gmail.com",
+    "name" : "Mihai Cata",
+    "hasContactId" : "_:b12"
+  }, {
+    "@id" : "_:b7",
+    "startDate" : "2019-06-30",
+    "licenseRef" : "https://creativecommons.org/share-your-work/public-domain/cc0/"
+  }, {
+    "@id" : "_:b8",
+    "startDate" : "2021-04-14",
+    "licenseRef" : "https://creativecommons.org/share-your-work/public-domain/cc0/"
+  }, {
+    "@id" : "_:b9",
+    "description" : "CSV file early measurements of meat consumption per capita and deaths caused by lung cancer in Romania, during the period 1990-2017",
+    "format" : "text/csv",
+    "title" : "Raw data",
+    "dcat:byteSize" : 1500,
+    "dataAccess" : "open",
+    "hasLicense" : "_:b8"
+  } ],
+  "@context" : {
+    "identifierType" : {
+      "@id" : "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "hasProject" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasProject",
+      "@type" : "@id"
+    },
+    "ethicalIssuesExist" : {
+      "@id" : "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "hasDMPId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type" : "@id"
+    },
+    "language" : {
+      "@id" : "https://w3id.org/dcso/ns/core#language"
+    },
+    "hasDataset" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasContact" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContact",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "licenseRef" : {
+      "@id" : "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "startDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#startDate"
+    },
+    "hasLicense" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type" : "@id"
+    },
+    "dataAccess" : {
+      "@id" : "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "byteSize" : {
+      "@id" : "http://www.w3.org/ns/dcat#byteSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format"
+    },
+    "sensitiveData" : {
+      "@id" : "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "personalData" : {
+      "@id" : "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "hasDistribution" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type" : "@id"
+    },
+    "hasDatasetId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "dataQualityAssurance" : {
+      "@id" : "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "hasContactId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "accessUrl" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "@vocab" : "https://w3id.org/dcso/ns/core#",
+    "schema" : "http://schema.org/",
+    "dcam" : "http://purl.org/dc/dcam/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "ns" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "dcsx" : "https://w3id.org/dcso/ns/extension#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ex" : "https://w3id.org/dcso/id/example/",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcso" : "https://w3id.org/dcso/ns/core#",
+    "terms" : "http://purl.org/dc/terms/",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "wot" : "http://xmlns.com/wot/0.1/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  }
+}

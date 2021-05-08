@@ -1,0 +1,329 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "mbox" : "moritz.staudinger@tuwien.ac.at",
+    "name" : "Moritz Staudinger",
+    "hasContributorId" : "_:b2",
+    "dcso:role" : {
+      "@list" : [ "Data Steward", "Software Engineer", "Researcher" ]
+    }
+  }, {
+    "@id" : "_:b10",
+    "identifier" : "https://orcid.org/0000-0002-5164-2690",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b11",
+    "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+    "title" : "Zenodo",
+    "pidSystem" : "doi",
+    "storageType" : "repository",
+    "url" : "https://www.re3data.org/repository/r3d100010468"
+  }, {
+    "@id" : "_:b12",
+    "description" : "Result CSV for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets. This datasets contain the ",
+    "issued" : "2021-04-18",
+    "title" : "Result: Analysis of Performances of kNN and Random Forest",
+    "hasDatasetId" : "_:b14",
+    "hasDistribution" : "_:b13",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b13",
+    "description" : "CSV files showing the results of our experiments, especially the accuracy, precision, recall and fbeta scores.",
+    "format" : "text/csv",
+    "title" : "Planned Distribution",
+    "dcat:byteSize" : 45056,
+    "availableUntil" : "2022-04-19",
+    "dataAccess" : "open",
+    "hasHost" : "_:b11",
+    "hasLicense" : "_:b15"
+  }, {
+    "@id" : "_:b14",
+    "identifier" : "https://doi.org/10.5281/zenodo.4699026",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b15",
+    "startDate" : "2021-04-19",
+    "licenseRef" : "https://creativecommons.org/licenses/by/4.0/"
+  }, {
+    "@id" : "_:b16",
+    "description" : "Source Code for Comparison of KNN and Random Forest on Zoo and PhishingWebsites datasets.",
+    "issued" : "2021-04-18",
+    "title" : "Code: Analysis of Performances of kNN and Random Forest",
+    "dataQualityAssurance" : "The code has been peer-reviewed by the authors",
+    "hasDatasetId" : "_:b3",
+    "hasDistribution" : "_:b17",
+    "identifierType" : "software",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b17",
+    "description" : "Final release implemented using sklearn, numpy and Matplotlib",
+    "title" : "Planned Distribution",
+    "accessUrl" : "https://doi.org/10.5281/zenodo.4699023",
+    "dcat:byteSize" : 5242880,
+    "availableUntil" : "2022-04-19",
+    "dataAccess" : "open",
+    "hasHost" : "_:b23",
+    "hasLicense" : "_:b24"
+  }, {
+    "@id" : "_:b2",
+    "identifier" : "https://orcid.org/0000-0002-5164-2690",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b20",
+    "identifier" : "https://orcid.org/0000-0002-7143-0353",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b21",
+    "description" : "One of the challenges faced by our research was the unavailability of reliable training datasets. In fact this challenge faces any researcher in the field. However, although plenty of articles about predicting phishing websites have been disseminated these days, no reliable training dataset has been published publically, may be because there is no agreement in literature on the definitive features that characterize phishing webpages, hence it is difficult to shape a dataset that covers all possible features. In this dataset, we shed light on the important features that have proved to be sound and effective in predicting phishing websites. In addition, we propose some new features.",
+    "issued" : "2012-02-16",
+    "title" : "Dataset Phishing Websites",
+    "hasDatasetId" : "_:b22",
+    "hasMetadata" : "_:b4",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b22",
+    "identifier" : "https://www.openml.org/d/4534",
+    "identifierType" : "url"
+  }, {
+    "@id" : "_:b23",
+    "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+    "title" : "Zenodo",
+    "pidSystem" : "doi",
+    "storageType" : "repository",
+    "url" : "https://www.re3data.org/repository/r3d100010468"
+  }, {
+    "@id" : "_:b24",
+    "startDate" : "2021-04-19",
+    "licenseRef" : "https://opensource.org/licenses/MIT"
+  }, {
+    "@id" : "_:b26",
+    "mbox" : "moritz.staudinger@tuwien.ac.at",
+    "name" : "Moritz Staudinger",
+    "hasContactId" : "_:b10"
+  }, {
+    "@id" : "_:b28",
+    "@type" : "DMP",
+    "created" : "2021-04-18T02:27:00.000Z",
+    "description" : "This machine actionable DMP aims to describe how the data of our Project Analysis of Performances of kNN and Random Forest are archived, how they are reusable and also how they are licensed.",
+    "modified" : "2021-04-18T02:27:00.000Z",
+    "title" : "machine actionable DMP: Analysis of Performances of kNN and Random Forest",
+    "ethicalIssuesExist" : "no",
+    "hasContact" : "_:b26",
+    "hasContributor" : [ "_:b0", "_:b29" ],
+    "hasDMPId" : "_:b6",
+    "hasDataset" : [ "_:b21", "_:b12", "_:b7", "_:b16" ],
+    "hasProject" : "_:b9",
+    "language" : "eng"
+  }, {
+    "@id" : "_:b29",
+    "mbox" : "tobias.hajszan@tuwien.ac.at",
+    "name" : "Tobias Hajszan",
+    "hasContributorId" : "_:b20",
+    "dcso:role" : {
+      "@list" : [ "Software Engineer", "Researcher" ]
+    }
+  }, {
+    "@id" : "_:b3",
+    "identifier" : "https://doi.org/10.5281/zenodo.4699023",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b4",
+    "description" : "This metadata explaines all features in the dataset and how they have been preprocessed.",
+    "title" : "Phishing Websites Metadata",
+    "hasMetadataStandardId" : "_:b5",
+    "language" : "eng"
+  }, {
+    "@id" : "_:b5",
+    "identifier" : "https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Phishing Websites Features.docx",
+    "identifierType" : "url"
+  }, {
+    "@id" : "_:b6",
+    "identifier" : "https://doi.org/10.5281/zenodo.4699051",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b7",
+    "description" : "Zoo dataset is a small dataset with 100 rows and 17 Boolean-valued attributes describing animals.",
+    "issued" : "1990-05-15",
+    "title" : "Dataset Zoo",
+    "hasDatasetId" : "_:b8",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b8",
+    "identifier" : "https://www.openml.org/d/62",
+    "identifierType" : "url"
+  }, {
+    "@id" : "_:b9",
+    "description" : "This project aims to evaluate the performances of different settings for the k-nearest-neighbor algorithm and the random forest algorithm on two publicly available datasets of different sizes. With this project we want to show the differences between a small dataset with only 100 rows and a medium sized dataset with 10.000 rows. Both datasets (Zoo and Phishing Websites) are already preprocessed and do not contain any missing values",
+    "title" : "Analysis of Performances of kNN and Random Forest",
+    "endDate" : "2020-11-15",
+    "startDate" : "2020-10-15"
+  } ],
+  "@context" : {
+    "role" : {
+      "@id" : "https://w3id.org/dcso/ns/core#role",
+      "@type" : "@id"
+    },
+    "hasContributorId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContributorId",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "identifierType" : {
+      "@id" : "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "language" : {
+      "@id" : "https://w3id.org/dcso/ns/core#language"
+    },
+    "hasMetadataStandardId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasMetadataStandardId",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "sensitiveData" : {
+      "@id" : "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "personalData" : {
+      "@id" : "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "hasDatasetId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "startDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#startDate"
+    },
+    "endDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#endDate"
+    },
+    "url" : {
+      "@id" : "https://w3id.org/dcso/ns/core#url"
+    },
+    "storageType" : {
+      "@id" : "https://w3id.org/dcso/ns/core#storageType"
+    },
+    "pidSystem" : {
+      "@id" : "https://w3id.org/dcso/ns/core#pidSystem"
+    },
+    "hasDistribution" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type" : "@id"
+    },
+    "licenseRef" : {
+      "@id" : "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "dataQualityAssurance" : {
+      "@id" : "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "hasMetadata" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasMetadata",
+      "@type" : "@id"
+    },
+    "hasLicense" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type" : "@id"
+    },
+    "hasHost" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasHost",
+      "@type" : "@id"
+    },
+    "dataAccess" : {
+      "@id" : "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "availableUntil" : {
+      "@id" : "https://w3id.org/dcso/ns/core#availableUntil"
+    },
+    "byteSize" : {
+      "@id" : "http://www.w3.org/ns/dcat#byteSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format"
+    },
+    "hasContactId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type" : "@id"
+    },
+    "accessUrl" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "hasContributor" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type" : "@id"
+    },
+    "hasDMPId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type" : "@id"
+    },
+    "hasDataset" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type" : "@id"
+    },
+    "hasContact" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContact",
+      "@type" : "@id"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasProject" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasProject",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "ethicalIssuesExist" : {
+      "@id" : "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "@vocab" : "https://w3id.org/dcso/ns/core#",
+    "schema" : "http://schema.org/",
+    "dcam" : "http://purl.org/dc/dcam/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "ns" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "dcsx" : "https://w3id.org/dcso/ns/extension#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ex" : "https://w3id.org/dcso/id/example/",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcso" : "https://w3id.org/dcso/ns/core#",
+    "terms" : "http://purl.org/dc/terms/",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "wot" : "http://xmlns.com/wot/0.1/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  }
+}

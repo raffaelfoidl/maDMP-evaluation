@@ -1,0 +1,323 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "identifier" : "https://doi.org/10.5281/zenodo.4699565",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b1",
+    "description" : "Final release implemented using sklearn, numpy and matplotlib",
+    "title" : "Planned Distribution",
+    "accessUrl" : "https://doi.org/10.5281/zenodo.4699506",
+    "dcat:byteSize" : 15007744,
+    "availableUntil" : "2022-04-19",
+    "dataAccess" : "open",
+    "hasHost" : "_:b3",
+    "hasLicense" : "_:b2"
+  }, {
+    "@id" : "_:b10",
+    "identifier" : "https://www.kaggle.com/aungpyaeap/fish-market",
+    "identifierType" : "url"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "DMP",
+    "created" : "2021-04-18T18:02:00.000Z",
+    "description" : "This maDMP describes how the data of the project Performance Comparison of kNN and GD is organized, archived, preserved and licensed. It gives information about the project in general, the project members and how it is accessable",
+    "modified" : "2021-04-18T18:02:00.000Z",
+    "title" : "machine actionable DMP: Performance Comparison of kNN and GD",
+    "ethicalIssuesExist" : "no",
+    "hasContact" : "_:b16",
+    "hasContributor" : [ "_:b5", "_:b8" ],
+    "hasDMPId" : "_:b18",
+    "hasDataset" : [ "_:b14", "_:b15", "_:b17", "_:b19", "_:b21" ],
+    "hasProject" : "_:b20",
+    "language" : "eng"
+  }, {
+    "@id" : "_:b14",
+    "description" : "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish (https://www.kaggle.com/aungpyaeap/fish-market) and employee (https://www.openml.org/d/42125) dataset. Preview",
+    "issued" : "2020-04-18",
+    "title" : "Datasets for Performance Comparison of kNN and GD",
+    "hasDatasetId" : "_:b28",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b15",
+    "description" : "The employee dataset is from openml.org and provides annual salary information including gross pay and overtime pay for all active, permanent employees of Montgomery County, MD paid in calendar year 2016. It is composed of 13 features and 9222 rows of data.",
+    "issued" : "2019-09-12",
+    "title" : "Dataset Employees",
+    "hasDatasetId" : "_:b22",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b16",
+    "mbox" : "tobias.hajszan@tuwien.ac.at",
+    "name" : "Tobias Hajszan",
+    "hasContactId" : "_:b24"
+  }, {
+    "@id" : "_:b17",
+    "description" : "The fish data set is a small data and provides records of 7 common different fish species in fish market sales",
+    "issued" : "2019-06-13",
+    "title" : "Dataset Fish",
+    "hasDatasetId" : "_:b10",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b18",
+    "identifier" : "https://doi.org/10.5281/zenodo.4701164",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b19",
+    "description" : "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset.",
+    "issued" : "2021-04-18",
+    "title" : "Results for Performance Comparison of kNN and GD",
+    "hasDatasetId" : "_:b0",
+    "hasDistribution" : "_:b26",
+    "identifierType" : "dataset",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b2",
+    "startDate" : "2021-04-19",
+    "licenseRef" : "https://opensource.org/licenses/lgpl-3.0.html"
+  }, {
+    "@id" : "_:b20",
+    "description" : "This project aims to analyze the difference of two custom written regression algorithms against the state of the art implementation of sklearn. The two algorithms are k-nearest neighbors (KNN) and gradient descend (gd). Both are fully implemented in python. Key points to the comparison are accuracy and efficency of the two algorithms but we will furthermore comapre mse, mae, r2. ",
+    "title" : "Performance Comparison of kNN and GD",
+    "endDate" : "2020-12-10",
+    "startDate" : "2020-11-15"
+  }, {
+    "@id" : "_:b21",
+    "description" : "Source Code for Performance Comparison of kNN and GD",
+    "issued" : "2021-04-18",
+    "title" : "Source Code for Performance Comparison of kNN and GD",
+    "dataQualityAssurance" : "The code has been peer-reviewed by the authors",
+    "hasDatasetId" : "_:b25",
+    "hasDistribution" : "_:b1",
+    "identifierType" : "software",
+    "personalData" : "no",
+    "sensitiveData" : "no"
+  }, {
+    "@id" : "_:b22",
+    "identifier" : "https://www.openml.org/d/42125",
+    "identifierType" : "url"
+  }, {
+    "@id" : "_:b23",
+    "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+    "title" : "Zenodo",
+    "pidSystem" : "doi",
+    "storageType" : "repository",
+    "url" : "https://www.re3data.org/repository/r3d100010468"
+  }, {
+    "@id" : "_:b24",
+    "identifier" : "https://orcid.org/0000-0002-7143-0353",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b25",
+    "identifier" : "https://doi.org/10.5281/zenodo.4701071",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b26",
+    "description" : "CSV files showing the results of the experiments for gd and knn for both datasets. As well as the original datasets used.",
+    "format" : "text/csv",
+    "title" : "Planned Distribution",
+    "dcat:byteSize" : 24576,
+    "availableUntil" : "2022-04-19",
+    "dataAccess" : "open",
+    "hasHost" : "_:b23",
+    "hasLicense" : "_:b27"
+  }, {
+    "@id" : "_:b27",
+    "startDate" : "2021-04-19",
+    "licenseRef" : "https://creativecommons.org/licenses/by/4.0/"
+  }, {
+    "@id" : "_:b28",
+    "identifier" : "https://doi.org/10.5281/zenodo.4699520",
+    "identifierType" : "doi"
+  }, {
+    "@id" : "_:b3",
+    "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+    "title" : "Zenodo",
+    "pidSystem" : "doi",
+    "storageType" : "repository",
+    "url" : "https://www.re3data.org/repository/r3d100010468"
+  }, {
+    "@id" : "_:b4",
+    "identifier" : "https://orcid.org/0000-0002-7143-0353",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b5",
+    "mbox" : "moritz.staudinger@tuwien.ac.at",
+    "name" : "Moritz Staudinger",
+    "hasContributorId" : "_:b7",
+    "dcso:role" : {
+      "@list" : [ "Data Manager" ]
+    }
+  }, {
+    "@id" : "_:b7",
+    "identifier" : "https://orcid.org/0000-0002-5164-2690",
+    "identifierType" : "orcid"
+  }, {
+    "@id" : "_:b8",
+    "mbox" : "tobias.hajszan@tuwien.ac.at",
+    "name" : "Tobias Hajszan",
+    "hasContributorId" : "_:b4",
+    "dcso:role" : {
+      "@list" : [ "Data Manager", "Principal Investigator", "Project Administrator", "Software Engineer" ]
+    }
+  } ],
+  "@context" : {
+    "identifierType" : {
+      "@id" : "https://w3id.org/dcso/ns/core#identifierType"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "hasLicense" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasLicense",
+      "@type" : "@id"
+    },
+    "hasHost" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasHost",
+      "@type" : "@id"
+    },
+    "dataAccess" : {
+      "@id" : "https://w3id.org/dcso/ns/core#dataAccess"
+    },
+    "availableUntil" : {
+      "@id" : "https://w3id.org/dcso/ns/core#availableUntil"
+    },
+    "byteSize" : {
+      "@id" : "http://www.w3.org/ns/dcat#byteSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "accessUrl" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessUrl"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "role" : {
+      "@id" : "https://w3id.org/dcso/ns/core#role",
+      "@type" : "@id"
+    },
+    "hasContributorId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContributorId",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "url" : {
+      "@id" : "https://w3id.org/dcso/ns/core#url"
+    },
+    "storageType" : {
+      "@id" : "https://w3id.org/dcso/ns/core#storageType"
+    },
+    "pidSystem" : {
+      "@id" : "https://w3id.org/dcso/ns/core#pidSystem"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "ethicalIssuesExist" : {
+      "@id" : "https://w3id.org/dcso/ns/core#ethicalIssuesExist"
+    },
+    "language" : {
+      "@id" : "https://w3id.org/dcso/ns/core#language"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "hasDataset" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDataset",
+      "@type" : "@id"
+    },
+    "hasContact" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContact",
+      "@type" : "@id"
+    },
+    "hasContributor" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContributor",
+      "@type" : "@id"
+    },
+    "hasDMPId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDMPId",
+      "@type" : "@id"
+    },
+    "hasProject" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasProject",
+      "@type" : "@id"
+    },
+    "sensitiveData" : {
+      "@id" : "https://w3id.org/dcso/ns/core#sensitiveData"
+    },
+    "personalData" : {
+      "@id" : "https://w3id.org/dcso/ns/core#personalData"
+    },
+    "hasDatasetId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDatasetId",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "licenseRef" : {
+      "@id" : "https://w3id.org/dcso/ns/core#licenseRef"
+    },
+    "startDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#startDate"
+    },
+    "hasDistribution" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasDistribution",
+      "@type" : "@id"
+    },
+    "dataQualityAssurance" : {
+      "@id" : "https://w3id.org/dcso/ns/core#dataQualityAssurance"
+    },
+    "hasContactId" : {
+      "@id" : "https://w3id.org/dcso/ns/core#hasContactId",
+      "@type" : "@id"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format"
+    },
+    "endDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#endDate"
+    },
+    "@vocab" : "https://w3id.org/dcso/ns/core#",
+    "schema" : "http://schema.org/",
+    "dcam" : "http://purl.org/dc/dcam/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "ns" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "dcsx" : "https://w3id.org/dcso/ns/extension#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ex" : "https://w3id.org/dcso/id/example/",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcso" : "https://w3id.org/dcso/ns/core#",
+    "terms" : "http://purl.org/dc/terms/",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "wot" : "http://xmlns.com/wot/0.1/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  }
+}
