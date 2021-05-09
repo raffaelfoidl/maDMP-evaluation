@@ -44,7 +44,7 @@ jobs:
           git branch branchTemp
           git reset --hard main
           git reset --soft branchTemp
-          git commit --amend --no-edit
+          git commit --allow-empty --amend --no-edit
           git branch -D branchTemp
           
       # Verify merge went well (i.e. there are no differences to main)
@@ -62,7 +62,7 @@ jobs:
       - name: Add and Commit Changes
         run: |
           git add ./docs/*
-          git commit -m "Generate Documentation Webpage
+          git commit --allow-empty -m "Generate Documentation Webpage
           
           (based on 'main' commit $GITHUB_SHA)"
           
