@@ -118,6 +118,9 @@ public class DcsoJson implements Callable<Integer> {
      * think of Group ID (not org.example)
      * Maybe some more error handling
      * decide whether we want to check-in the packaged tool
+     * make links to files in READMEs absolute
+     *  e.g. https://github.com/raffaelfoidl/maDMP-evaluation/blob/docs/maDMPs/convert.sh
+     * find way to make links to other sections and other README
      */
     public static void main(String... args) throws IOException {
         var commandLine = new CommandLine(new DcsoJson());

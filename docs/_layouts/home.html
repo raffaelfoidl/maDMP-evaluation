@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<header class="pt-3 mb-3">
+<header>
   {{ content }}
 </header>
 
-<div id="content">
+<div id="content" class="pb-4 pt-3">
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -16,17 +16,12 @@ layout: default
 
   <ul class="list-unstyled m-0">
     {% assign date_format = site.minima_reboot.date_format | default: "%b %-d, %Y" %}
-    {% for post in site.posts %}
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts %}
       <li class="py-2">
-        <span class="text-secondary">{{ post.date | date: date_format }}</span>
-
         <h1 class="mt-1 mb-3 h3">
           <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h1>
-
-        <div class="text-justify">
-          {{ post.excerpt }}
-        </div>
       </li>
     {% endfor %}
   </ul>

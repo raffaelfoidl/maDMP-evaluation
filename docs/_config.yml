@@ -1,15 +1,20 @@
-title: minima-reboot
-author: GitHub User
-email: your-email@domain.com
+title: maDMP Evaluation
+authors:
+  - raffaelfoidl:
+    name: Raffael Foidl
+    email: raffael.foidl@gmail.com
+  - bruggerl:
+    name: Lea Salome Brugger
+    email: test@test.com
 description: >
-  This is a demo page for minima-reboot, a bootstrap-based rewrite of Jekyll's
-  default minima theme. It is simple, lightweight, and responsive.
-  You can use it with your GitHub Pages site by adding the line
-  "theme: aterenin/minima-reboot" to _config.yml.
+  A project to facilitate the automatic assessment of the quality of machine-actionable data management. Especially
+  conceived SPARQL queries to be executed over a DCSO serialization - in in this instance, JSON-LD - allow for making
+  solid assumptions about the informational value of a maDMP.
+
+permalink: /:title.html
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-feed
   - jekyll-redirect-from
 
 minima_reboot:
@@ -18,12 +23,11 @@ minima_reboot:
 
 header_pages:
   - about.md
-  - posts.md
   - github.md
 
 footer_icons:
-  - username: aterenin/minima-reboot/
-    url: https://github.com/aterenin/minima-reboot/
+  - username: raffaelfoidl/maDMP-evaluation/
+    url: https://github.com/raffaelfoidl/maDMP-evaluation
     icon: icon-github.svg
 
 markdown: kramdown
