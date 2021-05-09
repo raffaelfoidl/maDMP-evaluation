@@ -1,0 +1,71 @@
+name: Webpage
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch.
+  push:
+    # Run action only for pushes to main (main branch is source of truth for documentation).
+    branches:
+      - main 
+
+  # Allows you to run this workflow manually from the Actions tab.
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+jobs:
+  # This workflow contains a single job called "build_docs".
+  build_docs:
+    # The type of runner that the job will run on.
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          # Number of commits to fetch. 0 indicates all history for all branches and tags.
+          # Default: 1
+          fetch-depth: '0'
+
+      # Configure commits made during the action to come from GitHub's action bot. 
+      - name: Set up Git Committer Info
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      # Checkout docs branch and reset to most current main.
+      - name: Update to Main
+        run: |
+          # We want to merge the branch 'main' into 'docs' and, in case of conflicts, always take the
+          # contents of 'main'. Source: https://stackoverflow.com/a/4969679
+          # Use "--" suffix for checkout to disambiguate between tracking branch and local file names.
+          git checkout docs --
+          git merge -m "Merge branch 'main' into 'docs'" -s ours main
+          git branch branchTemp
+          git reset --hard main
+          git reset --soft branchTemp
+          git commit --amend --no-edit
+          git branch -D branchTemp
+          
+      # Verify merge went well (i.e. there are no differences to main)
+      - name: Verify Merge
+        run: |
+          # "--exit-code": Like diff(1), exit with 1 if there are difference (otherwise 0); making the job fail in this case.
+          git diff --exit-code HEAD main
+
+      # Re-generate the documentation page.
+      - name: Generate Documentation
+        run: |
+          chmod +x ./generate_docs.sh
+          ./generate_docs.sh
+          
+      - name: Add and Commit Changes
+        run: |
+          git add ./docs/*
+          git commit -m "Generate Documentation Webpage
+          
+          (based on 'main' commit $GITHUB_SHA)"
+          
+      - name: Push Changes
+        run: |
+          git push --force-with-lease

@@ -1,0 +1,1 @@
+date > ./docs/date.txt
