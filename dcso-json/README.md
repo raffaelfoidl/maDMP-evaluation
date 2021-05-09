@@ -7,10 +7,11 @@ the [RDA DMP Common Standard](https://github.com/RDA-DMP-Common/RDA-DMP-Common-S
 representations based on the DMP Common Standard
 Ontology ([DCSO](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/ontologies)).
 
-It supports the following conversion directions:
+It supports the following conversions:
 
-* JSON => JSON-LD/Turtle
-* JSON-LD/Turtle => JSON
+* JSON => JSON-LD, JSON => Turtle
+* JSON-LD => JSON, JSON-LD => Turtle
+* Turtle => JSON, Turtle => JSON-LD
 
 The tool was initially created by [Fajar J. Ekaputra](https://github.com/fekaputra) and is published
 at [https://github.com/fekaputra/dcso-json](https://github.com/fekaputra/dcso-json). We added a command line interface
@@ -19,9 +20,11 @@ pieces of business logic.
 
 **Disclaimer:** We have not been able to successfully run this tool from a Windows machine or from a directory with
 spaces in its path (neither the initial tool nor our customization). Since this is not of high importance for our goal
-(it is only the first preprocessing step), we did not investigate these issues any further.
+(it is only the first preprocessing step), we did not investigate these issues any further. However, in order to provide
+this tool for a wider audience anyway, we have also created a `Dockerfile` such that `dcsojson` can be used in an isolated
+container that runs in a supported environment.
 
-## Usage
+## Usage (Local)
 
 You can retrieve the integrated help message by invoking the program with the `--help` argument. It provides extensive
 information about the program and execution modalities:
@@ -31,7 +34,7 @@ Usage: dcsojson [-hV] -i=<inputFormat> -o=<outputFormat> [--] <inputFile>
                 <outputFile>
 Transforms JSON maDMPs to DCSO (JSON-LD/Turtle) and vice versa.
 The following conversions are valid:
-JSON => JSON-LD, JSON => Turtle, JSON-LD => JSON, Turtle => JSON.
+JSON => JSON-LD, JSON => Turtle; JSON-LD => JSON, JSON-LD => Turtle; Turtle => JSON, Turtle => JSON-LD.
 
 Positional Parameters:
       <inputFile>    The maDMP file from which a converted representation
@@ -67,6 +70,10 @@ java -jar dcso-json-1.0-jar --input-format=json --output-format=json-ld maDmp.js
 
 The logging can be configured in `src/main/resources/simplelogger.properties`.
 
+## Usage (Docker)
+
+__TODO__
+
 ## Build Lifecycle Customizations
 
 The build is based on `maven`. The following custom behaviours are achieved via build plugins:
@@ -76,36 +83,6 @@ The build is based on `maven`. The following custom behaviours are achieved via 
 * `install`: Distribute packaged files with dependencies to ...
 
 The files to be deployed are represented by the files produced by the `package` phase.
-
-## Methodology (to be moved to main readme)
-
-* get maDMPs from [Zenodo](https://zenodo.org/communities/dast-2021)
-* preprocessing (uniform indenting + formatting) + ensuring schema conformity
-    * <https://www.jsonschemavalidator.net/>
-    * 4: removed line breaks in JSON string
-    * 6: some closing brackets were missing + the object hierarchy in the `distribution` field was not correct (only a guess as to the author's intentions could be made)
-
-```text
-Found 2 error(s)
-Message: Required properties are missing from object: license_ref, start_date.
-Schema path: https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON/JSON-schema/1.1#/properties/dmp/properties/dataset/items/properties/distribution/items/properties/license/items/required
-
-Message: Required properties are missing from object: ethical_issues_exist, language, modified.
-Schema path: https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON/JSON-schema/1.1#/properties/dmp/required
-```
-
-  * 10: 56 errors (mostly "Expected Array but got Object") **TODO**
-    * mostly objects were used instead of arrays with one element
-    * string instead of numerical values
-    * two of the four data sets had no `dataset_id` field
-    * used datetime format for date field
-  * 11: 2021-04-12T25:10:16.8 -> 2021-04-12T25:10:16.8Z
-  * 2021-04-12T25:10:16.8Z -> 2021-04-12T23:10:16.8Z (a day does not have more than 24 hours)
-* normalization (achieve same, alphabetical key sorting using tool)
-* convert to JSON-LD
-* import into GraphDB
-* formulate SPARQL queries, based on (link to evaluation Rubric)
-* report
 
 ## License
 
