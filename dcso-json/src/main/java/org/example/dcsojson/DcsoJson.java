@@ -106,22 +106,6 @@ public class DcsoJson implements Callable<Integer> {
         return 3;
     }
 
-    /* TODO:
-     * more thorough (or any) Logging
-     * repository metadata (GitHub)
-     * Documentation (code, readme, root readme, goals, methodology, outputs, file structure, ...)
-     * dockerization to make conversion to json-ld portable?
-     *  -> known issue: when converting JSON -> JSON-LD/Turtle -> JSON, array elements with arity 1 have been
-     *     converted to regular objects ({"a": [{"b": "c"}]} -> {"a": {"b": "c"}}) (JSON is not equivalent to initial
-     *     file anymore); would need post-processing/investigation, but not inherently relevant for this project (especially
-     *     since Dockerization is aspired)
-     * think of Group ID (not org.example)
-     * Maybe some more error handling
-     * decide whether we want to check-in the packaged tool
-     * make links to files in READMEs absolute
-     *  e.g. https://github.com/raffaelfoidl/maDMP-evaluation/blob/docs/maDMPs/convert.sh
-     * find way to make links to other sections and other README
-     */
     public static void main(String... args) throws IOException {
         var commandLine = new CommandLine(new DcsoJson());
         commandLine.setCaseInsensitiveEnumValuesAllowed(true);
