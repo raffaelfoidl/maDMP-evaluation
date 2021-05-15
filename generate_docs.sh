@@ -1,4 +1,4 @@
-﻿# $1: file to edit
+# $1: file to edit
 # $2: text to insert at start of file
 function insertTextAtBeginning() {
   sed -i "1s/^/$2/" "$1"
