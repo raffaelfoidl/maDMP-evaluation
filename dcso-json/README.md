@@ -72,7 +72,17 @@ The logging can be configured in `src/main/resources/simplelogger.properties`.
 
 ## Usage (Docker)
 
-__TODO__
+Build : `docker build -t dcso_json .`
+
+Run (1): `docker run --name=dcso_json_container --env-file=.env dcso_json`
+
+Run (2): `docker run --name=dcso_json_container --env INPUT_FORMAT=json --env OUTPUT_FORMAT=json-ld --env INPUT_FILE=file.json --env OUTPUT_FILE=file.jsonld dcso_json`
+
+Run (3): `docker run --name=dcso_json_container --env-file=.env --env OUTPUT_FILE=newFile.jsonld dcso_json`
+-> `--env` overrides values supplied via `--env-file`
+
+Retrieve: `docker cp dcso_json_container:/dcso-json/output/. ./output`
+
 
 ## Build Lifecycle Customizations
 
