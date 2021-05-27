@@ -26,7 +26,7 @@ queries that are meant to automatically give an initial assessment of the respec
 
 ```shell
 .
-├── bin
+├── app-bin
 ├── dcso-json
 │   ├── src
 │   ├── target
@@ -45,7 +45,7 @@ queries that are meant to automatically give an initial assessment of the respec
 └── generate_docs.sh
 ```
 
-* `bin`: distribution directory of the `dcso-json` tool (built and distributed upon `mvn install`, refer to
+* `app-bin`: distribution directory of the `dcso-json` tool (built and distributed upon `mvn install`, refer to
   is [README](dcso-json/README.md) for more information)
 * `dcso-json`: the source code of the `dcso-json` tool, bundled as a `maven` project
 * `docs`: the content of the [documentation webpage](https://raffaelfoidl.github.io/maDMP-evaluation/); served via

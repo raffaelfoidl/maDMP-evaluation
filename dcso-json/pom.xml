@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
         <script.dependency.dir>libs</script.dependency.dir>
-        <script.distribution.dir>${project.basedir}/../bin</script.distribution.dir>
+        <script.distribution.dir>${project.basedir}/../app-bin</script.distribution.dir>
     </properties>
 
     <dependencies>

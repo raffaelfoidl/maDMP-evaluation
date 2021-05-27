@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # an array of all versions of the dcso-json executable jar in the correct directory
-CONVERTER_PATTERN=("../bin/dcso-json-"*".jar")
+CONVERTER_PATTERN=("../app-bin/dcso-json-"*".jar")
 
 # $1: input-format (json|json-ld|turtle)
 # $2: input file path
@@ -67,7 +67,7 @@ if ls "${CONVERTER_PATTERN[@]}" 1>/dev/null 2>&1; then
 else
   echo "The converter \"dcsojson\" does not seem to have been built yet."
   echo "Please change into the \"../dcso-json\" directory and execute the maven install using \"mvn clean install\"."
-  echo "The executable jar will then be placed into the \"../bin\" directory."
+  echo "The executable jar will then be placed into the \"../app-bin\" directory."
   echo "Afterwards, you may execute this script again."
   exit 1
 fi
