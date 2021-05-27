@@ -21,8 +21,8 @@ pieces of business logic.
 **Disclaimer:** We have not been able to successfully run this tool from a Windows machine or from a directory with
 spaces in its path (neither the initial tool nor our customization). Since this is not of high importance for our goal
 (it is only the first preprocessing step), we did not investigate these issues any further. However, in order to provide
-this tool for a wider audience anyway, we have also created a `Dockerfile` such that `dcsojson` can be used in an isolated
-container that runs in a supported environment.
+this tool for a wider audience anyway, we have also created a `Dockerfile` such that `dcsojson` can be used in an
+isolated container that runs in a supported environment.
 
 ## Usage (Local)
 
@@ -76,13 +76,13 @@ Build : `docker build -t dcso_json .`
 
 Run (1): `docker run --name=dcso_json_container --env-file=.env dcso_json`
 
-Run (2): `docker run --name=dcso_json_container --env INPUT_FORMAT=json --env OUTPUT_FORMAT=json-ld --env INPUT_FILE=file.json --env OUTPUT_FILE=file.jsonld dcso_json`
+Run (
+2): `docker run --name=dcso_json_container --env INPUT_FORMAT=json --env OUTPUT_FORMAT=json-ld --env INPUT_FILE=file.json --env OUTPUT_FILE=file.jsonld dcso_json`
 
 Run (3): `docker run --name=dcso_json_container --env-file=.env --env OUTPUT_FILE=newFile.jsonld dcso_json`
 -> `--env` overrides values supplied via `--env-file`
 
 Retrieve: `docker cp dcso_json_container:/dcso-json/output/. ./output`
-
 
 ## Build Lifecycle Customizations
 
@@ -93,6 +93,39 @@ The build is based on `maven`. The following custom behaviours are achieved via 
 * `install`: Distribute packaged files with dependencies to ...
 
 The files to be deployed are represented by the files produced by the `package` phase.
+
+## Known issues
+
+### Transformations are not bijective
+
+The operations performed by this tool are only surjective, but not injective. Hence, they are not reversible in general
+and we must not suppose the relationship `f^(-1)[f(x)] = x` holds for every possible input, where `f^(-1)` denotes the (
+assumed, factually non-existent) inverse function of `f(x)`. For example, when `f(x) = "conversion from JSON to JSON-LD`
+, then `f^(-1)[x] = "conversion from JSON-LD to JSON`.
+
+More specifically, when converting `JSON -> JSON-LD/Turtle -> JSON`, array elements with arity 1 are converted to
+regular objects: `{"a": [{"b": "c"}]} -> {"a": {"b": "c"}}`. This leads to the resulting JSON not being equivalent to
+the initial file.
+
+Solving this would probably require some post-processing based on assumptions that can be safely made with knowledge
+about the maDMP JSON schema. Whenever an object is encountered during the traversal of the result JSON tree that -
+according to the schema - must be an array, it could be transformed into a single-element
+array (`{"a": {"b": "c"}} -> {"a": [{"b": "c"}]}`).
+
+A solution without making any assumption based on the publicly available maDMP schema would probably be less trivial and
+involve some further exploration.
+
+### Spaces in paths cause problems
+
+As already noted in the [Introduction](#Introduction), executing the program from a directory with spaces in its path
+causes problems, both on Windows and Unix-like machines.
+
+We suspect the context file should not have spaces in its path because it can cause troubles for the resulting IRI(s).
+However, we are not aware whether this is a bug in any of the project's dependencies, a bug in the project's own code or
+if the actual reason is something entirely different.
+
+Since this issue was not a major hindrance for the main project of this repository, we did not want to spend too much
+time to dive into this issue because it undoubtedly would require some additional investigating.
 
 ## License
 
