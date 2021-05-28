@@ -72,17 +72,86 @@ The logging can be configured in `src/main/resources/simplelogger.properties`.
 
 ## Usage (Docker)
 
-Build : `docker build -t dcso_json .`
+In order to execute the tool using docker, you need to build the docker image, run it as a container and retrieve the
+generated file from the container.
 
-Run (1): `docker run --name=dcso_json_container --env-file=.env dcso_json`
+The commands below run the container, the tool and leave behind the result files.
 
-Run (
-2): `docker run --name=dcso_json_container --env INPUT_FORMAT=json --env OUTPUT_FORMAT=json-ld --env INPUT_FILE=file.json --env OUTPUT_FILE=file.jsonld dcso_json`
+**Note:** Input files to be copied into the container **must** reside within the `input` directory.
 
-Run (3): `docker run --name=dcso_json_container --env-file=.env --env OUTPUT_FILE=newFile.jsonld dcso_json`
--> `--env` overrides values supplied via `--env-file`
+### Build Image
 
-Retrieve: `docker cp dcso_json_container:/dcso-json/output/. ./output`
+In order to build the docker image, execute the following command from the `dcso-json` directory (don't forget the
+dot `.` at the end):
+
+```shell
+docker build -t dcso_json .
+```
+
+This builds a docker image with the name `dcso_json` based on the [Dockerfile](Dockerfile) contained within
+this `dcso-json`
+directory.
+
+**Note:** After new files have been added to the `input` directory, the image has to be re-built using above command. If
+nothing else changes (i.e. source code etc.), almost everything will be cached, and the image rebuild will be quite fix.
+
+### Run Container
+
+As described above, acts upon four input parameters: `inputFormat`, `outputFormat`, `inputFile`, `outputFile`. These are
+supplied via environment variables. There are essentially three options to define them - via an environment
+file (`.env`), vie command-line parameters or as a mixture of both (i.e. specifying variables in an environment file and
+overriding specific variables via the command-line invocation).
+
+#### Environment File
+
+The [.env](.env) file contains the environment variables that will be used by the container. The environment file is
+specified with the `--env-file` flag.
+
+The following command runs the image `dcso_json` as a container with the name `dcso_json_container`:
+
+```shell
+docker run --name=dcso_json_container --env-file=.env dcso_json
+```
+
+#### Command-Line Options
+
+The command-line flag `--env` is applied multiple times in to specify environment variables:
+
+```shell
+docker run --name=dcso_json_container --env INPUT_FORMAT=json --env OUTPUT_FORMAT=json-ld --env INPUT_FILE=file.json --env OUTPUT_FILE=file.jsonld dcso_json
+```
+
+#### Environment File with Overriding Command-Line Options
+
+You can also deposit some never-changing environment variables in an environment file and override specific ones with
+the help of the `--env` flag. Note that variables specified by `--env` always take precedence over ones specified in
+environment files.
+
+```shell
+docker run --name=dcso_json_container --env-file=.env --env OUTPUT_FILE=newFile.jsonld dcso_json
+```
+
+### Retrieve Files from Container
+
+After the tool was executed successfully, the result file can be retrieved by copying it from the container onto the
+host machine.
+
+```shell
+docker cp dcso_json_container:/dcso-json/output/. ./output
+```
+
+This copies the contents of the `output` directory in the container (will contain only one file, the output file) into
+the `output` directory on the host machine (overwriting possibly pre-existing files).
+
+### Cleanup (optional)
+
+In order to avoid clashes with image and container names, one can simply give different names to the image and
+container. Another possibility is to remove the container and afterwards the image.
+
+```shell
+docker container rm dcso_json_container
+docker image rm dcso_json
+```
 
 ## Build Lifecycle Customizations
 
