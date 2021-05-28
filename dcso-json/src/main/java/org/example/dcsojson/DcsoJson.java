@@ -78,24 +78,24 @@ public class DcsoJson implements Callable<Integer> {
 
     private int validateInputs() {
         if (!inputFile.exists()) {
-            return err("Invalid value for parameter 'inputFile': File at \"%s\" does not exist.%n", inputFile.toString());
+            return err("Invalid value for parameter 'inputFile': File at \"{}\" does not exist.\n", inputFile.toString());
         }
 
         try {
             inputFile.toPath().toAbsolutePath();
         } catch (InvalidPathException e) {
-            return err("Invalid value for parameter 'inputFile': Path \"%s\" does not represent a valid, accessible path (%s).%n", inputFile.toString(), e.getMessage());
+            return err("Invalid value for parameter 'inputFile': Path \"{}\" does not represent a valid, accessible path ({}).\n", inputFile.toString(), e.getMessage());
         }
 
         try {
             outputFile.toPath().toAbsolutePath();
         } catch (InvalidPathException e) {
-            return err("Invalid value for parameter 'outputFile': Path \"%s\" does not represent a valid, accessible path (%s).%n", outputFile.toString(), e.getMessage());
+            return err("Invalid value for parameter 'outputFile': Path \"{}\" does not represent a valid, accessible path ({}).\n", outputFile.toString(), e.getMessage());
         }
 
         var conversion = inputFormat.convertTo(outputFormat);
         if (!conversions.containsKey(conversion)) {
-            return err("Invalid combination of values for options '--input-format', '--output-format': The conversion \"%s\" is not supported.%n", conversion);
+            return err("Invalid combination of values for options '--input-format', '--output-format': The conversion \"{}\" is not supported.\n", conversion);
         }
 
         return 0;

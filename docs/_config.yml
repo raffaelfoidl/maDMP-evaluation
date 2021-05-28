@@ -2,10 +2,10 @@ title: maDMP Evaluation
 authors:
   - raffaelfoidl:
     name: Raffael Foidl
-    email: raffael.foidl@gmail.com
+    email: raffael.foidl@student.tuwien.ac.at
   - bruggerl:
     name: Lea Salome Brugger
-    email: test@test.com
+    email: lea.brugger@student.tuwien.ac.at
 description: >
   A project to facilitate the automatic assessment of the quality of machine-actionable data management. Especially
   conceived SPARQL queries to be executed over a DCSO serialization - in in this instance, JSON-LD - allow for making

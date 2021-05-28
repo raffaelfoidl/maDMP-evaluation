@@ -21,8 +21,8 @@ pieces of business logic.
 **Disclaimer:** We have not been able to successfully run this tool from a Windows machine or from a directory with
 spaces in its path (neither the initial tool nor our customization). Since this is not of high importance for our goal
 (it is only the first preprocessing step), we did not investigate these issues any further. However, in order to provide
-this tool for a wider audience anyway, we have also created a `Dockerfile` such that `dcsojson` can be used in an isolated
-container that runs in a supported environment.
+this tool for a wider audience anyway, we have also created a `Dockerfile` such that `dcsojson` can be used in an
+isolated container that runs in a supported environment.
 
 ## Usage (Local)
 
@@ -72,7 +72,86 @@ The logging can be configured in `src/main/resources/simplelogger.properties`.
 
 ## Usage (Docker)
 
-__TODO__
+In order to execute the tool using docker, you need to build the docker image, run it as a container and retrieve the
+generated file from the container.
+
+The commands below run the container, the tool and leave behind the result files.
+
+**Note:** Input files to be copied into the container **must** reside within the `input` directory.
+
+### Build Image
+
+In order to build the docker image, execute the following command from the `dcso-json` directory (don't forget the
+dot `.` at the end):
+
+```shell
+docker build -t dcso_json .
+```
+
+This builds a docker image with the name `dcso_json` based on the [Dockerfile](Dockerfile) contained within
+this `dcso-json`
+directory.
+
+**Note:** After new files have been added to the `input` directory, the image has to be re-built using above command. If
+nothing else changes (i.e. source code etc.), almost everything will be cached, and the image rebuild will be quite fix.
+
+### Run Container
+
+As described above, acts upon four input parameters: `inputFormat`, `outputFormat`, `inputFile`, `outputFile`. These are
+supplied via environment variables. There are essentially three options to define them - via an environment
+file (`.env`), vie command-line parameters or as a mixture of both (i.e. specifying variables in an environment file and
+overriding specific variables via the command-line invocation).
+
+#### Environment File
+
+The [.env](.env) file contains the environment variables that will be used by the container. The environment file is
+specified with the `--env-file` flag.
+
+The following command runs the image `dcso_json` as a container with the name `dcso_json_container`:
+
+```shell
+docker run --name=dcso_json_container --env-file=.env dcso_json
+```
+
+#### Command-Line Options
+
+The command-line flag `--env` is applied multiple times in to specify environment variables:
+
+```shell
+docker run --name=dcso_json_container --env INPUT_FORMAT=json --env OUTPUT_FORMAT=json-ld --env INPUT_FILE=file.json --env OUTPUT_FILE=file.jsonld dcso_json
+```
+
+#### Environment File with Overriding Command-Line Options
+
+You can also deposit some never-changing environment variables in an environment file and override specific ones with
+the help of the `--env` flag. Note that variables specified by `--env` always take precedence over ones specified in
+environment files.
+
+```shell
+docker run --name=dcso_json_container --env-file=.env --env OUTPUT_FILE=newFile.jsonld dcso_json
+```
+
+### Retrieve Files from Container
+
+After the tool was executed successfully, the result file can be retrieved by copying it from the container onto the
+host machine.
+
+```shell
+docker cp dcso_json_container:/dcso-json/output/. ./output
+```
+
+This copies the contents of the `output` directory in the container (will contain only one file, the output file) into
+the `output` directory on the host machine (overwriting possibly pre-existing files).
+
+### Cleanup (optional)
+
+In order to avoid clashes with image and container names, one can simply give different names to the image and
+container. Another possibility is to remove the container and afterwards the image.
+
+```shell
+docker container rm dcso_json_container
+docker image rm dcso_json
+```
 
 ## Build Lifecycle Customizations
 
@@ -83,6 +162,39 @@ The build is based on `maven`. The following custom behaviours are achieved via 
 * `install`: Distribute packaged files with dependencies to ...
 
 The files to be deployed are represented by the files produced by the `package` phase.
+
+## Known issues
+
+### Transformations are not bijective
+
+The operations performed by this tool are only surjective, but not injective. Hence, they are not reversible in general
+and we must not suppose the relationship `f^(-1)[f(x)] = x` holds for every possible input, where `f^(-1)` denotes the (
+assumed, factually non-existent) inverse function of `f(x)`. For example, when `f(x) = "conversion from JSON to JSON-LD`
+, then `f^(-1)[x] = "conversion from JSON-LD to JSON`.
+
+More specifically, when converting `JSON -> JSON-LD/Turtle -> JSON`, array elements with arity 1 are converted to
+regular objects: `{"a": [{"b": "c"}]} -> {"a": {"b": "c"}}`. This leads to the resulting JSON not being equivalent to
+the initial file.
+
+Solving this would probably require some post-processing based on assumptions that can be safely made with knowledge
+about the maDMP JSON schema. Whenever an object is encountered during the traversal of the result JSON tree that -
+according to the schema - must be an array, it could be transformed into a single-element
+array (`{"a": {"b": "c"}} -> {"a": [{"b": "c"}]}`).
+
+A solution without making any assumption based on the publicly available maDMP schema would probably be less trivial and
+involve some further exploration.
+
+### Spaces in paths cause problems
+
+As already noted in the [Introduction](#Introduction), executing the program from a directory with spaces in its path
+causes problems, both on Windows and Unix-like machines.
+
+We suspect the context file should not have spaces in its path because it can cause troubles for the resulting IRI(s).
+However, we are not aware whether this is a bug in any of the project's dependencies, a bug in the project's own code or
+if the actual reason is something entirely different.
+
+Since this issue was not a major hindrance for the main project of this repository, we did not want to spend too much
+time to dive into this issue because it undoubtedly would require some additional investigating.
 
 ## License
 

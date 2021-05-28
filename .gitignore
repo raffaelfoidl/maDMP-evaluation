@@ -1,6 +1,6 @@
-/bin/libs
-/bin/*
-!/bin/.gitkeep
+/app-bin/libs
+/app-bin/*
+!/app-bin/.gitkeep
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,java,maven
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,java,maven
