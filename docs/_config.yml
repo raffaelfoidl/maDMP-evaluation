@@ -8,7 +8,7 @@ authors:
     email: lea.brugger@student.tuwien.ac.at
 description: >
   A project to facilitate the automatic assessment of the quality of machine-actionable data management. Especially
-  conceived SPARQL queries to be executed over a DCSO serialization - in in this instance, JSON-LD - allow for making
+  conceived SPARQL queries to be executed over a DCSO serialization - in this instance, JSON-LD - allow for making
   solid assumptions about the informational value of a maDMP.
 
 permalink: /:title.html
