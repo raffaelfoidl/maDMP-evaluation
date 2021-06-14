@@ -46,7 +46,7 @@ queries that are meant to automatically give an initial assessment of the respec
 ```
 
 * `app-bin`: distribution directory of the `dcso-json` tool (built and distributed upon `mvn install`, refer to
-  is [README](dcso-json/README.md) for more information)
+  [README](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/README.md) for more information)
 * `dcso-json`: the source code of the `dcso-json` tool, bundled as a `maven` project
 * `docs`: the content of the [documentation webpage](https://raffaelfoidl.github.io/maDMP-evaluation/); served via
   GitHub pages and the static site generator [Jekyll](https://jekyllrb.com/).
@@ -73,11 +73,8 @@ Community [Data Stewardship 2021 - DMPs](https://zenodo.org/communities/dast-202
 __TODO: Create Image illustrating the Process.__
 
 1. Start with raw maDMPs from the Zenodo Community.
-2.
-
-Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
+2. Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
 conformity, uniform formatting and indenting
-
 3. Normalization: Establish uniform, alphabetical sorting of JSON properties.
 4. Convert JSON/Turtle maDMPs to
    a [DCSO](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/ontologies) instance in a JSON-LD
@@ -102,9 +99,9 @@ Regarding step 2, the following changes had to be made in order to achieve schem
     * correction regarding incorrect time value: `2021-04-12T25:10:16.8Z` -> `2021-04-12T23:10:16.8Z` (a day does not
       have more than 24 hours)
 
-Step 4 has been automatically executed via the [convert.sh](maDMPs/convert.sh) shell script. For more information
+Step 4 has been automatically executed via the [convert.sh](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/maDMPs/convert.sh) shell script. For more information
 on `dcso-json`
-tool invoked by this script, please refer to the [dcso-json README](dcso-json/README.md).
+tool invoked by this script, please refer to the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html).
 
 ### Processing of the Semantic maDMP Representation
 
@@ -114,7 +111,7 @@ subsets of the data into a customized view (`SELECT` queries) as well as ones th
 are satisfied (`ASK` queries).
 
 A more in-depth, but still summarized, overview of the queries we created can be observed in [Queries](#queries). The
-queries themselves are available in the [queries](queries) directory.
+queries themselves are available in the [queries](https://github.com/raffaelfoidl/maDMP-evaluation/tree/main/queries) directory.
 
 The subsection below illustrates how we imported the JSON-LD data into a locally installed GraphDB instance.
 
