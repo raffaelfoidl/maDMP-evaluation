@@ -68,7 +68,7 @@ representation (the context is directly embedded into the file) `maDmp.jsonld`, 
 java -jar dcso-json-1.0-jar --input-format=json --output-format=json-ld maDmp.json maDmp.jsonld
 ```
 
-The logging can be configured in `src/main/resources/simplelogger.properties`.
+The logging can be configured in [src/main/resources/simplelogger.properties](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/dcso-json/src/main/resources/simplelogger.properties).
 
 ## Usage (Docker)
 
@@ -157,13 +157,11 @@ docker image rm dcso_json
 
 The build is based on `maven`. The following custom behaviours are achieved via build plugins:
 
-* `package`: Package application, place JAR in `lib/` folder...
-* `clean`: Remove files from distribution location...
-* `install`: Distribute packaged files with dependencies to ...
-
-The files to be deployed are represented by the files produced by the `package` phase.
-
-**TODO** complete explanations
+| Phase     | Action                                                                                                                                                                                                        |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `clean`   | In addition to the removing the files generated during build-time, also deletes the distributed files residing within `../app-bin` - excluding the `.gitkeep` file.                                   |
+| `package` | Packages not only the application itself as JAR file, but also places its (transitive) dependencies into a `libs` folder and adjusts the class path such that the resulting JAR can be executed using `java`. |
+| `install` | Copies the artifacts created during `package` (i.e. the application including its dependencies) to the `../app-bin` directory.                                                                                |
 
 ## Known issues
 
