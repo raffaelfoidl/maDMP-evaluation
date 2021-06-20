@@ -1,5 +1,7 @@
 # maDMP Evaluation
 
+[![DOI](https://zenodo.org/badge/364735916.svg)](https://zenodo.org/badge/latestdoi/364735916)
+
 Have a look at our project documentation
 at [https://raffaelfoidl.github.io/maDMP-evaluation/](https://raffaelfoidl.github.io/maDMP-evaluation/).
 
@@ -45,23 +47,23 @@ queries that are meant to automatically give an initial assessment of the respec
 └── generate_docs.sh
 ```
 
-* `app-bin`: distribution directory of the `dcso-json` tool (built and distributed upon `mvn install`, refer to
-  [README](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/README.md) for more information)
+* `app-bin`: distribution directory of the `dcso-json` tool (built and distributed upon `mvn install`, refer to its
+  [documentation](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html) for more information)
 * `dcso-json`: the source code of the `dcso-json` tool, bundled as a `maven` project
 * `docs`: the content of the [documentation webpage](https://raffaelfoidl.github.io/maDMP-evaluation/); served via
   GitHub pages and the static site generator [Jekyll](https://jekyllrb.com/).
 * `maDMPs`: different versions of the machine-actionable DMPs assessed during this project, from raw input data to
   normalized JSON-LD [DCSO](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/ontologies)
-  serializations.
+  serializations (see also [Methodology](https://raffaelfoidl.github.io/maDMP-evaluation/0003.html)).
 * `queries`: SPARQL queries conceived during this project to assess the quality of maDMPs
 * `generate_docs.sh`: regenerates the content of the `docs` folder based on the README files in this repository
 
 The regeneration of the documentation webpage is triggered and automatically executed on the `docs` branch using a
 GitHub Action at every push to the `main` branch. In other words, the `docs` branch is the source of truth
 for [https://raffaelfoidl.github.io/maDMP-evaluation/](https://raffaelfoidl.github.io/maDMP-evaluation/)
-and is updated at every push to `main`.
+and is updated at every push to `main` using a dedicated [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
 
-The `docs` folder on the `main` branch is only updated at releases (i.e. commits with a release tag).
+The `docs` folder on the `main` branch is only updated at sporadically, e.g. at releases (commits with a release tag).
 
 ## Methodology
 
@@ -69,8 +71,6 @@ The `docs` folder on the `main` branch is only updated at releases (i.e. commits
 
 The maDMPs we use as raw input data for our project are taken directly from the Zenodo
 Community [Data Stewardship 2021 - DMPs](https://zenodo.org/communities/dast-2021/).
-
-__TODO: Create Image illustrating the Process.__
 
 1. Start with raw maDMPs from the Zenodo Community.
 2. Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
@@ -81,10 +81,10 @@ conformity, uniform formatting and indenting
    serialization using the `dcsojon` tool.
 5. Apply postprocessing to the JSON-LD maDMPs (again, establish uniform, alphabetical sorting of JSON-LD properties).
 
-Regarding step 2, the following changes had to be made in order to achieve schema conformity:
+Regarding step 2, the following changes had to be made in order to achieve schema conformity for all input maDMPs:
 
 * `4.json`
-    * removed line breaks in JSON string literals
+    * removed line breaks within JSON string literals
 * `6.json`
     * some closing brackets were missing
     * object nesting hierarchy in the `distribution` field was incorrect (we could only make a guess as to the author's
@@ -99,36 +99,28 @@ Regarding step 2, the following changes had to be made in order to achieve schem
     * correction regarding incorrect time value: `2021-04-12T25:10:16.8Z` -> `2021-04-12T23:10:16.8Z` (a day does not
       have more than 24 hours)
 
-Step 4 has been automatically executed via the [convert.sh](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/maDMPs/convert.sh) shell script. For more information
-on `dcso-json`
-tool invoked by this script, please refer to the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html).
+Step 4 has been performed automatically via the [convert.sh](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/maDMPs/convert.sh) shell script.
+For more information on the `dcso-json` tool invoked by this script, please refer to the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html).
 
 ### Processing of the Semantic maDMP Representation
 
 After having brought the maDMPs into a semantically enriched JSON-LD format, we were ready to express requirements from
-the evaluation rubric mentioned in the [Project Overview](#project-overview). We developed queries that project certain
+the evaluation rubric mentioned in the [Project Overview](https://raffaelfoidl.github.io/maDMP-evaluation/0001.html). We developed queries that project certain
 subsets of the data into a customized view (`SELECT` queries) as well as ones that simply indicate whether some criteria
 are satisfied (`ASK` queries).
 
-A more in-depth, but still summarized, overview of the queries we created can be observed in [Queries](#queries). The
+A more in-depth, but still summarized, overview of the queries we created can be observed in [Queries](https://raffaelfoidl.github.io/maDMP-evaluation/0005.html). The
 queries themselves are available in the [queries](https://github.com/raffaelfoidl/maDMP-evaluation/tree/main/queries) directory.
 
-The subsection below illustrates how we imported the JSON-LD data into a locally installed GraphDB instance.
-
-#### Import the JSON-LD Data into a Triple Store
-
 During our experiment, we used a local [GraphDB](https://www.ontotext.com/products/graphdb/) instance as triple store
-and SPARQL endpoint. Hence, the explanations in the following paragraphs are only applicable to GraphDB. Other triple
-stores such as [Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) are of course eligible as well. However,
-there are no instructions for them in this repository.
-
-__TODO: tutorial on how to import one JSON-LD file, with screenshots etc.__
+and SPARQL endpoint. Other triple stores such as [Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) are of course
+eligible as well. However, as a result of previous experiences with it, we opted for GraphDB.
 
 ### Report on Quality of Input maDMPs
 
 Finally, after having created the queries, we applied them to the maDMPs that made up our input and which had previously
 been imported into a GraphDB repository. The results of this assessment can be found
-in [Assessment Report](#assessment-report).
+in the [Assessment Report](https://raffaelfoidl.github.io/maDMP-evaluation/0006.html).
 
 ## Covered Criteria
 
@@ -325,7 +317,7 @@ SPARQL queries.
         <td colspan="4"><b>4a If personal data are processed, how will compliance with legislation on personal data and security be ensured?</b></td>
     </tr>
     <tr>
-        <td>Ensure that when dealing with personal data, data protection laws (for example GDPR) are complied with.  _(including sub-points)_</td>
+        <td>Ensure that when dealing with personal data, data protection laws (for example GDPR) are complied with.  <i>(including sub-points)</i></td>
         <td>No</td>
         <td></td>
     </tr>
@@ -333,7 +325,7 @@ SPARQL queries.
         <td colspan="4"><b>4b How will other legal issues, such as intellectual property rights and ownership, be managed? What legislation is applicable?</b></td>
     </tr>
     <tr>
-        <td>Explain who will be the owner of the data, meaning who will have the rights to control access. _(including sub-points)_</td>
+        <td>Explain who will be the owner of the data, meaning who will have the rights to control access. <i>(including sub-points)</i></td>
         <td>No</td>
         <td></td>
     </tr>
@@ -407,7 +399,7 @@ SPARQL queries.
         <td></td>
     </tr>
     <tr>
-        <td>Explain the foreseeable research uses (and/ or users) for the data.</td>
+        <td>Explain the foreseeable research uses (and/or users) for the data.</td>
         <td>No</td>
         <td></td>
     </tr>
