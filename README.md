@@ -74,7 +74,8 @@ The maDMPs we use as raw input data for our project are taken directly from the 
 Community [Data Stewardship 2021 - DMPs](https://zenodo.org/communities/dast-2021/).
 
 1. Start with raw maDMPs from the Zenodo Community.
-2. Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
+2.
+Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
 conformity, uniform formatting and indenting
 3. Normalization: Establish uniform, alphabetical sorting of JSON properties.
 4. Convert JSON/Turtle maDMPs to
@@ -142,7 +143,7 @@ order not to "lose" any results/information about the corresponding maDMP.
 <thead>
     <tr>
         <th>Requirement</th>
-        <th>Covered</th>
+        <th>Covered In</th>
         <th>Remarks</th>
     </tr>
 </thead>
@@ -207,7 +208,7 @@ order not to "lose" any results/information about the corresponding maDMP.
 <thead>
     <tr>
         <th>Requirement</th>
-        <th>Covered</th>
+        <th>Covered In</th>
         <th>Remarks</th>
     </tr>
 </thead>
@@ -282,7 +283,7 @@ order not to "lose" any results/information about the corresponding maDMP.
 <thead>
     <tr>
         <th>Requirement</th>
-        <th>Covered</th>
+        <th>Covered In</th>
         <th>Remarks</th>
     </tr>
 </thead>
@@ -331,8 +332,8 @@ order not to "lose" any results/information about the corresponding maDMP.
 <table class="rtable">
 <thead>
     <tr>
-        <th>Requirement/th>
-        <th>Covered/th>
+        <th>Requirement</th>
+        <th>Covered In</th>
         <th>Remarks</th>
     </tr>
 </thead>
@@ -471,7 +472,7 @@ order not to "lose" any results/information about the corresponding maDMP.
 <thead>
     <tr>
         <th>Requirement</th>
-        <th>Covered</th>
+        <th>Covered In</th>
         <th>Remarks</th>
     </tr>
 </thead>
