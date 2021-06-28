@@ -61,7 +61,8 @@ queries that are meant to automatically give an initial assessment of the respec
 The regeneration of the documentation webpage is triggered and automatically executed on the `docs` branch using a
 GitHub Action at every push to the `main` branch. In other words, the `docs` branch is the source of truth
 for [https://raffaelfoidl.github.io/maDMP-evaluation/](https://raffaelfoidl.github.io/maDMP-evaluation/)
-and is updated at every push to `main` using a dedicated [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
+and is updated at every push to `main` using a
+dedicated [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
 
 The `docs` folder on the `main` branch is only updated at sporadically, e.g. at releases (commits with a release tag).
 
@@ -99,47 +100,53 @@ Regarding step 2, the following changes had to be made in order to achieve schem
     * correction regarding incorrect time value: `2021-04-12T25:10:16.8Z` -> `2021-04-12T23:10:16.8Z` (a day does not
       have more than 24 hours)
 
-Step 4 has been performed automatically via the [convert.sh](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/maDMPs/convert.sh) shell script.
-For more information on the `dcso-json` tool invoked by this script, please refer to the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html).
+Step 4 has been performed automatically via
+the [convert.sh](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/maDMPs/convert.sh) shell script. For more
+information on the `dcso-json` tool invoked by this script, please refer to
+the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html).
 
 ### Processing of the Semantic maDMP Representation
 
 After having brought the maDMPs into a semantically enriched JSON-LD format, we were ready to express requirements from
-the evaluation rubric mentioned in the [Project Overview](https://raffaelfoidl.github.io/maDMP-evaluation/0001.html). We developed queries that project certain
-subsets of the data into a customized view (`SELECT` queries) as well as ones that simply indicate whether some criteria
-are satisfied (`ASK` queries).
+the evaluation rubric mentioned in the [Project Overview](https://raffaelfoidl.github.io/maDMP-evaluation/0001.html). We
+developed queries that project certain subsets of the data into a customized view (`SELECT` queries) as well as ones
+that simply indicate whether some criteria are satisfied (`ASK` queries).
 
-A more in-depth, but still summarized, overview of the queries we created can be observed in [Queries](https://raffaelfoidl.github.io/maDMP-evaluation/0005.html). The
-queries themselves are available in the [queries](https://github.com/raffaelfoidl/maDMP-evaluation/tree/main/queries) directory.
+A more in-depth, but still summarized, overview of the queries we created can be observed
+in [Queries](https://raffaelfoidl.github.io/maDMP-evaluation/0005.html). The queries themselves are available in
+the [queries](https://github.com/raffaelfoidl/maDMP-evaluation/tree/main/queries) directory.
 
 During our experiment, we used a local [GraphDB](https://www.ontotext.com/products/graphdb/) instance as triple store
-and SPARQL endpoint. Other triple stores such as [Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) are of course
-eligible as well. However, as a result of previous experiences with it, we opted for GraphDB.
+and SPARQL endpoint. Other triple stores such as [Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) are of
+course eligible as well. However, as a result of previous experiences with it, we opted for GraphDB.
 
 ### Report on Quality of Input maDMPs
 
 Finally, after having created the queries, we applied them to the maDMPs that made up our input and which had previously
-been imported into a GraphDB repository. The results of this assessment can be found
-in the [Assessment Report](https://raffaelfoidl.github.io/maDMP-evaluation/0006.html).
+been imported into a GraphDB repository. The results of this assessment can be found in
+the [Assessment Report](https://raffaelfoidl.github.io/maDMP-evaluation/0006.html).
 
 ## Covered Criteria
 
 The tables in the following subsections depict which criteria from the evaluation rubric we were able to express via
 SPARQL queries.
 
-We want to stress that some queries could be formulated less strict, i.e. `OPTIONAL` blocks could be 
-inserted for triple patterns that join elements from the maDMP schema that are, by the schema definition, optional. However,
-as this project is more of a proof-of-concept-kind, this could be easily be done when extending or building upon the work at hand - 
-in order not to "lose" any results/information about the corresponding maDMP.
+We want to stress that some queries could be formulated less strict, i.e. `OPTIONAL` blocks could be inserted for triple
+patterns that join elements from the maDMP schema that are, by the schema definition, optional. However, as this project
+is more of a proof-of-concept-kind, this could be easily be done when extending or building upon the work at hand - in
+order not to "lose" any results/information about the corresponding maDMP.
 
 ### Data Description and Collection or Re-Use of Existing Data
 
 <table class="rtable">
+<thead>
     <tr>
-        <td><b>Requirement</b></td>
-        <td><b>Covered</b></td>
-        <td><b>Remarks</b></td>
+        <th>Requirement</th>
+        <th>Covered</th>
+        <th>Remarks</th>
     </tr>
+</thead>
+<tbody>
     <tr>
         <td colspan="4"><b>1a How will new data be produced and/or how will existing data be re-used?</b></td>
     </tr>
@@ -191,16 +198,20 @@ in order not to "lose" any results/information about the corresponding maDMP.
         <td>No</td>
         <td></td>
     </tr>
+</tbody>
 </table>
 
 ### Documentation and Data Quality
 
 <table class="rtable">
+<thead>
     <tr>
-        <td><b>Requirement</b></td>
-        <td><b>Covered</b></td>
-        <td><b>Remarks</b></td>
+        <th>Requirement</th>
+        <th>Covered</th>
+        <th>Remarks</th>
     </tr>
+</thead>
+<tbody>
     <tr>
         <td colspan="4"><b>2a What metadata and documentation (for example the methodology of data collection and way of organising data) will accompany the data?</b></td>
     </tr>
@@ -262,16 +273,20 @@ in order not to "lose" any results/information about the corresponding maDMP.
         <td>No</td>
         <td></td>
     </tr>
+</tbody>
 </table>
 
 ### Storage and Backup During the Research Process
 
 <table class="rtable">
+<thead>
     <tr>
-        <td><b>Requirement</b></td>
-        <td><b>Covered</b></td>
-        <td><b>Remarks</b></td>
+        <th>Requirement</th>
+        <th>Covered</th>
+        <th>Remarks</th>
     </tr>
+</thead>
+<tbody>
     <tr>
         <td colspan="4"><b>3a How will data and metadata be stored and backed up during the research?</b></td>
     </tr>
@@ -308,16 +323,20 @@ in order not to "lose" any results/information about the corresponding maDMP.
         <td>No</td>
         <td></td>
     </tr>
+</tbody>
 </table>
 
 ### Legal and Ethical Requirements, Code of Conduct
 
 <table class="rtable">
+<thead>
     <tr>
-        <td><b>Requirement</b></td>
-        <td><b>Covered</b></td>
-        <td><b>Remarks</b></td>
+        <th>Requirement/th>
+        <th>Covered/th>
+        <th>Remarks</th>
     </tr>
+</thead>
+<tbody>
     <tr>
         <td colspan="4"><b>4a If personal data are processed, how will compliance with legislation on personal data and security be ensured?</b></td>
     </tr>
@@ -357,16 +376,20 @@ in order not to "lose" any results/information about the corresponding maDMP.
         <td>No</td>
         <td></td>
     </tr>
+</tbody>
 </table>
 
 ### Data Sharing and Long-Term Preservation
 
 <table class="rtable">
+<thead>
     <tr>
-        <td><b>Requirement</b></td>
-        <td><b>Covered In</b></td>
-        <td><b>Remarks</b></td>
+        <th>Requirement</th>
+        <th>Covered In</th>
+        <th>Remarks</th>
     </tr>
+</thead>
+<tbody>
     <tr>
         <td colspan="4"><b>5a How and when will data be shared? Are there possible restrictions to data sharing or embargo reasons?</b></td>
     </tr>
@@ -439,16 +462,20 @@ in order not to "lose" any results/information about the corresponding maDMP.
         <td><code>5-d-2</code></td>
         <td>Tests whether there exists a distribution with a host that specifies the use of a PID system.</td>
     </tr>
+</tbody>
 </table>
 
 ### Data Management Responsibilities and Resources
 
 <table class="rtable">
+<thead>
     <tr>
-        <td><b>Requirement</b></td>
-        <td><b>Covered</b></td>
-        <td><b>Remarks</b></td>
+        <th>Requirement</th>
+        <th>Covered</th>
+        <th>Remarks</th>
     </tr>
+</thead>
+<tbody>
     <tr>
         <td colspan="4"><b>6a Who (for example role, position, and institution) will be responsible for data management (i.e. the data steward)?</b></td>
     </tr>
@@ -490,16 +517,17 @@ in order not to "lose" any results/information about the corresponding maDMP.
         <td><code>6-b-2</code></td>
         <td>Specifies equipment needed or used to create or process the data.</td>
     </tr>
+</tbody>
 </table>
 
 ## Summary
 
-The chapter [Covered Criteria](https://raffaelfoidl.github.io/maDMP-evaluation/0004.html) gave a brief overview of the queries
-developed over the course of the project. Furthermore, it also contains assumptions that had to be made as well as challenges
-we faced.
+The chapter [Covered Criteria](https://raffaelfoidl.github.io/maDMP-evaluation/0004.html) gave a brief overview of the
+queries developed over the course of the project. Furthermore, it also contains assumptions that had to be made as well
+as challenges we faced.
 
-Overall, the Science Europe Evaluation Rubric defines 6 broad categories in its assessment guideline. The following table gives of the
-spectrum we were able to cover with our queries.
+Overall, the Science Europe Evaluation Rubric defines 6 broad categories in its assessment guideline. The following
+table gives of the spectrum we were able to cover with our queries.
 
 <table class="rtable">
 <thead>
@@ -547,13 +575,15 @@ spectrum we were able to cover with our queries.
     <td>5</td>
     <td>71 %</td>
   </tr>
-  <tr>
-    <td><b>Sum</b></td>
-    <td><b>51</b></td>
-    <td><b>13</b></td>
-    <td><b>25 %</b></td>
-  </tr>
 </tbody>
+<tfoot>
+  <tr>
+    <td>Sum</td>
+    <td>51</td>
+    <td>13</td>
+    <td>25 %</td>
+  </tr>
+</tfoot>
 </table>
 
 ## Assessment Report
