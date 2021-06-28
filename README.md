@@ -137,6 +137,10 @@ patterns that join elements from the maDMP schema that are, by the schema defini
 is more of a proof-of-concept-kind, this could be easily be done when extending or building upon the work at hand - in
 order not to "lose" any results/information about the corresponding maDMP.
 
+The queries can be found in the corresponding [directory](https://github.com/raffaelfoidl/maDMP-evaluation/tree/main/queries)
+in the GitHub repository. In the next subsections, the queries are referred to by their filename without extension, e.g.
+a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
+
 ### Data Description and Collection or Re-Use of Existing Data
 
 <table class="rtable">
