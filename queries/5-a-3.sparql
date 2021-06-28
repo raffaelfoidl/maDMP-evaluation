@@ -1,0 +1,30 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcso: <https://w3id.org/dcso/ns/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT (?hostName AS ?host) ?accessUrl (?issued AS ?releaseDate) ?sensitiveData ?dataAccess ?licenseRef ?embargoDate
+WHERE
+{
+    ?dataset dcso:hasDistribution ?distribution ;
+             dct:issued ?issued ;
+             dcso:sensitiveData ?sensitiveData.
+
+    ?distribution dcso:hasHost ?hostId ;
+                  dcat:accessUrl ?accessUrl ;
+                  dcso:dataAccess ?dataAccess ;
+                  dcso:hasLicense ?license .
+
+    OPTIONAL { ?license dcso:licenseRef ?licenseRef . }
+    OPTIONAL { ?license dcat:startDate ?embargoDate . }
+
+
+    ?hostId dct:title ?hostName .
+
+}
+GROUP BY ?distribution ?hostName ?accessUrl ?issued ?sensitiveData ?licenseRef ?dataAccess ?licenseRef ?embargoDate
+ORDER BY ASC(?distribution)

@@ -186,7 +186,7 @@ involve some further exploration.
 
 ### Spaces in paths cause problems
 
-As already noted in the [Introduction](#Introduction), executing the program from a directory with spaces in its path
+As already noted in the Introduction, executing the program from a directory with spaces in its path
 causes problems, both on Windows and Unix-like machines.
 
 We suspect the context file should not have spaces in its path because it can cause troubles for the resulting IRI(s).

@@ -1,0 +1,20 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcso: <https://w3id.org/dcso/ns/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT ?hostId ?property ?propertyValue
+WHERE
+{
+    ?dataset dcso:hasDistribution ?distribution .
+
+    ?distribution dcso:hasHost ?hostId .
+
+    ?hostId ?property ?propertyValue .
+}
+GROUP BY ?distribution ?hostId ?title ?property ?propertyValue
+ORDER BY ASC(?hostId) ASC(?property)
