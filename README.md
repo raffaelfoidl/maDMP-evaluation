@@ -156,52 +156,52 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
         <td colspan="4"><b>1a How will new data be produced and/or how will existing data be re-used?</b></td>
     </tr>
     <tr>
-        <td>Explain which methodologies or software will be used if new data are collected or produced</td>
-        <td>No</td>
-        <td></td>
+        <td>Explain which methodologies or software will be used if new data are collected or produced.</td>
+        <td>/</td>
+        <td>Information provided by the <code>methodology</code> field in the <code>dataset</code> structure - however, this field is only specified in the funder extension and is not included in the RDA-DMP Common Standard; therefore, it can not be translated when converting the JSON files to a JSON-LD format and in consequence, not be queried.</td>
     </tr>
     <tr>
-        <td>State any constraints on re-use of existing data if there</td>
-        <td>No</td>
-        <td></td>
+        <td>State any constraints on re-use of existing data if there are any.</td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Explain how data provenance will be documented.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Briefly state the reasons if the re-use of any existing data sources has been considered but discarded.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>1b What data (for example the kind, formats, and volumes) will be collected or produced?</b></td>
     </tr>
     <tr>
         <td>Give details on the kind of data: for example, numeric (databases, spreadsheets), textual (documents), image, audio, video, and/or mixed media.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>1-b-1</code></td>
+        <td>Queries all declared datasets and displays their title, type and identifier.</td>
     </tr>
     <tr>
         <td>Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension (for example pdf, xls, doc, txt, or rdf).</td>
-        <td>No</td>
-        <td></td>
+        <td><code>1-b-2</code></td>
+        <td>Returns the data formats of each specified distribution (including the respective access URL and description of the distribution).</td>
     </tr>
     <tr>
         <td>Justify the use of certain formats. For example, decisions may be based on staff expertise within the host organisation, a preference for open formats, standards accepted by data repositories, widespread usage within the research community, or on the software or equipment that will be used.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Give preference to open and standard formats as they facilitate sharing and long-term re-use of data (several repositories provide lists of such ‘preferred formats’).</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not directly covered by maDMP; difficult to cover with a simple SPARQL query.</td>
     </tr>
     <tr>
         <td>Give details on the volumes (they can be expressed in storage space required (bytes), and/or in numbers of objects, files, rows, and columns).</td>
-        <td>No</td>
-        <td></td>
+        <td><code>1-b-3</code></td>
+        <td>Displays for each defined distribution its size in bytes.</td>
     </tr>
 </tbody>
 </table>
