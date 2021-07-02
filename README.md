@@ -617,8 +617,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>The size of the produced/used data is provided. However, for two out of four distributions, the description is missing. Furthermore, the file formats of the produced data are not specified (in contrast to the reused data).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -668,8 +668,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -719,8 +719,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -770,8 +770,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -821,8 +821,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>There is a clear description for each distribution; the file formats are defined as well. However, the type of the dataset is not specified and the size of the produced/used data is missing.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -872,8 +872,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -923,8 +923,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is provided as well.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -974,8 +974,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>The file formats are defined. However, some distribution descriptions are missing as well as the size of some data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -1025,8 +1025,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -1078,8 +1078,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>The file formats are specified, but not in the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA media type</a> format. The size of the data is provided. However, the distribution descriptions are missing.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -1132,8 +1132,8 @@ the maDMP did provide a decent informational value.
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
@@ -1186,8 +1186,8 @@ a lot of fields that are not actually part of the RDA DMP Common Standard and th
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
