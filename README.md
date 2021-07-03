@@ -326,39 +326,39 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Ensure that when dealing with personal data, data protection laws (for example GDPR) are complied with.  <i>(including sub-points)</i></td>
-        <td>No</td>
-        <td></td>
+        <td><code>5-a-2</code></td>
+        <td>If anything, information about consent for preservation or sharing and anonymization would be included in the <code>preservation_statement</code> which is already covered by query <code>5-a-2</code>. The other aspects are not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>4b How will other legal issues, such as intellectual property rights and ownership, be managed? What legislation is applicable?</b></td>
     </tr>
     <tr>
         <td>Explain who will be the owner of the data, meaning who will have the rights to control access. <i>(including sub-points)</i></td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-b-1</code>, <code>5-a-3</code></td>
+        <td>If anything, access restrictions would be included in the <code>security_and_privacy</code> field which is already covered by query <code>3-b-1</code>. Descriptions of the licenses in place are queried with query <code>5-a-3</code>.</td>
     </tr>
     <tr>
         <td>Indicate whether intellectual property rights (for example Database Directive, sui generis rights) are affected. If so, explain which and how will they be dealt with.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
-        <td>Indicate whether there are any restrictions on the re-use of third-party data</td>
-        <td>No</td>
-        <td></td>
+        <td>Indicate whether there are any restrictions on the re-use of third-party data.</td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>4c What ethical issues and codes of conduct are there, and how will they be taken into account?</b></td>
     </tr>
     <tr>
         <td>Consider whether ethical issues can affect how data are stored and transferred, who can see or use them, and how long they are kept. Demonstrate awareness of these aspects and respective planning.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>4-c-1</code>, <code>4-c-2</code></td>
+        <td>Query <code>4-c-1</code> checks whether ethical issues exist. Query <code>4-c-2</code> returns a description of the specified ethical issues, if there are any, as well as the ethical issues report, if there is one.</td>
     </tr>
     <tr>
         <td>Follow the national and international codes of conducts and institutional ethical guidelines, and check if ethical review (for example by an ethics committee) is required for data collection in the research project.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
 </tbody>
 </table>
