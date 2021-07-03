@@ -526,11 +526,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
 </tbody>
 </table>
 
-## Summary
-
-The chapter [Covered Criteria](https://raffaelfoidl.github.io/maDMP-evaluation/0004.html) gave a brief overview of the
-queries developed over the course of the project. Furthermore, it also contains assumptions that had to be made as well
-as challenges we faced.
+### Summary
 
 Overall, the Science Europe Evaluation Rubric defines 6 broad categories in its assessment guideline. The following
 table gives of the spectrum we were able to cover with our queries.
@@ -554,26 +550,26 @@ table gives of the spectrum we were able to cover with our queries.
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>9</td>
-    <td>0</td>
-    <td>0 %</td>
+    <td>3</td>
+    <td>33 %</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>11</td>
-    <td>0</td>
-    <td>0 %</td>
+    <td>7</td>
+    <td>5</td>
+    <td>71 %</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
     <td>6</td>
-    <td>0</td>
-    <td>0 %</td>
+    <td>3</td>
+    <td>50 %</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
     <td>6</td>
-    <td>0</td>
-    <td>0 %</td>
+    <td>3</td>
+    <td>50 %</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -591,9 +587,9 @@ table gives of the spectrum we were able to cover with our queries.
 <tfoot>
   <tr>
     <td>Sum</td>
-    <td>51</td>
-    <td>13</td>
-    <td>25 %</td>
+    <td>48</td>
+    <td>28</td>
+    <td>58 %</td>
   </tr>
 </tfoot>
 </table>
