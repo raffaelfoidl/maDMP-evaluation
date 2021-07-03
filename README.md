@@ -601,8 +601,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>No information about metadata or versioning provided. Keywords are included for half of the defined datasets. Minimal information about naming conventions included, as well as some statements about quality assurance measures.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -653,7 +653,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Information about metadata, data quality assurance and versioning is missing.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -704,7 +704,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Information about metadata and versioning is missing. Minimal information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -754,8 +754,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Significant keywords are provided as well as the metadata accompanying the data. Community metadata standards are used. Minimal information about versioning is available. Extensive description of data quality assurance measures.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -806,7 +806,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>Only few keywords specified. Information about metadata and versioning is missing. No information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -857,7 +857,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Information about metadata and versioning is missing. Minimal information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -908,7 +908,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Specified metadata standard is not a standard. Minimal information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -958,8 +958,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Significant keywords are specified. Specified metadata standards are no standards. No information regarding data quality assurance provided, except for minimal information about versioning.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -1009,8 +1009,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Keywords are provided as well as the metadata accompanying the data. Community metadata standards are used. Minimal information about versioning is available. Description of data quality assurance measurements missing.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -1062,8 +1062,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Significant keywords are specified. No information about metadata or versioning provided. Extensive documentation of naming conventions included.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -1117,7 +1117,7 @@ the maDMP did provide a decent informational value.
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Original JSON file contains <code>documentation_and_metadata</code> element where some information about metadata is provided; this field is, however, not part of the RDA CMP Common Standard and can therefore not be considered. No information about versioning. Minimal statement regarding data quality assurance.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -1170,8 +1170,8 @@ a lot of fields that are not actually part of the RDA DMP Common Standard and th
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Significant keywords are provided as well as the metadata accompanying the data. Community metadata standards are used. Minimal information about versioning is available. Extensive description of data quality assurance measures and folder structures.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
