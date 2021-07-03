@@ -157,7 +157,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     <tr>
         <td>Provide information such as name of applicant, project number, funding programme, version of DMP.Provide information such as name of applicant, project number, funding programme, version of DMP.</td>
         <td><code>0-1</code>, <code>0-2</code>, <code>0-3</code></td>
-        <td>Query <code>0-1</code> returns the basic information, i.e., the author, title, created date and language of the maDMP as well as the ID of the corresponding DMP. Query <code>0-2</code> gathers all important information available for the corresponding project, whereas query <code>0-3</code> collects information about the funding of the project.</td>
+        <td>Query <code>0-1</code> returns the basic information, i.e. the author, title, created date and language of the maDMP as well as the ID of the corresponding DMP. Query <code>0-2</code> gathers all important information available for the corresponding project, whereas query <code>0-3</code> collects information about the funding of the project.</td>
     </tr>
 </tbody>
 </table>
@@ -244,7 +244,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     <tr>
         <td>Indicate which metadata will be provided to help others identify and discover the data.</td>
         <td><code>2-a-1</code>, <code>2-a-2</code></td>
-        <td><code>2-a-1</code> collects all information provided by the <code>metadata</code> field, i.e., a description (optional), the used standard and the language. <code>2-a-2</code> displays the specified keywords for each defined dataset.</td>
+        <td><code>2-a-1</code> collects all information provided by the <code>metadata</code> field, i.e. a description (optional), the used standard and the language. <code>2-a-2</code> displays the specified keywords for each defined dataset.</td>
     </tr>
     <tr>
         <td>Indicate which metadata standards (for example DDI, TEI, EML, MARC, CMDI) will be used.</td>
