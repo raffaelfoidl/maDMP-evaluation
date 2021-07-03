@@ -140,6 +140,28 @@ The queries can be found in the corresponding [directory](https://github.com/raf
 in the GitHub repository. In the next subsections, the queries are referred to by their filename without extension, e.g.
 a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
 
+### General Information
+
+<table class="rtable">
+<thead>
+    <tr>
+        <th>Requirement</th>
+        <th>Covered In</th>
+        <th>Remarks</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td colspan="4"><b>Administrative information</b></td>
+    </tr>
+    <tr>
+        <td>Provide information such as name of applicant, project number, funding programme, version of DMP.Provide information such as name of applicant, project number, funding programme, version of DMP.</td>
+        <td><code>0-1</code>, <code>0-2</code>, <code>0-3</code></td>
+        <td>Query <code>0-1</code> returns the basic information, i.e., the author, title, created date and language of the maDMP as well as the ID of the corresponding DMP. Query <code>0-2</code> gathers all important information available for the corresponding project, whereas query <code>0-3</code> collects information about the funding of the project.</td>
+    </tr>
+</tbody>
+</table>
+
 ### Data Description and Collection or Re-Use of Existing Data
 
 <table class="rtable">
@@ -524,6 +546,12 @@ table gives of the spectrum we were able to cover with our queries.
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>1</td>
+    <td>1</td>
+    <td>100 %</td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>9</td>
     <td>0</td>
@@ -595,6 +623,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>2</td>
     <td>The size of the produced/used data is provided. However, for two out of four distributions, the description is missing. Furthermore, the file formats of the produced data are not specified (in contrast to the reused data).</td>
@@ -645,6 +678,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>4</td>
@@ -697,6 +735,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>4</td>
     <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
@@ -747,6 +790,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>5</td>
@@ -799,6 +847,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>3</td>
     <td>There is a clear description for each distribution; the file formats are defined as well. However, the type of the dataset is not specified and the size of the produced/used data is missing.</td>
@@ -849,6 +902,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>4</td>
@@ -901,6 +959,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>5</td>
     <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is provided as well.</td>
@@ -952,6 +1015,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>3</td>
     <td>The file formats are defined. However, some distribution descriptions are missing as well as the size of some data.</td>
@@ -1002,6 +1070,11 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>5</td>
@@ -1055,6 +1128,11 @@ According to the results of the queries, this maDMP has a quite high amount of i
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>4</td>
@@ -1110,6 +1188,11 @@ the maDMP did provide a decent informational value.
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>4</td>
     <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
@@ -1164,6 +1247,11 @@ a lot of fields that are not actually part of the RDA-DMP Common Standard and th
 </thead>
 <tbody>
   <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>5</td>
     <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
@@ -1217,6 +1305,11 @@ statement would have provided some more information.
   </tr>
 </thead>
 <tbody>
+  <tr>
+    <td>0 General Information</td>
+    <td>0</td>
+    <td></td>
+  </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
     <td>0</td>
