@@ -11,13 +11,13 @@ This page provides a less linear and more structured version of the information 
 
 [Machine-actionable data management plans (maDMPs)](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard) have, by
 their very nature, advantages over data management plans that are written exclusively in text form. By employing maDMPs,
-not only researches should be able to benefit from their merits, but also research funders receiving and assessing the
+not only researchers should be able to benefit from their merits, but also research funders receiving and assessing the
 DMPs.
 
 In
 its _[Practical Guide to the International Alignment of Research Data Management](https://www.scienceeurope.org/our-resources/practical-guide-to-the-international-alignment-of-research-data-management/)_
 , Science Europe has published an evaluation rubric (section _Guidance for Reviewers_) that provides a solid basis to
-support research (funding) organisations in evaluating DMPs. By stating a set of criteria, it helps to ensure submitted
+support research (funding) organizations in evaluating DMPs. By stating a set of criteria, it helps to ensure submitted
 DMPs cover required aspects and support [FAIR data management](https://www.go-fair.org/fair-principles/).
 
 This project aims to facilitate leveraging the machine-actionability of DMPs by
