@@ -1097,8 +1097,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>2</td>
-    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition.</td>
+    <td>3</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is a preservation statement in the original JSON file, but it cannot be queried from the JSON-LD due to the reason explained above. Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -1151,7 +1151,7 @@ the maDMP did provide a decent informational value.
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>2</td>
+    <td>3</td>
     <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition.</td>
   </tr>
   <tr>
