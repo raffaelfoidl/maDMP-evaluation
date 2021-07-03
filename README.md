@@ -620,8 +620,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Sufficient information about DMP. Information about project not included.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -676,8 +676,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Sufficient information about DMP. Information about project not included.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -732,8 +732,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about DMP and project. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -788,8 +788,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about DMP and project. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -844,8 +844,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>The SPARQL queries are not able to collect the required data. Nevertheless, in the original TTL file, there is a sufficient documentation of basic information (author etc.) and the project description. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -900,8 +900,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Sufficient information about DMP. Information about project not included.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -956,8 +956,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about DMP and project. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -1012,8 +1012,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about DMP and project. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -1068,8 +1068,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Extensive information about DMP. Description of the project is not included. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -1126,8 +1126,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about DMP and project. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -1185,8 +1185,8 @@ the maDMP did provide a decent informational value.
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Sufficient information about DMP. Information about project not included.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
@@ -1244,8 +1244,8 @@ a lot of fields that are not actually part of the RDA-DMP Common Standard and th
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about DMP and project. Funding information is missing, but this is to be expected since the project which was done in the course of this lecture is obviously not funded by anyone.</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
