@@ -606,8 +606,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). Good description of access restrictions. For most datasets, clear indication whether personal/sensitive data is stored provided.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -658,7 +658,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
     <td>0</td>
-    <td></td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No description of security measures. For most datasets, no clear indication whether personal/sensitive data is stored provided.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -708,8 +708,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Extensive description of where the data is stored; however, information about backups and security measures is missing. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -759,8 +759,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive description of where the data is stored, the respective backup modalities and access regulations. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -810,8 +810,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Minimal description of where the data is stored and the respective backup modalities (which the SPARQL queries fail to detect). No description of security measures. No indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -861,8 +861,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No information about security measures provided. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -912,8 +912,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Extensive description of where the data is stored; however, information about backups and security measures is missing. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -963,8 +963,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>Extensive description of where the data is stored; however, information about access restrictions is missing, as well as a description of the backup modalities for some hosts. Clear indication whether personal/sensitive data is stored for most specified datasets.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1014,8 +1014,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Extensive description of where the data is stored and access restrictions; however, information about backups is missing. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1067,8 +1067,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No information about security measures provided. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1121,8 +1121,8 @@ the maDMP did provide a decent informational value.
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No information about security measures provided. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1176,7 +1176,7 @@ a lot of fields that are not actually part of the RDA-DMP Common Standard and th
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
     <td>5</td>
-    <td>Good description of where the data is stored and the respective backup modalities.</td>
+    <td>Extensive description of where the data is stored, the respective backup modalities and access regulations. Clear indication whether personal/sensitive data is stored. Data is stored at four locations.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
