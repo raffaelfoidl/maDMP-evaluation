@@ -157,11 +157,28 @@ docker image rm dcso_json
 
 The build is based on `maven`. The following custom behaviours are achieved via build plugins:
 
-| Phase     | Action                                                                                                                                                                                                        |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `clean`   | In addition to the removing the files generated during build-time, also deletes the distributed files residing within `../app-bin` - excluding the `.gitkeep` file.                                   |
-| `package` | Packages not only the application itself as JAR file, but also places its (transitive) dependencies into a `libs` folder and adjusts the class path such that the resulting JAR can be executed using `java`. |
-| `install` | Copies the artifacts created during `package` (i.e. the application including its dependencies) to the `../app-bin` directory.                                                                                |
+<table class="rtable">
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>clean</code></td>
+        <td>In addition to the removing the files generated during build-time, also deletes the distributed files residing within <code>../app-bin</code> - excluding the <code>.gitkeep</code> file.</td>
+      </tr>
+      <tr>
+        <td><code>package</code></td>
+        <td>Packages not only the application itself as JAR file, but also places its (transitive) dependencies into a <code>libs</code> folder and adjusts the class path such that the resulting JAR can be executed using <code>java</code>.</td>
+      </tr>
+      <tr>
+        <td><code>install</code></td>
+        <td>Copies the artifacts created during <code>package</code> (i.e. the application including its dependencies) to the <code>../app-bin</code> directory.</td>
+      </tr>
+    </tbody>
+</table>
 
 ## Known issues
 
