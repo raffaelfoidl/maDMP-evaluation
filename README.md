@@ -295,7 +295,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     <tr>
         <td>Explain who will have access to the data during the research and how access to data is controlled, especially in collaborative partnerships.</td>
         <td><code>3-b-1</code></td>
-        <td>The best one can do is with the <code>security_and_privacy</code> field.</td>
+        <td>The best one can do is with the <code>security_and_privacy</code> field. Information about the availability of data hosts is included in query <code>3-a-1</code>.</td>
     </tr>
     <tr>
         <td>Consider data protection, particularly if your data is sensitive (for example containing personal data, politically sensitive information, or trade secrets). Describe the main risks and how these will be managed.</td>
