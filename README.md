@@ -1383,7 +1383,12 @@ Nevertheless, based on the evaluation with our queries one can argue that all ma
 
 With respect to the quality and usefulness of our queries, as already mentioned in the introduction to this section,
 some queries could be made more tolerant against not having  defined optional schema elements.
-This would improve the results in gauging maDMPs.
+This would improve the results in gauging maDMPs. Other than that, they proved to be quite useful in assessing the set of
+input maDMPs.
+
+All in all, the SPARQL queries can certainly serve as a starting point for reviewers. However, it is certainly worth noting that
+queries are mostly kept rather general in order to be applicable to the quite diverse input files.  Hence, one might need to adjust
+them to fit one's specific domain and requirements.
 
 ## License
 
