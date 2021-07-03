@@ -1322,66 +1322,68 @@ Overall, this maDMP could be assessed decently well and turned out to be of exce
 with our queries. Missing aspects were mostly due to the maDMP schema, a preservation statement would have provided some
 more information.
 
-### Aggregation, Conclusion
+### Conclusion
+
+The table below displays the average satisfaction value for each category defined in the rubric as well as the average
+sum.
 
 <table class="rtable">
 <thead>
   <tr>
     <th>Category</th>
-    <th>Satisfaction Value</th>
-    <th>Justification</th>
+    <th>Average Satisfaction Value</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>0 General Information</td>
-    <td>0</td>
-    <td></td>
+    <td>3.9</td>
   </tr>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4.0</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>1.6</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2.3</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>3.2</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>3.6</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>3.5</td>
   </tr>
 </tbody>
 <tfoot>
   <tr>
     <td>Sum</td>
-    <td>0/360</td>
-    <td></td>
+    <td>22/35</td>
   </tr>
 </tfoot>
 </table>
 
-Common pitfalls of maDMPs, where are queries lacking and why, ... 
+As one can see in the table and the individual evaluations above, the main issues in the input maDMPs are insufficient
+documentation of the metadata accompanying the used and produced data as well as lacking information about the storage
+and backup of data (categories 2 and 3). Regarding the other categories, most of the maDMPs provided a decent amount of information,
+with a few shortcomings here and there. One aspect worth mentioning here is the missing definition of the `host` element
+which is an issue that appeared in quite a few maDMPs. Furthermore, the cost were neglected in all maDMPs, the required
+resources were only specified in one maDMP.
 
-As already mentioned in the introduction to this section, some queries could be made more tolerant against not having
-defined optional schema elements. This would improve the results in gauging maDMPs. 
+Nevertheless, based on the evaluation with our queries one can argue that all maDMPs are of good (or at least sufficient) quality.
+
+With respect to the quality and usefulness of our queries, as already mentioned in the introduction to this section,
+some queries could be made more tolerant against not having  defined optional schema elements.
+This would improve the results in gauging maDMPs.
 
 ## License
 
