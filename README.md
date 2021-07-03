@@ -611,8 +611,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is no information about potential preservation considerations. Regarding licenses, the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition. Good description of access restrictions and sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -662,8 +662,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>There is no information about potential preservation considerations. Regarding licensing, the maDMP contains helpful data, but the SPARQL query is a little bit too strict and fails due to the missing host definition. No description of access restrictions. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -713,8 +713,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>There is no information about potential preservation considerations. Useful information about licensing provided. No description of access restrictions. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -764,8 +764,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive documentation of access restrictions, ethical considerations and licensing. Information about data preservation with regard to sensitive or personal data included.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -815,8 +815,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>No mention of data preservation considerations and no description of access control mechanisms. Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the incomplete host definitions. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -866,8 +866,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>No mention of data preservation considerations and no description of access control mechanisms. Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the incomplete host definitions. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -917,8 +917,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>There is no information about potential preservation considerations. Useful information about licensing provided. No description of access restrictions. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -968,8 +968,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>There is no information about potential preservation considerations and access restrictions. Extensive documentation regarding licensing. Sufficient declaration of ethical issues.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -1019,8 +1019,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Extensive documentation of access restrictions, ethical considerations and licensing. No information about data preservation with regard to sensitive or personal data included.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -1072,8 +1072,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>There is no information about potential preservation considerations and access control. Regarding licensing, the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -1126,8 +1126,8 @@ the maDMP did provide a decent informational value.
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>There is no information about potential preservation considerations and access control. Regarding licensing, the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition. Sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
@@ -1180,8 +1180,8 @@ a lot of fields that are not actually part of the RDA-DMP Common Standard and th
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive documentation regarding licensing. Good description of access restrictions and sufficient declaration of ethical considerations.</td>
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>

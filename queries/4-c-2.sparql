@@ -5,9 +5,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcso: <https://w3id.org/dcso/ns/core#>
 
-SELECT ?ethicalIssuesDescription ?report
+SELECT (COALESCE(?desc, "<none>") AS ?ethicalIssuesDescription) (COALESCE(?rep, "<none>") AS ?report)
 WHERE
 {
-    ?maDMP dcso:ethicalIssuesDescription ?ethicalIssuesDescription ;
-           dcso:ethicalIssuesReport ?report .
+    OPTIONAL { ?maDMP dcso:ethicalIssuesDescription ?desc . }
+    OPTIONAL { ?maDMP dcso:ethicalIssuesReport ?rep . }
 }
