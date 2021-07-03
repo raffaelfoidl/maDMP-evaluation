@@ -724,7 +724,7 @@ Apart from those aspects, the maDMP provides a decent informational value.
 </table>
 
 A lot of (important) information is missing in this maDMP. Hence, one can conclude based on the assessment with our queries that
-the maDMP provides insufficient documentation and is therefore of rather bad quality.
+the maDMP provides insufficient documentation and exhibits many aspects in which it can be improved.
 
 
 ### 3.jsonld
@@ -963,7 +963,7 @@ this maDMP is of decent quality.
 </table>
 
 A lot of (important) information is missing here. Hence, one can conclude based on the assessment with our queries that
-the maDMP provides insufficient documentation and is therefore of rather bad quality.
+the maDMP provides insufficient documentation and exhibits many aspects in which it can be improved.
 
 ### 7.jsonld
 
@@ -1260,7 +1260,7 @@ documentation of metadata. Apart from those aspects,  the maDMP did provide a de
 
 Since the JSON-LD maDMP was surprisingly short in content, a manual look into the source maDMP revealed that there are
 a lot of fields that are not actually part of the RDA-DMP Common Standard and thus, not queryable with our approach. From
-this assessment, one can conclude that the maDMP is of poor quality.
+this assessment, one can conclude that there is still room for improvement.
 
 ### 12.jsonld
 
