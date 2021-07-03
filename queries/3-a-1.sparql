@@ -1,0 +1,28 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcso: <https://w3id.org/dcso/ns/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT ?hostName ?hostUrl (COALESCE(?hostDesc, "<none>") AS ?hostDescription) (COALESCE(?desc, "<none>") AS ?distributionDescription) (COALESCE(?access, "<unknown>") AS ?accessUrl) (COALESCE(?availability, "<unknown>") AS ?hostAvailability) (COALESCE(?frequency, "<unknown>") AS ?backupFrequency) (COALESCE(?type, "<unknown>") AS ?backupType)
+WHERE
+{
+    ?dataset dcso:hasDistribution ?distribution .
+
+    ?distribution dcso:hasHost ?hostId .
+    OPTIONAL { ?distribution dct:description ?desc . }
+    OPTIONAL { ?distribution dct:description ?desc . }
+    OPTIONAL { ?distribution dcat:accessUrl ?access .}
+
+    ?hostId dct:title ?hostName ;
+            dcso:url ?hostUrl .
+    OPTIONAL { ?hostId dct:description ?hostDesc . }
+    OPTIONAL { ?hostId dcso:availability ?availability .}
+    OPTIONAL { ?hostId dcso:backupFrequency ?frequency .}
+   	OPTIONAL { ?hostId dcso:backupType ?type .}
+}
+GROUP BY ?frequency ?desc ?hostName ?access ?hostUrl ?type ?hostDesc ?availability
+ORDER BY ASC(?distribution)

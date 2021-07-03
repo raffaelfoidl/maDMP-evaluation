@@ -196,6 +196,12 @@ if the actual reason is something entirely different.
 Since this issue was not a major hindrance for the main project of this repository, we did not want to spend too much
 time to dive into this issue because it undoubtedly would require some additional investigating.
 
+### Missing conversions
+
+The conversion to JSON-LD format is based on a mapping from JSON terms to ontology concepts defined in
+[`src/main/resources/ontology/dcso.jsonld`](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/dcso-json/src/main/resources/ontology/dcso.jsonld). The `data_preservation` element is unfortunately missing in this mapping.
+Therefore, this field is ignored in the conversion.
+
 ## License
 
 MIT (see [License](LICENSE))

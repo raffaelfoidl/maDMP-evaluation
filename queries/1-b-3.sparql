@@ -1,0 +1,22 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcso: <https://w3id.org/dcso/ns/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT ?title (COALESCE(?desc, "<unknown>") AS ?description) (COALESCE(?accessUrl, "<unknown>") AS ?url) (COALESCE(?size, "<unknown>") AS ?sizeInBytes)
+WHERE
+{
+    ?dataset dcso:hasDistribution ?distribution .
+
+    ?distribution dct:title ?title .
+
+    OPTIONAL { ?distribution dct:description ?desc . }
+    OPTIONAL { ?distribution dcat:accessUrl ?accessUrl .}
+   	OPTIONAL { ?distribution dcat:byteSize ?size .}
+}
+GROUP BY ?distribution ?accessUrl ?desc ?size ?title
+ORDER BY ASC(?distribution)

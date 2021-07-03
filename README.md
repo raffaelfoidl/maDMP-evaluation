@@ -74,8 +74,7 @@ The maDMPs we use as raw input data for our project are taken directly from the 
 Community [Data Stewardship 2021 - DMPs](https://zenodo.org/communities/dast-2021/).
 
 1. Start with raw maDMPs from the Zenodo Community.
-2.
-Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
+2. Ensure [schema](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/blob/master/examples/JSON/JSON-schema/1.1/maDMP-schema-1.1.json)
 conformity, uniform formatting and indenting
 3. Normalization: Establish uniform, alphabetical sorting of JSON properties.
 4. Convert JSON/Turtle maDMPs to
@@ -156,52 +155,52 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
         <td colspan="4"><b>1a How will new data be produced and/or how will existing data be re-used?</b></td>
     </tr>
     <tr>
-        <td>Explain which methodologies or software will be used if new data are collected or produced</td>
-        <td>No</td>
-        <td></td>
+        <td>Explain which methodologies or software will be used if new data are collected or produced.</td>
+        <td>/</td>
+        <td>Information provided by the <code>methodology</code> field in the <code>dataset</code> structure - however, this field is only specified in the funder extension and is not included in the RDA-DMP Common Standard; therefore, it can not be translated when converting the JSON files to a JSON-LD format and in consequence, not be queried.</td>
     </tr>
     <tr>
-        <td>State any constraints on re-use of existing data if there</td>
-        <td>No</td>
-        <td></td>
+        <td>State any constraints on re-use of existing data if there are any.</td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Explain how data provenance will be documented.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Briefly state the reasons if the re-use of any existing data sources has been considered but discarded.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>1b What data (for example the kind, formats, and volumes) will be collected or produced?</b></td>
     </tr>
     <tr>
         <td>Give details on the kind of data: for example, numeric (databases, spreadsheets), textual (documents), image, audio, video, and/or mixed media.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>1-b-1</code></td>
+        <td>Queries all declared datasets and displays their title, type and identifier.</td>
     </tr>
     <tr>
         <td>Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension (for example pdf, xls, doc, txt, or rdf).</td>
-        <td>No</td>
-        <td></td>
+        <td><code>1-b-2</code></td>
+        <td>Returns the data formats of each specified distribution (including the respective access URL and description of the distribution).</td>
     </tr>
     <tr>
         <td>Justify the use of certain formats. For example, decisions may be based on staff expertise within the host organisation, a preference for open formats, standards accepted by data repositories, widespread usage within the research community, or on the software or equipment that will be used.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Give preference to open and standard formats as they facilitate sharing and long-term re-use of data (several repositories provide lists of such ‘preferred formats’).</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not directly covered by maDMP; difficult to cover with a simple SPARQL query.</td>
     </tr>
     <tr>
         <td>Give details on the volumes (they can be expressed in storage space required (bytes), and/or in numbers of objects, files, rows, and columns).</td>
-        <td>No</td>
-        <td></td>
+        <td><code>1-b-3</code></td>
+        <td>Displays for each defined distribution its size in bytes.</td>
     </tr>
 </tbody>
 </table>
@@ -222,61 +221,41 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Indicate which metadata will be provided to help others identify and discover the data.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-1</code>, <code>2-a-2</code></td>
+        <td><code>2-a-1</code> collects all information provided by the <code>metadata</code> field, i.e., a description (optional), the used standard and the language. <code>2-a-2</code> displays the specified keywords for each defined dataset.</td>
     </tr>
     <tr>
         <td>Indicate which metadata standards (for example DDI, TEI, EML, MARC, CMDI) will be used.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-1</code></td>
+        <td>Information about the used metadata standards is covered in this query.</td>
     </tr>
     <tr>
         <td>Use community metadata standards where these are in place.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-3</code></td>
+        <td>Example query for testing whether certain community standards (Dublin Core, DDI, EML, TEI or MARC) are used. This can be arbitrarily modified based on which standards are preferred.</td>
     </tr>
     <tr>
         <td>Indicate how the data will be organised during the project mentioning, for example, conventions, version control, and folder structures. Consistent, well-ordered research data will be easier to find, understand, and re-use.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-4</code></td>
+        <td>Displays whether the given distribution hosts support versioning. The other information is not really covered by maDMP; if it is included in the maDMP, then probably in the <code>data_quality_assurance</code> field which is covered by query <code>2-b-1</code>.</td>
     </tr>
     <tr>
         <td>Consider what other documentation is needed to enable re-use. This may include information on the methodology used to collect the data, analytical and procedural information, definitions of variables, units of measurement, and so on.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>This information would (if anything) probably be included in the <code>methodology</code> field in the <code>dataset</code> structure - however, this field is only specified in the funder extension and is not included in the RDA-DMP Common Standard; therefore, it can not be translated when converting the JSON files to a JSON-LD format and in consequence, not be queried.</td>
     </tr>
     <tr>
         <td>Consider how this information will be captured and where it will be recorded (for example in a database with links to each item, a 'readme' text file, file headers, code books, or lab notebooks).</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>2b What data quality control measures will be used?</b></td>
     </tr>
     <tr>
-        <td>Give details on the kind of data: for example, numeric (databases, spreadsheets), textual (documents), image, audio, video, and/or mixed media.</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension (for example pdf, xls, doc, txt, or rdf).</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Justify the use of certain formats. For example, decisions may be based on staff expertise within the host organisation, a preference for open formats, standards accepted by data repositories, widespread usage within the research community, or on the software or equipment that will be used.</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Give preference to open and standard formats as they facilitate sharing and long-term re-use of data (several repositories provide lists of such ‘preferred formats’).</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Give details on the volumes (they can be expressed in storage space required (bytes), and/or in numbers of objects, files, rows, and columns).</td>
-        <td>No</td>
-        <td></td>
+        <td>Explain how the consistency and quality of data collection will be controlled and documented. This may include processes such as calibration, repeated samples or measurements, standardised data capture, data entry validation, peer review of data, or representation with controlled vocabularies.</td>
+        <td><code>2-b-1</code></td>
+        <td>The best one can do is with the <code>data_quality_assurance</code> element.</td>
     </tr>
 </tbody>
 </table>
@@ -297,36 +276,36 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Describe where the data will be stored and backed up during research activities and how often the backup will be performed. It is recommended to store data in least at two separate locations.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-a-1</code></td>
+        <td>Retrieving information about backups is only possible by querying the <code>host</code> element. If provided, the query returns the backup type and frequency for each specified host, as well as some information about the host.</td>
     </tr>
     <tr>
         <td>Give preference to the use of robust, managed storage with automatic backup, such as provided by IT support services of the home institution. Storing data on laptops, stand-alone hard drives, or external storage devices such as USB sticks is not recommended.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>3b How will data security and protection of sensitive data be taken care of during the research?</b></td>
     </tr>
     <tr>
         <td>Explain how the data will be recovered in the event of an incident.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Explain who will have access to the data during the research and how access to data is controlled, especially in collaborative partnerships.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-b-1</code></td>
+        <td>The best one can do is with the <code>security_and_privacy</code> field. Information about the availability of data hosts is included in query <code>3-a-1</code>.</td>
     </tr>
     <tr>
         <td>Consider data protection, particularly if your data is sensitive (for example containing personal data, politically sensitive information, or trade secrets). Describe the main risks and how these will be managed.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-b-2</code></td>
+        <td>Description of risks and countermeasures are not really covered by maDMP. Information about whether data are sensitive is covered.</td>
     </tr>
     <tr>
         <td>Explain which institutional data protection policies are in place.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Information provided by the <code>related_policy</code> field in the <code>dmp</code> structure - however, this field is only specified in the funder extension and is not included in the RDA-DMP Common Standard; therefore, it can not be translated when converting the JSON files to a JSON-LD format and in consequence, not be queried.</td>
     </tr>
 </tbody>
 </table>
@@ -347,39 +326,39 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Ensure that when dealing with personal data, data protection laws (for example GDPR) are complied with.  <i>(including sub-points)</i></td>
-        <td>No</td>
-        <td></td>
+        <td><code>5-a-2</code></td>
+        <td>If anything, information about consent for preservation or sharing and anonymization would be included in the <code>preservation_statement</code> which is already covered by query <code>5-a-2</code>. The other aspects are not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>4b How will other legal issues, such as intellectual property rights and ownership, be managed? What legislation is applicable?</b></td>
     </tr>
     <tr>
         <td>Explain who will be the owner of the data, meaning who will have the rights to control access. <i>(including sub-points)</i></td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-b-1</code>, <code>5-a-3</code></td>
+        <td>If anything, access restrictions would be included in the <code>security_and_privacy</code> field which is already covered by query <code>3-b-1</code>. Descriptions of the licenses in place are queried with query <code>5-a-3</code>.</td>
     </tr>
     <tr>
         <td>Indicate whether intellectual property rights (for example Database Directive, sui generis rights) are affected. If so, explain which and how will they be dealt with.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
-        <td>Indicate whether there are any restrictions on the re-use of third-party data</td>
-        <td>No</td>
-        <td></td>
+        <td>Indicate whether there are any restrictions on the re-use of third-party data.</td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>4c What ethical issues and codes of conduct are there, and how will they be taken into account?</b></td>
     </tr>
     <tr>
         <td>Consider whether ethical issues can affect how data are stored and transferred, who can see or use them, and how long they are kept. Demonstrate awareness of these aspects and respective planning.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>4-c-1</code>, <code>4-c-2</code></td>
+        <td>Query <code>4-c-1</code> checks whether ethical issues exist. Query <code>4-c-2</code> returns a description of the specified ethical issues, if there are any, as well as the ethical issues report, if there is one.</td>
     </tr>
     <tr>
         <td>Follow the national and international codes of conducts and institutional ethical guidelines, and check if ethical review (for example by an ethics committee) is required for data collection in the research project.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
 </tbody>
 </table>
@@ -406,7 +385,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     <tr>
         <td>Outline the plan for data preservation and give information on how long the data will be retained.</td>
         <td><code>5-a-2</code></td>
-        <td>The best one can do is with the preservation statement.</td>
+        <td>The best one can do is with the preservation statement. However, note that this query does not return anything for our input files in JSON-LD format, probably because the <code>preservation_statement</code> field in the JSON files is ignored by the DCSO-JSON tool (see "Known issues" in <a href="https://raffaelfoidl.github.io/maDMP-evaluation/0008.html">the README of the tool</a>) and hence, not converted. In consequence, this field can obviously not be queried.</td>
     </tr>
     <tr>
         <td>Explain when the data will be made available. Indicate the expected timely release. Explain whether exclusive use of the data will be claimed and if so, why and for how long. Indicate whether data sharing will be postponed or restricted for example to publish, protect intellectual property, or seek patents.</td>
@@ -617,18 +596,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>The size of the produced/used data is provided. However, for two out of four distributions, the description is missing. Furthermore, the file formats of the produced data are not specified (in contrast to the reused data).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>No information about metadata or versioning provided. Keywords are included for half of the defined datasets. Minimal information about naming conventions included, as well as some statements about quality assurance measures.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). Good description of access restrictions. For most datasets, clear indication whether personal/sensitive data is stored provided.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -637,13 +616,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There are preservation statements in the original JSON file, but they cannot be queried from the JSON-LD due to the reason explained above. Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Contact person is defined, but no contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -668,18 +647,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Information about metadata, data quality assurance and versioning is missing.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
     <td>0</td>
-    <td></td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No description of security measures. For most datasets, no clear indication whether personal/sensitive data is stored provided.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -688,13 +667,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There are no preservation statements, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Contact person is defined, but no contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -719,18 +698,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Information about metadata and versioning is missing. Minimal information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Extensive description of where the data is stored; however, information about backups and security measures is missing. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -739,13 +718,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Substantial information about the data hosts (Zenodo); however, the corresponding queries are a little bit too strict and do not return anything. Good description of licensing/usage (sensitive data, embargo, openness). No explicit data preservation statement (missing data: retention period, data destruction, what data is kept).</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -770,18 +749,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Significant keywords are provided as well as the metadata accompanying the data. Community metadata standards are used. Minimal information about versioning is available. Extensive description of data quality assurance measures.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive description of where the data is stored, the respective backup modalities and access regulations. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -790,13 +769,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Substantial information about the data hosts (GitHub, Zenodo). Good description of licensing/usage (sensitive data, embargo, openness). There is a preservation statement in the original JSON file, but it cannot be queried from the JSON-LD due to the reason explained above.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -821,18 +800,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>There is a clear description for each distribution; the file formats are defined as well. However, the type of the dataset is not specified and the size of the produced/used data is missing.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>Only few keywords specified. Information about metadata and versioning is missing. No information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Minimal description of where the data is stored and the respective backup modalities (which the SPARQL queries fail to detect). No description of security measures. No indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -841,13 +820,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Almost complete information about the data hosts (GitHub, Zenodo); information about the PID system is missing. There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the incomplete host definitions.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about creator, contributors and their roles. Needed resources are defined. Financial costs are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -872,18 +851,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Information about metadata and versioning is missing. Minimal information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No information about security measures provided. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -892,13 +871,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>maDMP does not have host elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Contact person is defined, but no contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -923,18 +902,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is provided as well.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Specified metadata standard is not a standard. Minimal information regarding data quality assurance provided.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Extensive description of where the data is stored; however, information about backups and security measures is missing. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -943,13 +922,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Substantial information about the data host (Zenodo) and licensing/usage (sensitive data, embargo, openness). No explicit data preservation statement (missing data: retention period, data destruction, what data is kept).</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -974,18 +953,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>The file formats are defined. However, some distribution descriptions are missing as well as the size of some data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Significant keywords are specified. Specified metadata standards are no standards. No information regarding data quality assurance provided, except for minimal information about versioning.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>Extensive description of where the data is stored; however, information about access restrictions is missing, as well as a description of the backup modalities for some hosts. Clear indication whether personal/sensitive data is stored for most specified datasets.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -994,13 +973,13 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about the data hosts (GitHub, Zenodo) and licensing/usage (sensitive data, embargo, openness). There are preservation statements in the original JSON file, but they cannot be queried from the JSON-LD due to the reason explained above.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about creator, contributors and their roles. Extensive description of needed resources and costs.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -1025,18 +1004,18 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Keywords are provided as well as the metadata accompanying the data. Community metadata standards are used. Minimal information about versioning is available. Description of data quality assurance measurements missing.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Extensive description of where the data is stored and access restrictions; however, information about backups is missing. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1051,7 +1030,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
     <td>5</td>
-    <td>Clear info about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are also specified in the maDMP.</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are also specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -1078,18 +1057,18 @@ According to the results of the queries, this maDMP has a quite high amount of i
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>The file formats are specified, but not in the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA media type</a> format. The size of the data is provided. However, the distribution descriptions are missing.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>Significant keywords are specified. No information about metadata or versioning provided. Extensive documentation of naming conventions included.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No information about security measures provided. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1098,8 +1077,8 @@ According to the results of the queries, this maDMP has a quite high amount of i
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>2</td>
-    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition.</td>
+    <td>3</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is a preservation statement in the original JSON file, but it cannot be queried from the JSON-LD due to the reason explained above. Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -1132,18 +1111,18 @@ the maDMP did provide a decent informational value.
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>There is a clear description for each distribution. The file formats are specified (except for the source code). The size of the data is given as well (except for the source code).</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td></td>
+    <td>No keywords specified. Original JSON file contains <code>documentation_and_metadata</code> element where some information about metadata is provided; this field is, however, not part of the RDA CMP Common Standard and can therefore not be considered. No information about versioning. Minimal statement regarding data quality assurance.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore some information is missing (backup type and frequency, availability). No information about security measures provided. Clear indication whether personal/sensitive data is stored.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1152,13 +1131,13 @@ the maDMP did provide a decent informational value.
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>2</td>
+    <td>3</td>
     <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing <code>host</code> definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>5</td>
-    <td>Clear info about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -1171,7 +1150,7 @@ the maDMP did provide a decent informational value.
 </table>
 
 Since the JSON-LD maDMP was surprisingly short in content, a manual look into the source maDMP revealed that there are
-a lot of fields that are not actually part of the RDA DMP Common Standard and thus, not queryable with our approach.
+a lot of fields that are not actually part of the RDA-DMP Common Standard and thus, not queryable with our approach.
 
 ### 12.jsonld
 
@@ -1186,18 +1165,18 @@ a lot of fields that are not actually part of the RDA DMP Common Standard and th
 <tbody>
   <tr>
     <td>1 Data Description and Collection or Re-Use of Existing Data</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>There is a clear description for each distribution. The file formats are specified as well as the size of the data.</td>
   </tr>
   <tr>
     <td>2 Documentation and Data Quality</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Significant keywords are provided as well as the metadata accompanying the data. Community metadata standards are used. Minimal information about versioning is available. Extensive description of data quality assurance measures and folder structures.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive description of where the data is stored, the respective backup modalities and access regulations. Clear indication whether personal/sensitive data is stored. Data is stored at four locations.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
@@ -1212,7 +1191,7 @@ a lot of fields that are not actually part of the RDA DMP Common Standard and th
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
     <td>4</td>
-    <td>Clear info about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
