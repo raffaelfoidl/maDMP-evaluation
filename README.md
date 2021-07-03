@@ -276,8 +276,8 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Describe where the data will be stored and backed up during research activities and how often the backup will be performed. It is recommended to store data in least at two separate locations.</td>
-        <td><code>3-a-1</code></td>
-        <td>Only possible by querying the <code>host</code> element. If provided, returns the backup type and frequency for each specified host, as well as some information about the host.</td>
+        <td><code>3-a-1</code>, <code>3-a-2</code>, <code>3-a-3</code></td>
+        <td>Retrieving information about backups is only possible by querying the <code>host</code> element. If provided, query <code>3-a-1</code> returns the backup type and frequency for each specified host, as well as some information about the host. Query <code>3-a-2</code> returns for each dataset the number of specified distributions whereas query <code>3-a-3</code> checks whether for each dataset, at least two distributions are declared.</td>
     </tr>
     <tr>
         <td>Give preference to the use of robust, managed storage with automatic backup, such as provided by IT support services of the home institution. Storing data on laptops, stand-alone hard drives, or external storage devices such as USB sticks is not recommended.</td>
@@ -1175,8 +1175,8 @@ a lot of fields that are not actually part of the RDA-DMP Common Standard and th
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Good description of where the data is stored and the respective backup modalities.</td>
   </tr>
   <tr>
     <td>4 Legal and Ethical Requirements, Code of Conduct</td>
