@@ -29,42 +29,19 @@
   border-spacing: 0;
 }
 
-.rtable,
-.rtable--flip tbody {
-  // optional - enable iOS momentum scrolling
-  -webkit-overflow-scrolling: touch;
-
-  // scrolling shadows
-  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
-  radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
-  background-size: 10px 100%, 10px 100%;
-  background-attachment: scroll, scroll;
-  background-repeat: no-repeat;
-}
-
-// change these gradients from white to your background colour if it differs
-// gradient on the first cells to hide the left shadow
-.rtable td:first-child,
-.rtable--flip tbody tr:first-child {
-  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
-  background-repeat: no-repeat;
-  background-size: 20px 100%;
-}
-
-// gradient on the last cells to hide the right shadow
-.rtable td:last-child,
-.rtable--flip tbody tr:last-child {
-  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: 20px 100%;
-}
-
-.rtable th, .rtable tfoot td {
+.rtable th {
   font-size: 11px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   background: #f2f0e6;
+}
+
+.rtable td {
+  text-align: left;
+}
+
+.rtable tfoot td {
+  font-weight: bold;
 }
 
 .rtable th,
