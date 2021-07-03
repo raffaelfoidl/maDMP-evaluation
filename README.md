@@ -656,12 +656,16 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>17/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+Due to the missing `host` definition, a lot of information could not be extracted with the queries. There is virtually no
+documentation of metadata. Information about the data management repsonsibilities is missing as well.
+Apart from those aspects, the maDMP provides a decent informational value.
 
 ### 2.jsonld
 
@@ -712,12 +716,16 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>11/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+A lot of (important) information is missing in this maDMP. Hence, one can conclude based on the assessment with our queries that
+the maDMP provides insufficient documentation and is therefore of rather bad quality.
+
 
 ### 3.jsonld
 
@@ -768,12 +776,16 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>22/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+The documentation of the metadata is not satisfactory. Furthermore, there is no information regarding security
+considerations, data preservation and backups. All in all, this maDMP provides sufficient documentation without being
+of exceptional quality.
 
 ### 4.jsonld
 
@@ -824,12 +836,15 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>34/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+This maDMP could be assessed quite well; based on the results one can argue that this maDMP is excellent.
+The only missing aspect concerns the costs of the project.
 
 ### 5.jsonld
 
@@ -880,12 +895,16 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>20/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+The main issue here is the lack of metadata documentation. Aside from that, the maDMP fails to provide information about
+data storage and preservation, backups and security measures. The other aspects were elaborated sufficiently. In conclusion,
+this maDMP is of decent quality.
 
 ### 6.jsonld
 
@@ -936,12 +955,15 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>12/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+A lot of (important) information is missing here. Hence, one can conclude based on the assessment with our queries that
+the maDMP provides insufficient documentation and is therefore of rather bad quality.
 
 ### 7.jsonld
 
@@ -992,12 +1014,16 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>23/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+The documentation of the metadata is not quite satisfactory. Furthermore, there is no information regarding security
+considerations, data preservation and backups. All in all, this maDMP provides sufficient documentation without being
+of exceptional quality.
 
 ### 8.jsonld
 
@@ -1048,12 +1074,15 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>26/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
+
+There was apparently some confusion regarding the metadata standards. Apart from that, there are only a few small
+issues. Overall, this maDMP is of mediocre quality.
 
 ### 9.jsonld
 
@@ -1104,14 +1133,15 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>30/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
 
-According to the results of the queries, this maDMP has a quite high amount of information required by the evaluation rubric, hinting at good quality.
+According to the results of the queries, although a few requirements were not completely fulfilled, this maDMP has a
+quite high amount of information demanded by the evaluation rubric, hinting at good quality.
 
 ### 10.jsonld
 
@@ -1162,15 +1192,15 @@ According to the results of the queries, this maDMP has a quite high amount of i
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>21/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
 
-Due to the missing `host` definition, a lot of information could not be extracted with the queries. Apart from that,
-the maDMP did provide a decent informational value.
+Due to the missing `host` definition, a lot of information could not be extracted with the queries. There is virtually no
+documentation of metadata. Apart from those aspects,  the maDMP did provide a decent informational value.
 
 ### 11.jsonld
 
@@ -1196,7 +1226,7 @@ the maDMP did provide a decent informational value.
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td>No keywords specified. Original JSON file contains <code>documentation_and_metadata</code> element where some information about metadata is provided; this field is, however, not part of the RDA CMP Common Standard and can therefore not be considered. No information about versioning. Minimal statement regarding data quality assurance.</td>
+    <td>No keywords specified. Original JSON file contains <code>documentation_and_metadata</code> element where some information about metadata is provided; this field is, however, not part of the RDA-CMP Common Standard and can therefore not be considered. No information about versioning. Minimal statement regarding data quality assurance.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
@@ -1221,15 +1251,16 @@ the maDMP did provide a decent informational value.
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>7/30</td>
+    <td>Sum</td>
+    <td>16/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
 
 Since the JSON-LD maDMP was surprisingly short in content, a manual look into the source maDMP revealed that there are
-a lot of fields that are not actually part of the RDA-DMP Common Standard and thus, not queryable with our approach.
+a lot of fields that are not actually part of the RDA-DMP Common Standard and thus, not queryable with our approach. From
+this assessment, one can conclude that the maDMP is of poor quality.
 
 ### 12.jsonld
 
@@ -1280,15 +1311,16 @@ a lot of fields that are not actually part of the RDA-DMP Common Standard and th
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
-    <td>0/30</td>
+    <td>Sum</td>
+    <td>33/35</td>
     <td></td>
   </tr>
 </tfoot>
 </table>
 
-Overall, this maDMP could be assessed decently well. Missing aspects were mostly due to the maDMP schema, a preservation
-statement would have provided some more information.
+Overall, this maDMP could be assessed decently well and turned out to be of excellent quality based on the evaluation
+with our queries. Missing aspects were mostly due to the maDMP schema, a preservation statement would have provided some
+more information.
 
 ### Aggregation, Conclusion
 
@@ -1339,7 +1371,7 @@ statement would have provided some more information.
 </tbody>
 <tfoot>
   <tr>
-    <td>Average</td>
+    <td>Sum</td>
     <td>0/360</td>
     <td></td>
   </tr>
