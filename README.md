@@ -276,36 +276,36 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Describe where the data will be stored and backed up during research activities and how often the backup will be performed. It is recommended to store data in least at two separate locations.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-a-1</code></td>
+        <td>Only possible by querying the <code>host</code> element. If provided, returns the backup type and frequency for each specified host, as well as some information about the host.</td>
     </tr>
     <tr>
         <td>Give preference to the use of robust, managed storage with automatic backup, such as provided by IT support services of the home institution. Storing data on laptops, stand-alone hard drives, or external storage devices such as USB sticks is not recommended.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>3b How will data security and protection of sensitive data be taken care of during the research?</b></td>
     </tr>
     <tr>
         <td>Explain how the data will be recovered in the event of an incident.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td>Explain who will have access to the data during the research and how access to data is controlled, especially in collaborative partnerships.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-b-1</code></td>
+        <td>The best one can do is with the <code>security_and_privacy</code> field.</td>
     </tr>
     <tr>
         <td>Consider data protection, particularly if your data is sensitive (for example containing personal data, politically sensitive information, or trade secrets). Describe the main risks and how these will be managed.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>3-b-2</code></td>
+        <td>Description of risks and countermeasures are not really covered by maDMP. Information about whether data are sensitive is covered.</td>
     </tr>
     <tr>
         <td>Explain which institutional data protection policies are in place.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Information provided by the <code>related_policy</code> field in the <code>dmp</code> structure - however, this field is only specified in the funder extension and is not included in the RDA-DMP Common Standard; therefore, it can not be translated when converting the JSON files to a JSON-LD format and in consequence, not be queried.</td>
     </tr>
 </tbody>
 </table>
@@ -1150,7 +1150,7 @@ the maDMP did provide a decent informational value.
 </table>
 
 Since the JSON-LD maDMP was surprisingly short in content, a manual look into the source maDMP revealed that there are
-a lot of fields that are not actually part of the RDA DMP Common Standard and thus, not queryable with our approach.
+a lot of fields that are not actually part of the RDA-DMP Common Standard and thus, not queryable with our approach.
 
 ### 12.jsonld
 
