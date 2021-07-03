@@ -156,8 +156,8 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Provide information such as name of applicant, project number, funding programme, version of DMP.Provide information such as name of applicant, project number, funding programme, version of DMP.</td>
-        <td><code>0-1</code></td>
-        <td></td>
+        <td><code>0-1</code>, <code>0-2</code>, <code>0-3</code></td>
+        <td>Query <code>0-1</code> returns the basic information, i.e., the author, title, created date and language of the maDMP as well as the ID of the corresponding DMP. Query <code>0-2</code> gathers all important information available for the corresponding project, whereas query <code>0-3</code> collects information about the funding of the project.</td>
     </tr>
 </tbody>
 </table>
