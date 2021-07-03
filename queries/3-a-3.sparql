@@ -15,7 +15,8 @@ WHERE
     WHERE
     {
         ?dataset dcso:hasDistribution ?distribution .
+
+        FILTER (?distributions > 1)
 	}
     GROUP BY ?dataset
-    HAVING (COUNT(DISTINCT ?distribution) > 1)
 }
