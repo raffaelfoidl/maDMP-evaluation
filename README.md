@@ -621,8 +621,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Contact person is defined, but no contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -672,8 +672,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Contact person is defined, but no contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -723,8 +723,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -774,8 +774,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -825,8 +825,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about creator, contributors and their roles. Needed resources are defined. Financial costs are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -876,8 +876,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>1</td>
+    <td>Contact person is defined, but no contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -927,8 +927,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -978,8 +978,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about creator, contributors and their roles. Extensive description of needed resources and costs.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -1030,7 +1030,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
     <td>5</td>
-    <td>Clear info about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are also specified in the maDMP.</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are also specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -1136,8 +1136,8 @@ the maDMP did provide a decent informational value.
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
-    <td>5</td>
-    <td>Clear info about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
+    <td>4</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
@@ -1191,7 +1191,7 @@ a lot of fields that are not actually part of the RDA DMP Common Standard and th
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
     <td>4</td>
-    <td>Clear info about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
+    <td>Clear information about creator, contributors and their roles. Costs (resources, equipment, staff expenses etc.) are not specified in the maDMP.</td>
   </tr>
 </tbody>
 <tfoot>
