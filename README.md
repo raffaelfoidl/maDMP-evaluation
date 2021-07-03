@@ -221,61 +221,41 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Indicate which metadata will be provided to help others identify and discover the data.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-1</code></td>
+        <td>Collects all information provided by the <code>metadata</code> field, i.e., a description (optional), the used standard and the language.</td>
     </tr>
     <tr>
         <td>Indicate which metadata standards (for example DDI, TEI, EML, MARC, CMDI) will be used.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-1</code></td>
+        <td>Information about the used metadata standards is covered in this query.</td>
     </tr>
     <tr>
         <td>Use community metadata standards where these are in place.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-2</code></td>
+        <td>Example query for testing whether certain community standards (Dublin Core, DDI, EML, TEI or MARC) are used. This can be arbitrarily modified based on which standards are preferred.</td>
     </tr>
     <tr>
         <td>Indicate how the data will be organised during the project mentioning, for example, conventions, version control, and folder structures. Consistent, well-ordered research data will be easier to find, understand, and re-use.</td>
-        <td>No</td>
-        <td></td>
+        <td><code>2-a-3</code></td>
+        <td>Displays whether the given distribution hosts support versioning. The other information is not really covered by maDMP; if it is included in the maDMP, then probably in the <code>data_quality_assurance</code> field which is covered by query <code>2-b-1</code>.</td>
     </tr>
     <tr>
         <td>Consider what other documentation is needed to enable re-use. This may include information on the methodology used to collect the data, analytical and procedural information, definitions of variables, units of measurement, and so on.</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>This information would (if anything) probably be included in the <code>methodology</code> field in the <code>dataset</code> structure - however, this field is only specified in the funder extension and is not included in the RDA-DMP Common Standard; therefore, it can not be translated when converting the JSON files to a JSON-LD format and in consequence, not be queried.</td>
     </tr>
     <tr>
         <td>Consider how this information will be captured and where it will be recorded (for example in a database with links to each item, a 'readme' text file, file headers, code books, or lab notebooks).</td>
-        <td>No</td>
-        <td></td>
+        <td>/</td>
+        <td>Not really covered by maDMP.</td>
     </tr>
     <tr>
         <td colspan="4"><b>2b What data quality control measures will be used?</b></td>
     </tr>
     <tr>
-        <td>Give details on the kind of data: for example, numeric (databases, spreadsheets), textual (documents), image, audio, video, and/or mixed media.</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension (for example pdf, xls, doc, txt, or rdf).</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Justify the use of certain formats. For example, decisions may be based on staff expertise within the host organisation, a preference for open formats, standards accepted by data repositories, widespread usage within the research community, or on the software or equipment that will be used.</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Give preference to open and standard formats as they facilitate sharing and long-term re-use of data (several repositories provide lists of such ‘preferred formats’).</td>
-        <td>No</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Give details on the volumes (they can be expressed in storage space required (bytes), and/or in numbers of objects, files, rows, and columns).</td>
-        <td>No</td>
-        <td></td>
+        <td>Explain how the consistency and quality of data collection will be controlled and documented. This may include processes such as calibration, repeated samples or measurements, standardised data capture, data entry validation, peer review of data, or representation with controlled vocabularies.</td>
+        <td><code>2-b-1</code></td>
+        <td>The best one can do is with the <code>data_quality_assurance</code> element.</td>
     </tr>
 </tbody>
 </table>
