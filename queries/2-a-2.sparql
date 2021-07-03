@@ -7,18 +7,12 @@ PREFIX dcso: <https://w3id.org/dcso/ns/core#>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
-ASK
+SELECT ?datasetTitle (GROUP_CONCAT(?keyword; SEPARATOR=", ") AS ?keywords)
 WHERE
 {
-    ?dataset dcso:hasMetadata ?metadata .
+    ?maDmp dcso:hasDataset ?dataset .
 
-    ?metadata dcso:hasMetadataStandardId ?metadataStandard ;
-              dct:description ?description ;
-              dcso:language ?language .
-
-    ?metadataStandard dct:identifier ?standardId ;
-                      dcso:identifierType "url" .
-
-    FILTER (CONTAINS(?standardId, "dublin") || CONTAINS(?standardId, "eml") || CONTAINS(?standardId, "marc") || CONTAINS(?standardId, "tei") || CONTAINS(?standardId, "ddi"))
+    ?dataset dct:title ?datasetTitle .
+    OPTIONAL { ?dataset dcat:keyword ?keyword . }
 }
-GROUP BY ?description ?language ?standardId ?standardType
+GROUP BY ?datasetTitle

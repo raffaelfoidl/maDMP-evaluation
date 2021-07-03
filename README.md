@@ -221,8 +221,8 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Indicate which metadata will be provided to help others identify and discover the data.</td>
-        <td><code>2-a-1</code></td>
-        <td>Collects all information provided by the <code>metadata</code> field, i.e., a description (optional), the used standard and the language.</td>
+        <td><code>2-a-1</code>, <code>2-a-2</code></td>
+        <td><code>2-a-1</code> collects all information provided by the <code>metadata</code> field, i.e., a description (optional), the used standard and the language. <code>2-a-2</code> displays the specified keywords for each defined dataset.</td>
     </tr>
     <tr>
         <td>Indicate which metadata standards (for example DDI, TEI, EML, MARC, CMDI) will be used.</td>
@@ -231,12 +231,12 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     </tr>
     <tr>
         <td>Use community metadata standards where these are in place.</td>
-        <td><code>2-a-2</code></td>
+        <td><code>2-a-3</code></td>
         <td>Example query for testing whether certain community standards (Dublin Core, DDI, EML, TEI or MARC) are used. This can be arbitrarily modified based on which standards are preferred.</td>
     </tr>
     <tr>
         <td>Indicate how the data will be organised during the project mentioning, for example, conventions, version control, and folder structures. Consistent, well-ordered research data will be easier to find, understand, and re-use.</td>
-        <td><code>2-a-3</code></td>
+        <td><code>2-a-4</code></td>
         <td>Displays whether the given distribution hosts support versioning. The other information is not really covered by maDMP; if it is included in the maDMP, then probably in the <code>data_quality_assurance</code> field which is covered by query <code>2-b-1</code>.</td>
     </tr>
     <tr>
