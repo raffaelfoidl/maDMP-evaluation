@@ -636,8 +636,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>3</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There are preservation statements in the original JSON file, but they cannot be queried from the JSON-LD due to the reason explained above. Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -687,8 +687,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>maDMP does not have <code>host</code> elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There are no preservation statements, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -738,8 +738,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Substantial information about the data hosts (Zenodo); however, the corresponding queries are a little bit too strict and do not return anything. Good description of licensing/usage (sensitive data, embargo, openness). No explicit data preservation statement (missing data: retention period, data destruction, what data is kept).</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -789,8 +789,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Substantial information about the data hosts (GitHub, Zenodo). Good description of licensing/usage (sensitive data, embargo, openness). There is a preservation statement in the original JSON file, but it cannot be queried from the JSON-LD due to the reason explained above.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -840,8 +840,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Almost complete information about the data hosts (GitHub, Zenodo); information about the PID system is missing. There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the incomplete host definitions.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -891,8 +891,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>2</td>
+    <td>maDMP does not have host elements defined, therefore a lot of important information is missing (PID system, backup strategies, URLs etc.). There is no preservation statement, therefore no information about research uses and preservation details (which data is kept, how to select etc.). Regarding licenses (license, embargo, openness, sensitivity), the maDMP does contain helpful data. However, the SPARQL query is a little bit too strict and fails due to the missing host definition.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -942,8 +942,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>4</td>
+    <td>Substantial information about the data host (Zenodo) and licensing/usage (sensitive data, embargo, openness). No explicit data preservation statement (missing data: retention period, data destruction, what data is kept).</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
@@ -993,8 +993,8 @@ or that the SPARQL queries are not able to extract the required pieces of inform
   </tr>
   <tr>
     <td>5 Data Sharing and Long-Term Preservation</td>
-    <td>0</td>
-    <td></td>
+    <td>5</td>
+    <td>Extensive information about the data hosts (GitHub, Zenodo) and licensing/usage (sensitive data, embargo, openness). There are preservation statements in the original JSON file, but they cannot be queried from the JSON-LD due to the reason explained above.</td>
   </tr>
   <tr>
     <td>6 Data Management Responsibilities and Resources</td>
