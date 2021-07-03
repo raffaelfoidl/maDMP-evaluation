@@ -498,7 +498,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     <tr>
         <td>Indicate who is responsible for implementing the DMP, and for ensuring it is reviewed and, if necessary, revised.</td>
         <td>/</td>
-        <td>Not explicitly covered by maDMP, but <code>6-a-1</code> and <code>6-a-2</code> give a good indicator of who might be resposible.</td>
+        <td>Not explicitly covered by maDMP, but <code>6-a-1</code> and <code>6-a-2</code> give a good indicator of who might be responsible.</td>
     </tr>
     <tr>
         <td>Consider regular updates of the DMP.</td>
@@ -664,7 +664,7 @@ or that the SPARQL queries are not able to extract the required pieces of inform
 </table>
 
 Due to the missing `host` definition, a lot of information could not be extracted with the queries. There is virtually no
-documentation of metadata. Information about the data management repsonsibilities is missing as well.
+documentation of metadata. Information about the data management responsibilities is missing as well.
 Apart from those aspects, the maDMP provides a decent informational value.
 
 ### 2.jsonld
@@ -1376,7 +1376,7 @@ As one can see in the table and the individual evaluations above, the main issue
 documentation of the metadata accompanying the used and produced data as well as lacking information about the storage
 and backup of data (categories 2 and 3). Regarding the other categories, most of the maDMPs provided a decent amount of information,
 with a few shortcomings here and there. One aspect worth mentioning here is the missing definition of the `host` element
-which is an issue that appeared in quite a few maDMPs. Furthermore, the cost were neglected in all maDMPs, the required
+which is an issue that appeared in quite a few maDMPs. Furthermore, the costs were neglected in all maDMPs, the required
 resources were only specified in one maDMP.
 
 Nevertheless, based on the evaluation with our queries one can argue that all maDMPs are of good (or at least sufficient) quality.
@@ -1386,7 +1386,7 @@ some queries could be made more tolerant against not having  defined optional sc
 This would improve the results in gauging maDMPs. Other than that, they proved to be quite useful in assessing the set of
 input maDMPs.
 
-All in all, the SPARQL queries can certainly serve as a starting point for reviewers. However, it is certainly worth noting that
+All in all, the SPARQL queries can certainly serve as a starting point for reviewers. However, it is worth noting that
 queries are mostly kept rather general in order to be applicable to the quite diverse input files.  Hence, one might need to adjust
 them to fit one's specific domain and requirements.
 
