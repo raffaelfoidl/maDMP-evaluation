@@ -48,7 +48,7 @@ queries that are meant to automatically give an initial assessment of the respec
 ```
 
 * `app-bin`: distribution directory of the `dcso-json` tool (built and distributed upon `mvn install`, refer to its
-  [documentation](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html) for more information)
+  [documentation](https://raffaelfoidl.github.io/maDMP-evaluation/0007.html) for more information)
 * `dcso-json`: the source code of the `dcso-json` tool, bundled as a `maven` project
 * `docs`: the content of the [documentation webpage](https://raffaelfoidl.github.io/maDMP-evaluation/); served via
   GitHub pages and the static site generator [Jekyll](https://jekyllrb.com/).
@@ -64,7 +64,7 @@ for [https://raffaelfoidl.github.io/maDMP-evaluation/](https://raffaelfoidl.gith
 and is updated at every push to `main` using a
 dedicated [GitHub Action](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
 
-The `docs` folder on the `main` branch is only updated at sporadically, e.g. at releases (commits with a release tag).
+The `docs` folder on the `main` branch is only updated sporadically, e.g. at releases (commits with a release tag).
 
 ## Methodology
 
@@ -103,7 +103,7 @@ Regarding step 2, the following changes had to be made in order to achieve schem
 Step 4 has been performed automatically via
 the [convert.sh](https://github.com/raffaelfoidl/maDMP-evaluation/blob/main/maDMPs/convert.sh) shell script. For more
 information on the `dcso-json` tool invoked by this script, please refer to
-the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0008.html).
+the [dcso-json overview](https://raffaelfoidl.github.io/maDMP-evaluation/0007.html).
 
 ### Processing of the Semantic maDMP Representation
 
@@ -113,7 +113,7 @@ developed queries that project certain subsets of the data into a customized vie
 that simply indicate whether some criteria are satisfied (`ASK` queries).
 
 A more in-depth, but still summarized, overview of the queries we created can be observed
-in [Queries](https://raffaelfoidl.github.io/maDMP-evaluation/0005.html). The queries themselves are available in
+in [Covered Criteria](https://raffaelfoidl.github.io/maDMP-evaluation/0004.html). The queries themselves are available in
 the [queries](https://github.com/raffaelfoidl/maDMP-evaluation/tree/main/queries) directory.
 
 During our experiment, we used a local [GraphDB](https://www.ontotext.com/products/graphdb/) instance as triple store
@@ -124,7 +124,7 @@ course eligible as well. However, as a result of previous experiences with it, w
 
 Finally, after having created the queries, we applied them to the maDMPs that made up our input and which had previously
 been imported into a GraphDB repository. The results of this assessment can be found in
-the [Assessment Report](https://raffaelfoidl.github.io/maDMP-evaluation/0006.html).
+the [Assessment Report](https://raffaelfoidl.github.io/maDMP-evaluation/0005.html).
 
 ## Covered Criteria
 
@@ -407,7 +407,7 @@ a reference to `5-a-1` is points to the query file `5-a-1.sparql`.
     <tr>
         <td>Outline the plan for data preservation and give information on how long the data will be retained.</td>
         <td><code>5-a-2</code></td>
-        <td>The best one can do is with the preservation statement. However, note that this query does not return anything for our input files in JSON-LD format, probably because the <code>preservation_statement</code> field in the JSON files is ignored by the DCSO-JSON tool (see "Known issues" in <a href="https://raffaelfoidl.github.io/maDMP-evaluation/0008.html">the README of the tool</a>) and hence, not converted. In consequence, this field can obviously not be queried.</td>
+        <td>The best one can do is with the preservation statement. However, note that this query does not return anything for our input files in JSON-LD format, probably because the <code>preservation_statement</code> field in the JSON files is ignored by the DCSO-JSON tool (see "Known issues" in <a href="https://raffaelfoidl.github.io/maDMP-evaluation/0007.html">the README of the tool</a>) and hence, not converted. In consequence, this field can obviously not be queried.</td>
     </tr>
     <tr>
         <td>Explain when the data will be made available. Indicate the expected timely release. Explain whether exclusive use of the data will be claimed and if so, why and for how long. Indicate whether data sharing will be postponed or restricted for example to publish, protect intellectual property, or seek patents.</td>
@@ -1226,7 +1226,7 @@ documentation of metadata. Apart from those aspects,  the maDMP did provide a de
   <tr>
     <td>2 Documentation and Data Quality</td>
     <td>0</td>
-    <td>No keywords specified. Original JSON file contains <code>documentation_and_metadata</code> element where some information about metadata is provided; this field is, however, not part of the RDA-CMP Common Standard and can therefore not be considered. No information about versioning. Minimal statement regarding data quality assurance.</td>
+    <td>No keywords specified. Original JSON file contains <code>documentation_and_metadata</code> element where some information about metadata is provided; this field is, however, not part of the RDA-DMP Common Standard and can therefore not be considered. No information about versioning. Minimal statement regarding data quality assurance.</td>
   </tr>
   <tr>
     <td>3 Storage and Backup During the Research Process</td>
