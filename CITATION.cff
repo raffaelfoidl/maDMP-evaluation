@@ -1,0 +1,17 @@
+authors: 
+  - affiliation: "Vienna University of Technology"
+    family-names: Foidl
+    given-names: Raffael
+    orcid: "https://orcid.org/0000-0002-1748-1571"
+  - affiliation: "Vienna University of Technology"
+    family-names: Brugger
+    given-names: "Lea Salome"
+    orcid: "https://orcid.org/0000-0001-8770-4112"
+cff-version: "1.1.0"
+date-released: 2021-09-29
+doi: "10.5281/zenodo.5068192"
+license: MIT
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/raffaelfoidl/maDMP-evaluation"
+title: "Evaluation of maDMPs using SPARQL"
+version: "1.1"
